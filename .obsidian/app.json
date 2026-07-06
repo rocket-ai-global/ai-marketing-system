@@ -1,8 +1,11 @@
 {
-  "attachmentFolderPath": "03. Resources/Attachments",
+  "attachmentFolderPath": "5. Toolbox/Attachments",
   "newFileLocation": "folder",
-  "newFileFolderPath": "00. Inbox",
+  "newFileFolderPath": "1. Raw",
   "alwaysUpdateLinks": true,
-  "readableLineLength": true,
+  "readableLineLength": false,
+  "userIgnoreFilters": [
+    "ai-nexus-landing/"
+  ],
   "showUnsupportedFiles": true
 }

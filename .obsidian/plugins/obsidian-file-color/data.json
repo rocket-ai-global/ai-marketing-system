@@ -3,29 +3,29 @@
   "colorBackground": false,
   "palette": [
     {
-      "id": "tech-cyan",
+      "id": "lyd-c9p8XwuBYl6VaWtqr",
       "name": "",
-      "value": "#0fb6d6"
+      "value": "#e00b0b"
     },
     {
-      "id": "tech-blue",
+      "id": "xRkjNMh1ce7Enedfx0z4b",
       "name": "",
-      "value": "#2e6bff"
+      "value": "#2e62ff"
     },
     {
-      "id": "tech-teal",
+      "id": "rEAT2SpUg0MTnWUq_mhPJ",
       "name": "",
-      "value": "#14b8a6"
+      "value": "#26c028"
     },
     {
-      "id": "tech-purple",
+      "id": "geBhOTatDbFV5-zJWuJcC",
       "name": "",
-      "value": "#7c3aed"
+      "value": "#f27907"
     },
     {
-      "id": "tech-pink",
+      "id": "U4UCLOpCf0IjHMON5GI_j",
       "name": "",
-      "value": "#f4569d"
+      "value": "#b60be5"
     }
   ],
   "fileColors": []

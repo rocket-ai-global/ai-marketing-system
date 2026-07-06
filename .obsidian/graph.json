@@ -8,58 +8,58 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"01. Projects\"  ",
+      "query": "core path:\"3. Core/Dots/Statements\"  ",
       "color": {
         "a": 1,
-        "rgb": 3042303
+        "rgb": 16460036
       }
     },
     {
-      "query": "path:\"02. Areas\"  ",
+      "query": "path:\"2. Mine/Literature Notes\"  ",
       "color": {
         "a": 1,
-        "rgb": 1029846
+        "rgb": 2682880
       }
     },
     {
-      "query": "path:\"03. Resources\"  ",
+      "query": "path:\"4. Mint/Paused\"  ",
       "color": {
         "a": 1,
-        "rgb": 1357990
+        "rgb": 478185
       }
     },
     {
-      "query": "path:\"04. Archive\"  ",
+      "query": "path:\"4. Mint\"  ",
       "color": {
         "a": 1,
-        "rgb": 7041664
+        "rgb": 16713148
       }
     },
     {
-      "query": "path:\"Companies\" OR path:\"People\"  ",
+      "query": "path:\"2. Mine/Daily Notes\"  ",
       "color": {
         "a": 1,
-        "rgb": 8141549
+        "rgb": 8388863
       }
     },
     {
-      "query": "path:\"Daily\"  ",
+      "query": "ima",
       "color": {
         "a": 1,
-        "rgb": 16012957
+        "rgb": 6073814
       }
     }
   ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": -1.4,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "nodeSizeMultiplier": 1.51555555555556,
+  "lineSizeMultiplier": 1.3766796875,
   "collapse-forces": false,
   "centerStrength": 0.487239583333333,
   "repelStrength": 12.4010416666667,
   "linkStrength": 0.61171875,
   "linkDistance": 30,
-  "scale": 1,
+  "scale": 0.1494030366711198,
   "close": true
 }

@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "03. Resources/Templates",
+  "templates_folder": "5. Toolbox/Templates",
   "templates_pairs": [
     [
       "",
@@ -15,36 +15,116 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "00. Inbox",
-      "template": "03. Resources/Templates/Template - Inbox.md"
+      "folder": "1. Raw",
+      "template": "5. Toolbox/Templates/New Notes Template.md"
     },
     {
-      "folder": "01. Projects",
-      "template": "03. Resources/Templates/Template - Project.md"
+      "folder": "4. Mint/Active",
+      "template": "5. Toolbox/Templates/Template - Mint Active.md"
     },
     {
-      "folder": "Daily",
-      "template": "03. Resources/Templates/Daily Note Template.md"
+      "folder": "4. Mint/Background",
+      "template": "5. Toolbox/Templates/Template - Mint Background.md"
     },
     {
-      "folder": "People",
-      "template": "03. Resources/Templates/Template - Person.md"
+      "folder": "4. Mint/Later",
+      "template": "5. Toolbox/Templates/Template - Mint Later.md"
     },
     {
-      "folder": "Companies",
-      "template": "03. Resources/Templates/Template - Company.md"
+      "folder": "3. Core/Dots/Statements",
+      "template": "5. Toolbox/Templates/Template - Permanent Notes.md"
     },
     {
-      "folder": "Decisions",
-      "template": "03. Resources/Templates/Template - Decision.md"
+      "folder": "3. Core/Dots/Concepts",
+      "template": "5. Toolbox/Templates/Template - Concepts.md"
     },
     {
-      "folder": "Meetings",
-      "template": "03. Resources/Templates/Template - Meeting.md"
+      "folder": "3. Core/Dots/Frameworks",
+      "template": "5. Toolbox/Templates/Template - Frameworks.md"
     },
     {
-      "folder": "Sản Phẩm & Dịch Vụ",
-      "template": "03. Resources/Templates/Template - Product.md"
+      "folder": "3. Core/Dots/Methodologies",
+      "template": "5. Toolbox/Templates/Template - Methodologies.md"
+    },
+    {
+      "folder": "2. Mine/Literature Notes/People",
+      "template": "5. Toolbox/Templates/Template - People.md"
+    },
+    {
+      "folder": "2. Mine/Literature Notes",
+      "template": "5. Toolbox/Templates/Template - Literature Notes.md"
+    },
+    {
+      "folder": "2. Mine/Experience Notes",
+      "template": "5. Toolbox/Templates/Template - Experience Notes.md"
+    },
+    {
+      "folder": "2. Mine/Fleeting Notes",
+      "template": "5. Toolbox/Templates/New Notes Template.md"
+    },
+    {
+      "folder": "2. Mine/Daily Notes",
+      "template": "5. Toolbox/Templates/Daily Note Template.md"
+    },
+    {
+      "folder": "2. Mine/Weekly Notes",
+      "template": "5. Toolbox/Templates/Weekly Note Template.md"
+    },
+    {
+      "folder": "4. Mint/Background/CRM/1. Phiếu Nhanh",
+      "template": "5. Toolbox/Templates/Template - Phiếu Nhanh Zoom.md"
+    },
+    {
+      "folder": "4. Mint/Background/CRM/2. Hồ Sơ KH",
+      "template": "5. Toolbox/Templates/Template - Hồ Sơ Khách Hàng.md"
+    },
+    {
+      "folder": "4. Mint/Background/CRM/3. Đóng Gói VP",
+      "template": "5. Toolbox/Templates/Template - Đóng Gói Value Proposition.md"
+    },
+    {
+      "folder": "4. Mint/Background/CRM/4. Offer",
+      "template": "5. Toolbox/Templates/Template - Đề Xuất Offer.md"
+    },
+    {
+      "folder": "4. Mint/Background/CRM/5. Kịch Bản Zoom",
+      "template": "5. Toolbox/Templates/Template - Kịch Bản Zoom Tiếp.md"
+    },
+    {
+      "folder": "4. Mint/Background/Học Viên/3. Hồ Sơ",
+      "template": "5. Toolbox/Templates/Template — MOC Học Viên.md"
+    },
+    {
+      "folder": "4. Mint/Background/Học Viên/4. Buổi Học",
+      "template": "5. Toolbox/Templates/Template — ZM Học Viên.md"
+    },
+    {
+      "folder": "4. Mint/Background/Học Viên/1. Bộ Câu Hỏi",
+      "template": "4. Mint/Background/Học Viên/1. Bộ Câu Hỏi/_Mẫu — Câu Hỏi Tiếp Nhận Buổi Đầu.md"
+    },
+    {
+      "folder": "4. Mint/Background/Học Viên/2. Chân Dung",
+      "template": "5. Toolbox/Templates/Template — Chân Dung Học Viên.md"
+    },
+    {
+      "folder": "Tư Vấn/Khách Hàng/Đang Hoạt Động",
+      "template": "5. Toolbox/Templates/Template — Consulting Client Hub.md"
+    },
+    {
+      "folder": "Tư Vấn/Buổi Tư Vấn",
+      "template": "5. Toolbox/Templates/Template — Consulting Session Note.md"
+    },
+    {
+      "folder": "Tư Vấn/Frameworks",
+      "template": "5. Toolbox/Templates/Template — Consulting Framework.md"
+    },
+    {
+      "folder": "Clipping",
+      "template": "5. Toolbox/Templates/Template test thử.md"
+    },
+    {
+      "folder": "6.Inbox",
+      "template": "5. Toolbox/Templates/Template Inbox.md"
     }
   ],
   "enable_file_templates": false,
@@ -57,7 +137,8 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "03. Resources/Templates/New Notes Template.md"
+    "5. Toolbox/Templates/New Notes Template.md",
+    "5. Toolbox/Templates/Template - Add Properties.md"
   ],
   "startup_templates": [
     ""
@@ -68,5 +149,5 @@
       "folder": ""
     }
   ],
-  "no_empty_file_template": "03. Resources/Templates/New Notes Template.md"
+  "no_empty_file_template": "5. Toolbox/Templates/New Notes Template.md"
 }

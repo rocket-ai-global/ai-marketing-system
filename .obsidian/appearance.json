@@ -1,13 +1,15 @@
 {
-  "cssTheme": "Obsidianite",
-  "theme": "obsidian",
-  "accentColor": "#0fb6d6",
+  "cssTheme": "Soft Paper",
+  "theme": "moonstone",
+  "accentColor": "#029400",
   "enabledCssSnippets": [
+    "highlight-color",
     "callouts",
     "nick-milo-callouts",
-    "highlighter",
-    "markdown-embed",
+    "watermark",
     "popover-tweek",
-    "workspace"
+    "highlighter",
+    "workspace",
+    "markdown-embed"
   ]
 }
