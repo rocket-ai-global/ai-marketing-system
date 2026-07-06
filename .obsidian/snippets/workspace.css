@@ -1,0 +1,11 @@
+.canvas-node-label {
+     display: none;
+}
+
+.bases-cards-cover {
+  background-color: #fff6f0b0;
+}
+
+.bases-cards-property.mod-title .bases-cards-line {
+    font-size: var(--font-ui-small);
+}

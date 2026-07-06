@@ -1,0 +1,32 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "tech-cyan",
+      "name": "",
+      "value": "#0fb6d6"
+    },
+    {
+      "id": "tech-blue",
+      "name": "",
+      "value": "#2e6bff"
+    },
+    {
+      "id": "tech-teal",
+      "name": "",
+      "value": "#14b8a6"
+    },
+    {
+      "id": "tech-purple",
+      "name": "",
+      "value": "#7c3aed"
+    },
+    {
+      "id": "tech-pink",
+      "name": "",
+      "value": "#f4569d"
+    }
+  ],
+  "fileColors": []
+}

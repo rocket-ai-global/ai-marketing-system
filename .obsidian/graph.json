@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"01. Projects\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 3042303
+      }
+    },
+    {
+      "query": "path:\"02. Areas\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1029846
+      }
+    },
+    {
+      "query": "path:\"03. Resources\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1357990
+      }
+    },
+    {
+      "query": "path:\"04. Archive\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 7041664
+      }
+    },
+    {
+      "query": "path:\"Companies\" OR path:\"People\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 8141549
+      }
+    },
+    {
+      "query": "path:\"Daily\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16012957
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -1.4,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.487239583333333,
+  "repelStrength": 12.4010416666667,
+  "linkStrength": 0.61171875,
+  "linkDistance": 30,
+  "scale": 1,
+  "close": true
+}

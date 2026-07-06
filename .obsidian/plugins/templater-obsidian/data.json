@@ -1,0 +1,72 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "03. Resources/Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "00. Inbox",
+      "template": "03. Resources/Templates/Template - Inbox.md"
+    },
+    {
+      "folder": "01. Projects",
+      "template": "03. Resources/Templates/Template - Project.md"
+    },
+    {
+      "folder": "Daily",
+      "template": "03. Resources/Templates/Daily Note Template.md"
+    },
+    {
+      "folder": "People",
+      "template": "03. Resources/Templates/Template - Person.md"
+    },
+    {
+      "folder": "Companies",
+      "template": "03. Resources/Templates/Template - Company.md"
+    },
+    {
+      "folder": "Decisions",
+      "template": "03. Resources/Templates/Template - Decision.md"
+    },
+    {
+      "folder": "Meetings",
+      "template": "03. Resources/Templates/Template - Meeting.md"
+    },
+    {
+      "folder": "Sản Phẩm & Dịch Vụ",
+      "template": "03. Resources/Templates/Template - Product.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "03. Resources/Templates/New Notes Template.md"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1,
+  "ignore_folders_on_creation": [
+    {
+      "folder": ""
+    }
+  ],
+  "no_empty_file_template": "03. Resources/Templates/New Notes Template.md"
+}

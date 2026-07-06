@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Obsidianite",
+  "theme": "obsidian",
+  "accentColor": "#0fb6d6",
+  "enabledCssSnippets": [
+    "callouts",
+    "nick-milo-callouts",
+    "highlighter",
+    "markdown-embed",
+    "popover-tweek",
+    "workspace"
+  ]
+}
