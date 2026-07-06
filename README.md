@@ -4,6 +4,26 @@
 >
 > Agent đọc file này để biết **vào đâu lấy gì**. Chi tiết kiến trúc & nguyên tắc vận hành: [[Vault SME — Hướng Dẫn]]. Quy tắc bắt buộc khi làm việc: `CLAUDE.md`.
 
+## 🚀 Bắt đầu từ đâu (dành cho người dùng mới)
+
+> Vừa mở vault này lần đầu? Làm theo thứ tự dưới. Cách chạy: gõ **`/tên-skill`** trong Claude, hoặc chỉ cần nói việc muốn làm — Claude tự nhận skill. Nếu không biết trả lời, cứ nói "bạn hỏi tôi đi", Claude sẽ phỏng vấn từng câu.
+
+**Bước 1 — Khai báo doanh nghiệp (làm TRƯỚC TIÊN, bắt buộc).** Mọi việc content/sale/marketing sau này đều đọc ngược về đây, nên phải điền `00. Business Context/` trước.
+1. Gõ **`/mo-hinh-kinh-doanh`** → Claude phỏng vấn 9 ô mô hình kinh doanh, tự sinh `Chân Dung Doanh Nghiệp`, `Business Model Canvas` (+ sơ đồ `.canvas`), và các file phân khúc/giá trị trong `MHKD/`.
+2. Gõ **`/hoan-tat-business-context`** → Claude quét xem còn thiếu gì (Brand Voice, Chân Dung CEO, AI-Sale-Assistant, Sản Phẩm & Dịch Vụ) và hỏi/phỏng vấn để điền nốt.
+3. Nếu thương hiệu **gắn với cá nhân CEO** → điền `Chân Dung CEO — [Tên].md` và bắt đầu ghi `Nhật Ký CEO/` (chuyện thật, quan điểm) để Claude viết content đúng chất bạn.
+
+**Bước 2 — Đổ dữ liệu đang có vào vault.** Ghi âm/note cũ → `01. Inbox/`; khách/deal đang có → `People/` + `Companies/`; sản phẩm/gói → `00. Business Context/Sản Phẩm & Dịch Vụ/` (hình/video để `_Media/[tên]/`).
+
+**Bước 3 — Bắt đầu vận hành hằng ngày.**
+- Viết content → lưu `03. Areas/Brand & Content/Content Đã Đăng/` (Claude lấy giọng từ `Brand Voice` + `Nhật Ký CEO/`).
+- Cuối tuần ghi số liệu → `03. Areas/Analytics & Reporting/` (chọn đúng miền: tương tác / traffic / quảng cáo / hiệu suất content / CSKH chat).
+- Khách khen/góp ý → `04. Resources/Feedback & Chứng Thực/`.
+
+**Bước 4 — Đào sâu khi cần (sau khi Business Context đã đủ).** `/phan-tich-doi-thu` (đối thủ) · `/nghien-cuu-thi-truong` (validate ngách) · `/thiet-ke-offer` (đóng gói bán) · `/kiem-tra-seo` · `/do-luong-tracking` · `/thu-nghiem-ab`. Danh sách skill đầy đủ: `.claude/skills/README.md`.
+
+> **Quy tắc vàng:** vault này chỉ cho **1 công ty**. Đừng tạo thư mục công ty con — mọi sản phẩm/phân khúc đều là file riêng trong cùng `00. Business Context/`. Không note mồ côi: note nào cũng link ra ngoài (xem mục 4).
+
 ## Tóm tắt 1 dòng cho agent
 
 - **Lấy ngữ cảnh doanh nghiệp** → `00. Business Context/`
