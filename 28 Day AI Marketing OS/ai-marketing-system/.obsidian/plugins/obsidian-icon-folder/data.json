@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiOpenArmLine",
+      "LiHome",
+      "RiToolsFill",
+      "LiSendHorizonal",
+      "LiAtom"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "3. Resources/Vault Mẫu - PARA + Zettelkasten/BẮT ĐẦU Ở ĐÂY.md": {
+    "iconName": "LiArrowRightFromLine",
+    "iconColor": "#1052d5"
+  },
+  "6. Journal/01. Journal Dashboard.md": "LiAppWindowMac",
+  "2. Mine/About MINE.md": "LiArrowRight",
+  "2. Mine/README.md": "LiArrowRight",
+  "3. Core/About CORE.md": "LiArrowRight",
+  "3. Core/README.md": "LiArrowRight",
+  "4. Mint/About MINT.md": "LiArrowRight",
+  "4. Mint/README.md": "LiArrowRight",
+  "1. Raw/README.md": "LiArrowRight",
+  "1. Raw/1. About RAW.md": "LiArrowRight",
+  "1. Raw": "IbTrash",
+  "2. Mine": "LiFunnelPlus",
+  "3. Core": "LiAtom",
+  "4. Mint": "LiSendHorizonal",
+  "5. Toolbox": "RiToolsFill",
+  "Me.md": "RiOpenArmLine"
+}

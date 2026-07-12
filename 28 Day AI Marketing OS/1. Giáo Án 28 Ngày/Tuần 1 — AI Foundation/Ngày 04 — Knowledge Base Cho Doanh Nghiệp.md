@@ -5,16 +5,240 @@ created: 2026-07-08
 tags: [project, aios, giao-an]
 week: 1
 day: 4
-core-output: "Knowledge Base Folder 10 thư mục chuẩn · Data Access & Security Rule · Product Knowledge Document · FAQ & Objection Database ≥30 cặp Q&A · 3 tài liệu lõi đã nạp lên RocketAgent"
+core-output: "Knowledge Base trong Vault SME theo 10 nhóm tri thức · Data Access & Security Rule 3 tầng · Product Knowledge Document phủ 100% sản phẩm · FAQ & Objection Database ≥30 cặp Q&A · 3 tài liệu lõi đã nạp lên RocketAgent"
 ---
 
 # Ngày 04 — Knowledge Base Cho Doanh Nghiệp
 
-> 📦 **Chuyển giao — không phải khoá học:** module hôm nay đã được đóng gói sẵn (framework + template + agent trên RocketAgent/Hermes). Việc của học viên: **nạp dữ liệu doanh nghiệp mình → custom → test → nghiệm thu** để module chạy thật trên chính doanh nghiệp — không xây từ số 0, không lý thuyết suông.
+> 👩‍🏫 **File này là giáo án cho trainer/mentor.** Học viên nhận: [[Bài Tập Ngày 4 — Knowledge Base]] + mục 5-8 và 11 của file này.
+
+> 📦 **Chuyển giao — không phải khoá học:** module hôm nay đã được đóng gói sẵn (framework + template + agent trên RocketAgent và Hermes — Hermes là trợ lý AI chạy nền trên máy tính, đọc thẳng Vault SME và tương tác qua Telegram). Việc của học viên: **nạp dữ liệu doanh nghiệp mình → custom → test → nghiệm thu** để module chạy thật trên chính doanh nghiệp — không xây từ số 0, không lý thuyết suông.
 
 > 🗂️ **Trong Vault SME (framework bàn giao `ai-marketing-system/`):** Chạy `/hoan-tat-business-context` — audit thiếu gì hỏi nấy. Đổ dữ liệu cũ đúng chỗ: media sản phẩm → `Sản Phẩm & Dịch Vụ/_Media/`, FAQ/Objection → `04. Resources/Playbooks/`, feedback khách → `04. Resources/Feedback & Chứng Thực/`.
 
-> Hôm nay bạn xây "kho dữ liệu chuẩn" — Knowledge Base (cơ sở tri thức) — để AI hết trả lời chung chung: gom mọi thứ về sản phẩm, khách hàng, offer, câu hỏi thường gặp vào 10 thư mục chuẩn và nạp lên RocketAgent. Không có ngày hôm nay thì chatbot tuần 3 chỉ là con vẹt.
+> Hôm nay bạn xây "kho dữ liệu chuẩn" — Knowledge Base (cơ sở tri thức) — để AI hết trả lời chung chung: gom mọi thứ về sản phẩm, khách hàng, offer, câu hỏi thường gặp vào 10 NHÓM tri thức nằm đúng vị trí trong Vault SME (một nguồn sự thật), rồi nạp 3 tài liệu lõi lên RocketAgent. Không có ngày hôm nay thì chatbot tuần 3 chỉ là con vẹt.
+
+## 0. 🧠 Giải Thích Sâu — Knowledge Base Là Gì?
+
+### 0.1. Định nghĩa đơn giản
+
+**Knowledge Base** là “bộ não dữ liệu” của doanh nghiệp để AI có thể hiểu đúng về doanh nghiệp đó.
+
+Nếu không có Knowledge Base, AI chỉ biết kiến thức chung ngoài xã hội. Nó **không biết**:
+
+- Sản phẩm/dịch vụ của doanh nghiệp tên gì
+- Giá bao nhiêu
+- Chính sách thanh toán, đổi trả, bảo hành thế nào
+- Khách hàng hay hỏi gì
+- Câu nào được phép trả lời tự động
+- Câu nào phải chuyển cho người thật
+- Giọng thương hiệu của doanh nghiệp ra sao
+- Quy trình bán hàng/chăm sóc khách hiện tại như thế nào
+
+> **Knowledge Base = toàn bộ tài liệu chuẩn hoá để AI trở thành “nhân viên hiểu doanh nghiệp”.**
+
+Cách nói cho học viên:
+
+> “AI giống một nhân viên rất giỏi nhưng mới vào công ty ngày đầu. Nếu anh chị không đưa bảng giá, sản phẩm, chính sách, câu hỏi khách hay hỏi, quy trình tư vấn, thì nó sẽ tự đoán. Mà AI tự đoán trong kinh doanh là rất nguy hiểm. Knowledge Base chính là sổ tay nhân viên mới cho AI. Ngày hôm nay, chúng ta xây sổ tay đó.”
+
+Câu chốt:
+
+> **Không có Knowledge Base, AI chỉ là người ngoài thông minh. Có Knowledge Base, AI mới trở thành nhân viên của doanh nghiệp bạn.**
+
+### 0.2. Vì sao Ngày 04 cực kỳ quan trọng?
+
+Ba ngày đầu học viên đã tạo ra các tài sản nền:
+
+| Ngày | Tài sản tạo ra |
+|---|---|
+| Ngày 01 | Business Snapshot, BMC, AI Opportunity Map |
+| Ngày 02 | Customer Avatar, PDFO Map (Pain–Desire–Fear–Objection — bản đồ Đau/Khát khao/Nỗi sợ/Phản đối), Customer Journey |
+| Ngày 03 | Offer, định vị, thông điệp bán hàng |
+
+Nhưng các tài sản này vẫn đang rời rạc. **Ngày 04 là ngày gom tất cả thành một bộ não có cấu trúc.**
+
+Nếu không làm Ngày 04, sang Tuần 2–3 sẽ dễ bị lỗi:
+
+- AI viết content chung chung
+- Chatbot trả lời sai giá hoặc sai chính sách
+- Sales script không đúng insight khách hàng
+- Nhân viên mỗi người tư vấn một kiểu
+- Dữ liệu nằm lung tung trong Zalo, Drive, trí nhớ chủ doanh nghiệp
+- Không thể scale thành agent thật
+
+Vì vậy, Ngày 04 là điểm chuyển từ:
+
+> “Tôi có vài bài tập rời rạc”  
+> sang  
+> “Doanh nghiệp tôi có một bộ não AI đọc được.”
+
+### 0.3. Knowledge Base khác gì Google Drive bình thường?
+
+Google Drive bình thường chỉ là nơi chứa file. Knowledge Base thì khác vì có 4 tiêu chuẩn:
+
+#### 1. Có cấu trúc
+
+Không ném file lung tung. Mọi thứ phải nằm đúng chỗ trong Vault SME:
+
+- Giá & hồ sơ sản phẩm → `00. Business Context/Sản Phẩm & Dịch Vụ/`
+- Câu hỏi khách hay hỏi → `04. Resources/Playbooks/FAQ & Objection Database`
+- Chân dung khách → `00. Business Context/MHKD/Phân Khúc Khách Hàng/`
+- Kịch bản tư vấn → `04. Resources/Playbooks/`
+- Case study khách hàng → `04. Resources/Feedback & Chứng Thực/`
+
+#### 2. Có “một nguồn sự thật”
+
+Một thông tin chỉ được có **một bản đúng nhất**.
+
+Ví dụ sai (tình huống minh họa thường gặp trước khi chuẩn hóa):
+
+- Bảng giá in cho hội chợ đợt trước ghi một số
+- Tin nhắn Zalo nhân viên gửi khách ghi số khác
+- Website ghi số khác nữa
+- Mỗi nhân viên nhớ một con số "khoảng chừng"
+
+AI đọc vào sẽ loạn.
+
+Ví dụ đúng (case MSX):
+
+> Giá Trà Mẩy Gòm An Giấc chỉ nằm trong hồ sơ sản phẩm `00. Business Context/Sản Phẩm & Dịch Vụ/Trà Mẩy Gòm An Giấc.md` — **359.000đ/hộp**. Các nơi khác nếu cần thì trỏ về file đó.
+
+#### 3. AI đọc được
+
+AI đọc tốt:
+
+- File markdown/doc/text rõ ràng
+- Có tiêu đề
+- Có bảng gọn
+- Mỗi phần một ý
+- Số liệu rõ ràng
+
+AI đọc kém:
+
+- Ảnh chụp bảng giá mờ
+- File scan
+- Tin nhắn rời rạc
+- File tên linh tinh
+- Nhiều phiên bản mâu thuẫn
+
+#### 4. Có phân quyền và bảo mật
+
+Không phải dữ liệu nào cũng nạp vào AI.
+
+| Loại dữ liệu | Có nên nạp AI? |
+|---|---|
+| FAQ công khai | Có |
+| Bảng giá công khai | Có |
+| Thông tin sản phẩm | Có |
+| Script sales nội bộ | Có, nhưng giới hạn quyền |
+| Số điện thoại khách | Không hoặc phải ẩn |
+| Doanh thu chi tiết | Hạn chế |
+| Hợp đồng, hồ sơ nhạy cảm | Không nạp bừa |
+
+### 0.4. Cây 10 thư mục Knowledge Base chuẩn
+
+```text
+[Tên DN] — Knowledge Base
+│
+├── 01. Business Overview
+├── 02. Product & Service
+├── 03. Customer Avatar
+├── 04. Offer & Sales Message
+├── 05. Marketing Assets
+├── 06. Sales Assets
+├── 07. FAQ & Objection
+├── 08. SOP & Operation
+├── 09. Case Study
+└── 10. Reports & Metrics
+```
+
+| Thư mục | Vai trò | AI dùng để làm gì |
+|---|---|---|
+| `01. Business Overview` | Tổng quan doanh nghiệp | Hiểu doanh nghiệp là ai, bán gì, cho ai |
+| `02. Product & Service` | Sản phẩm/dịch vụ, giá, chính sách | Trả lời đúng về sản phẩm, không bịa giá |
+| `03. Customer Avatar` | Chân dung khách, pain/desire/fear/objection | Viết content, chatbot, sale script đúng insight |
+| `04. Offer & Sales Message` | Offer, USP, thông điệp bán hàng | Tạo bài bán hàng, landing page, pitch |
+| `05. Marketing Assets` | Bài viết, ảnh, video, brand voice | Tạo content mới đúng giọng thương hiệu |
+| `06. Sales Assets` | Script tư vấn, báo giá, proposal | Tư vấn, follow-up, chốt đơn |
+| `07. FAQ & Objection` | Câu hỏi thường gặp & xử lý từ chối | Chatbot/CSKH trả lời nhất quán |
+| `08. SOP & Operation` | Quy trình vận hành | Tạo checklist, nhắc việc, onboarding nhân viên |
+| `09. Case Study` | Feedback, testimonial, before/after | Tạo social proof, landing page, sales deck |
+| `10. Reports & Metrics` | KPI, lead, conversion, doanh thu | Đo kết quả, tạo dashboard, CEO Copilot |
+
+### 0.5. Knowledge Base là nền để sinh Agent
+
+Học viên cần hiểu quan hệ này:
+
+```text
+Knowledge Base = Não
+Prompt = Cách giao việc
+Agent = Nhân sự AI
+Workflow = Quy trình làm việc
+Tool/API = Tay chân thao tác
+Dashboard = Mắt đo lường
+```
+
+Nếu không có Knowledge Base, Agent chỉ là chatbot thông minh nhưng không hiểu doanh nghiệp. Khi có Knowledge Base, ta mới sinh được:
+
+| Agent | Cần đọc phần nào |
+|---|---|
+| Marketing Agent | Business Overview, Avatar, Offer, Marketing Assets |
+| Sales Agent | Product, Offer, Sales Assets, FAQ |
+| CSKH Agent | Product, FAQ, SOP, Case Study |
+| CEO Copilot | Reports, Business Overview, Metrics |
+| Content Agent | Avatar, Brand Voice, Content Pillar |
+| Onboarding Agent | SOP, Product, Internal Docs |
+
+Vì vậy Ngày 04 không chỉ là “dọn file”. Nó là:
+
+> **Ngày tạo bộ não để toàn bộ AI Agent phía sau có dữ liệu mà vận hành.**
+
+### 0.6. Ví dụ thực tế
+
+Khách hỏi chatbot:
+
+> “Gói 28 Day AIOS giá bao nhiêu?”
+
+Nếu không có Knowledge Base, AI có thể trả lời:
+
+> “Giá thường dao động từ vài triệu đến vài chục triệu tùy chương trình.”
+
+Nghe hợp lý nhưng vô dụng.
+
+Nếu có Knowledge Base, AI trả lời:
+
+> “Dạ gói 28 Day AIOS hiện có 3 mức: Transfer, Installed và Managed. Mức cơ bản dành cho chủ SME muốn tự triển khai theo hướng dẫn; mức cao hơn có mentor/agent hỗ trợ setup. Anh/chị muốn em gửi bảng so sánh 3 gói không ạ?”
+
+Khác biệt là: **câu trả lời có dữ liệu, có định vị, có bước bán hàng tiếp theo.**
+
+### 0.7. Với RocketAI Platform: Product hoá thành AI Business Brain
+
+Sau này RocketAI không nên chỉ nói “upload tài liệu cho chatbot đọc”. Nên product hoá Knowledge Base thành **AI Business Brain** gồm:
+
+1. Business Profile
+2. Customer Brain
+3. Product Brain
+4. Offer Brain
+5. Sales Brain
+6. Marketing Brain
+7. Operation Brain
+8. Metrics Brain
+
+Luồng platform:
+
+```text
+AI Business Brain
+      ↓
+Marketing Agent
+Sales Agent
+CSKH Agent
+Ops Agent
+CEO Copilot
+```
+
+Đây là nền để RocketAI mở rộng thành platform agent đa ngành.
+
+---
 
 ## 1. 🎯 Mục Tiêu Ngày Học
 

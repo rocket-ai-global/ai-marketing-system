@@ -1,0 +1,390 @@
+{
+  "main": {
+    "id": "f94bd432278d4e26",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f5e0764222953ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a3568b598cedede",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00. Business Context/Brand Voice — Giọng Thương Hiệu.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Brand Voice — Giọng Thương Hiệu"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "777c18b9bbb4f074",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce24b7efcb5d2922",
+        "type": "tabs",
+        "dimension": 46.78456591639871,
+        "children": [
+          {
+            "id": "08f850d44849a9f8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3d343ba126de249e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#ai-hub",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "20c1956d33817c1e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Đánh dấu"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7ad02a0e9e379d67",
+        "type": "tabs",
+        "dimension": 20.90032154340836,
+        "children": [
+          {
+            "id": "0860d2a24a06decc",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent files"
+            }
+          },
+          {
+            "id": "bfee3dce57e95215",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      },
+      {
+        "id": "79abf6dc54705d48",
+        "type": "tabs",
+        "dimension": 32.31511254019293,
+        "children": [
+          {
+            "id": "c508968003dd2261",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315
+  },
+  "right": {
+    "id": "ab3fe6a04aa7fa3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebbbb9a311989c66",
+        "type": "tabs",
+        "dimension": 39.48100092678406,
+        "children": [
+          {
+            "id": "e69018b000d8ced2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2. Mine/Daily Notes/2026-06-29.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Liên kết đến của 2026-06-29"
+            }
+          },
+          {
+            "id": "8ef15613e5f5e195",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "5. Toolbox/ExcaliBrain.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Liên kết đi ra từ ExcaliBrain"
+            }
+          },
+          {
+            "id": "f034d485ad832729",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6d87a1391d65ad2a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "843a71c871c87aa3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2. Mine/Daily Notes/2026-06-29.md",
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Đề cương của 2026-06-29"
+            }
+          },
+          {
+            "id": "ae7fc4bfdcea54aa",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "70a1c54fa3994134",
+        "type": "tabs",
+        "dimension": 22.1501390176089,
+        "children": [
+          {
+            "id": "dfab54527df266fa",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "00. Business Context/Brand Voice — Giọng Thương Hiệu.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -0.8,
+                  "nodeSizeMultiplier": 1.33052951388889,
+                  "lineSizeMultiplier": 2.61933159722222,
+                  "collapse-forces": false,
+                  "centerStrength": 0.294184027777778,
+                  "repelStrength": 7.77083333333333,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4021756815521898,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Brand Voice — Giọng Thương Hiệu"
+            }
+          },
+          {
+            "id": "158caf96c09c6e47",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      },
+      {
+        "id": "02cbb974989ac984",
+        "type": "tabs",
+        "dimension": 38.368860055607044,
+        "children": [
+          {
+            "id": "b6df80cc4cffaf19",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 287,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "periodic-notes:Open today": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "callout-manager:Insert Callout": false
+    }
+  },
+  "active": "2a3568b598cedede",
+  "lastOpenFiles": [
+    "00. Business Context/AI-Sale-Assistant.md",
+    "04. Resources/Market & Competitor Research/Đối Thủ/_MOC Đối Thủ.md",
+    "MOC/MOC Sales Pipeline.md",
+    "MOC/MOC Content Calendar.md",
+    "Nhật Ký CEO/[Mẫu] 2026-07-07 — Nhật ký.md",
+    "Nhật Ký CEO/_Hướng Dẫn Nhật Ký CEO.md",
+    "README.md",
+    "00. Business Context/Chân Dung CEO — [Tên].md",
+    "Nhật Ký CEO",
+    "04. Resources/Feedback & Chứng Thực/Media/README.md",
+    "04. Resources/Feedback & Chứng Thực/Media",
+    "04. Resources/Feedback & Chứng Thực/[Mẫu] Case Study — [Tên khách].md",
+    "04. Resources/Feedback & Chứng Thực/[Mẫu] Testimonial — [Tên khách].md",
+    "04. Resources/Feedback & Chứng Thực/_MOC Feedback & Chứng Thực.md",
+    "04. Resources/Feedback & Chứng Thực",
+    "00. Business Context/Sản Phẩm & Dịch Vụ/_Media/[Ví dụ] Gói Basic/README.md",
+    "00. Business Context/Sản Phẩm & Dịch Vụ/_Media/[Ví dụ] Gói Basic",
+    "00. Business Context/Sản Phẩm & Dịch Vụ/_Media/README.md",
+    "00. Business Context/Sản Phẩm & Dịch Vụ/_Media",
+    "03. Areas/Analytics & Reporting/Chăm Sóc Khách Hàng/[Mẫu] CSKH Chat Tuần 27-2026.md",
+    "03. Areas/Analytics & Reporting/Chăm Sóc Khách Hàng/_MOC Chăm Sóc Khách Hàng (Chat).md",
+    "03. Areas/Analytics & Reporting/Chăm Sóc Khách Hàng",
+    "03. Areas/Analytics & Reporting/Hiệu Suất Content/[Mẫu] Hiệu Suất Content Tháng 7-2026.md",
+    "03. Areas/Analytics & Reporting/Hiệu Suất Content/_MOC Hiệu Suất Content.md",
+    "03. Areas/Analytics & Reporting/Hiệu Suất Content",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Quảng Cáo/[Mẫu] Báo Cáo Quảng Cáo — [Chiến dịch] Tháng 7-2026.md",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Quảng Cáo/_MOC Hiệu Quả Quảng Cáo.md",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Quảng Cáo",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Traffic Mạng Xã Hội/[Mẫu] Traffic MXH Tuần 27-2026.md",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Traffic Mạng Xã Hội/_MOC Hiệu Quả Traffic Mạng Xã Hội.md",
+    "03. Areas/Analytics & Reporting/Hiệu Quả Traffic Mạng Xã Hội",
+    "01. Projects/[Test] An Nhiên Spa/Business Model Canvas.canvas",
+    "04. Resources/Market & Competitor Research/Nghiên Cứu Thị Trường/[Ví dụ] Niche AI Tools Freelancer VN.canvas",
+    "04. Resources/Market & Competitor Research/Nghiên Cứu Thị Trường/[Ví dụ] Niche AI Tools Freelancer VN.md",
+    "04. Resources/Market & Competitor Research/Nghiên Cứu Thị Trường/_MOC Nghiên Cứu Thị Trường.md",
+    "04. Resources/Market & Competitor Research/Nghiên Cứu Thị Trường",
+    "00. Business Context/Brand Voice — Giọng Thương Hiệu.md",
+    "00. Business Context/Sản Phẩm & Dịch Vụ/_MOC Sản Phẩm & Dịch Vụ.md",
+    "05. Archive/[Test] An Nhiên Spa/Business Model Canvas.canvas",
+    "04. Archive/[Test] An Nhiên Spa/Business Model Canvas.canvas",
+    "4. Mint/Active/AI-HUB/AI-HUB Phương Pháp Luận.canvas",
+    "4. Mint/Active/Rocket AI/Business Model Canvas.canvas",
+    "5. Toolbox/Attachments/Icons/Icon - fully immersive experience, 360 view, panorama - Flaticon.svg",
+    "5. Toolbox/Attachments/Icons/Icon - spotlight - by mavadee, Flaticon.png",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Text Manipulation/Text Aura.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Text Manipulation/Split text by lines.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Text Manipulation/Set Link Alias.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Text Manipulation/Scribble Helper.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Text Manipulation/Convert selected text elements to sticky notes.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Manipulate shapes/Split Ellipse.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Manipulate shapes/Set Dimensions.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/05 Excalidraw/Scripts/Downloaded/Manipulate shapes/Select Similar Elements.svg",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/01 BoaPs/Emergence/Canvas - Emergence.canvas",
+    "2. Mine/Literature Notes/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop 2/01 BoaPs/Emergence/Canvas - Emergence.canvas",
+    "5. Toolbox/2. Visual Thinking PKM Zolts - Original/Visual Thinking Workshop/01 BoaPs/Emergence/Canvas - Emergence.canvas",
+    "4. Mint/Active/AI Marketing CRM/Bản Đồ Đối Thủ.canvas"
+  ]
+}

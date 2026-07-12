@@ -1,0 +1,29 @@
+{
+  "_ghi_chu": "Template bố cục JSON Canvas cho Business Model Canvas 9 ô (chuẩn Osterwalder). Copy toàn bộ nội dung này sang file .canvas mới, XOÁ khoá _ghi_chu này, giữ nguyên id/x/y/width/height, chỉ thay các chuỗi {{...}} bằng nội dung thật. Toạ độ đã được kiểm chứng hiển thị đẹp trong Obsidian Canvas.",
+  "nodes": [
+    {"id": "bmc-title", "type": "text", "text": "# {{ICON}} BUSINESS MODEL CANVAS — {{TEN_DU_AN}}\n{{MO_TA_NGAN_1_2_CAU}} · Chi tiết: [[Business Model Canvas — {{TEN_DU_AN}}]]", "x": 0, "y": -200, "width": 2300, "height": 120, "color": "#7c3aed"},
+
+    {"id": "bmc-key-partnerships", "type": "text", "text": "## 🤝 Key Partnerships\n(Đối tác chính)\n\n{{TOM_TAT_3_6_DONG}}", "x": 0, "y": 0, "width": 440, "height": 1000, "color": "6"},
+
+    {"id": "bmc-key-activities", "type": "text", "text": "## ⚙️ Key Activities\n(Hoạt động chính)\n\n{{TOM_TAT_3_6_DONG}}", "x": 460, "y": 0, "width": 440, "height": 460, "color": "6"},
+
+    {"id": "bmc-key-resources", "type": "text", "text": "## 🧱 Key Resources\n(Nguồn lực chính)\n\n{{TOM_TAT_3_6_DONG}}", "x": 460, "y": 480, "width": 440, "height": 400, "color": "6"},
+
+    {"id": "bmc-value-propositions", "type": "text", "text": "## 🎁 Value Propositions\n(Giá trị cốt lõi)\n\n{{TOM_TAT_3_6_DONG_MOI_PHAN_KHUC}}", "x": 920, "y": 0, "width": 460, "height": 1000, "color": "3"},
+
+    {"id": "bmc-customer-relationships", "type": "text", "text": "## ❤️ Customer Relationships\n(Quan hệ khách hàng)\n\n{{TOM_TAT_3_6_DONG}}", "x": 1400, "y": 0, "width": 440, "height": 400, "color": "5"},
+
+    {"id": "bmc-channels", "type": "text", "text": "## 📢 Channels\n(Kênh phân phối)\n\n{{TOM_TAT_3_6_DONG}}", "x": 1400, "y": 420, "width": 440, "height": 460, "color": "5"},
+
+    {"id": "bmc-customer-segments", "type": "text", "text": "## 👥 Customer Segments\n(Phân khúc khách hàng)\n\n{{TOM_TAT_3_6_DONG_MOI_PHAN_KHUC}}", "x": 1860, "y": 0, "width": 440, "height": 1000, "color": "5"},
+
+    {"id": "bmc-cost-structure", "type": "text", "text": "## 💸 Cost Structure\n(Cơ cấu chi phí)\n\n{{TOM_TAT_3_6_DONG}}", "x": 0, "y": 1040, "width": 1140, "height": 340, "color": "1"},
+
+    {"id": "bmc-revenue-streams", "type": "text", "text": "## 💰 Revenue Streams\n(Dòng doanh thu)\n\n{{TOM_TAT_3_6_DONG}}", "x": 1160, "y": 1040, "width": 1140, "height": 340, "color": "4"}
+  ],
+  "edges": [
+    {"id": "bmc-edge-01", "fromNode": "bmc-key-partnerships", "fromSide": "right", "toNode": "bmc-key-activities", "toSide": "left"},
+    {"id": "bmc-edge-02", "fromNode": "bmc-value-propositions", "fromSide": "right", "toNode": "bmc-customer-segments", "toSide": "left", "label": "giá trị → khách"},
+    {"id": "bmc-edge-03", "fromNode": "bmc-cost-structure", "fromSide": "right", "toNode": "bmc-revenue-streams", "toSide": "left", "color": "4", "label": "lợi nhuận = DT − CP"}
+  ]
+}

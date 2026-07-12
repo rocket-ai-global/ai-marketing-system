@@ -22,17 +22,17 @@ tags: [project, aios, template, product]
 
 | # | Template | Ngày | Dạng | Ưu tiên | Trạng thái |
 |---|---|---|---|---|---|
-| T01 | **Business Model Canvas + Business Snapshot** (BMC 9 khối + bản chụp DN 1 trang) | 1 | Canvas + Doc | 🅿️0 | ⬜ |
-| T02 | Business Process Map + AI Opportunity Map + Top 10 Use Cases | 1 | Sheet/Canvas | 🅿️0 | ⬜ |
-| T03 | Customer Avatar Profile (chân dung khách hàng) | 2 | Doc | 🅿️0 | ⬜ |
-| T04 | Pain–Desire–Fear–Objection Map | 2 | Sheet/Canvas | 🅿️0 | ⬜ |
-| T05 | Customer Journey Map 7 giai đoạn | 2 | Sheet | 🅿️0 | ⬜ |
-| T06 | Core Offer Document (Grand Slam Offer khung điền) | 3 | Doc | 🅿️0 | ⬜ |
-| T07 | Sales Message Pack (hook, headline, CTA, 5 angle) | 3 | Doc | 🅿️0 | ⬜ |
-| T08 | **Cấu trúc Knowledge Base 10 thư mục + Quy tắc phân quyền/bảo mật** (nạp sẵn vào RocketAgent workspace từ Ngày 0) | 4 | Folder structure + SOP | 🅿️0 | ⬜ |
-| T09 | **Prompt Library 50+ prompt** (4 nhóm: marketing/sales/CSKH/quản trị) — bản Spa điền sẵn | 5 | Sheet + RocketAgent | 🅿️0 | ⬜ |
-| T10 | AI Instruction Document (system prompt cho Business Brain + 5 Assistant) | 6 | Doc/RocketAgent | 🅿️0 | ⬜ |
-| T11 | Foundation Scorecard (tự nghiệm thu tuần 1) | 7 | Sheet | 🅿️1 | ⬜ |
+| T01 | **Business Model Canvas + Business Snapshot** (BMC 9 khối + bản chụp DN 1 trang) | 1 | Canvas + Doc | 🅿️0 | ✅ [[Template 1.1 — Business Snapshot & BMC]] |
+| T02 | Business Process Map + AI Opportunity Map + Top 10 Use Cases | 1 | Sheet/Canvas | 🅿️0 | ✅ [[Template 1.2 — Business Process Map & AI Opportunity Map]] |
+| T03 | Customer Avatar Profile (chân dung khách hàng) | 2 | Doc | 🅿️0 | ✅ [[Template 2.1 — Customer Avatar Profile]] |
+| T04 | Pain–Desire–Fear–Objection Map | 2 | Sheet/Canvas | 🅿️0 | ✅ [[Template 2.2 — Pain Desire Fear Objection Map]] |
+| T05 | Customer Journey Map 7 giai đoạn | 2 | Sheet | 🅿️0 | ✅ [[Template 2.3 — Customer Journey Map 7 Giai Đoạn]] |
+| T06 | Core Offer Document (Grand Slam Offer khung điền) | 3 | Doc | 🅿️0 | ✅ [[Template 3.1 — Core Offer Document]] |
+| T07 | Sales Message Pack (hook, headline, CTA, 5 angle) | 3 | Doc | 🅿️0 | ✅ [[Template 3.2 — Sales Message Pack]] |
+| T08 | **Cấu trúc Knowledge Base 10 thư mục + Quy tắc phân quyền/bảo mật** (nạp sẵn vào RocketAgent workspace từ Ngày 0) | 4 | Folder structure + SOP | 🅿️0 | ✅ [[Template 4.1 — Knowledge Base 10 Thư Mục & Data Security Rule]] |
+| T09 | **Prompt Library 50+ prompt** (4 nhóm: marketing/sales/CSKH/quản trị) — bản khung phát học viên + bản mẫu MSX | 5 | Markdown/Sheet | 🅿️0 | ✅ [[Template 5.1 — Prompt Library 50 Prompt Khung]] · [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]] |
+| T10 | AI Instruction Document (system prompt cho Business Brain + Assistant) | 6 | Doc/RocketAgent | 🅿️0 | ✅ [[Template 6.1 — AI Instruction Document]] · [[Template 6.1A — Bản Mẫu MSX AI Business Brain]] · [[Template 6.2 — Test Case Report 6 Ca Chuẩn]] · [[Template 6.3 — Improvement List]] |
+| T11 | Foundation Scorecard (tự nghiệm thu tuần 1) | 7 | Sheet | 🅿️1 | ✅ [[Template 7.1 — Foundation Scorecard]] · [[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]] · [[Template 7.2 — Marketing Brief Tuần 2]] · [[Template 7.3 — Peer Score Demo Day]] |
 
 ## Tuần 2 — Marketing Engine (10 template)
 

@@ -5,7 +5,7 @@ created: 2026-07-08
 tags: [project, aios, giao-an]
 week: 1
 day: 2
-core-output: "Customer Avatar Profile 1 chân dung chính · Pain-Desire-Fear-Objection Map (≥5 mục/nhóm) · Customer Journey Map 7 giai đoạn"
+core-output: "Customer Avatar Profile 1 chân dung chính (8 trường + Mức nhận thức + ≥3 câu nguyên văn) · Pain-Desire-Fear-Objection Map (≥5 mục/nhóm + ≥3 cặp Fear↔Objection) · Customer Journey Map 7 giai đoạn × 4 cột"
 ---
 
 # Ngày 02 — Chân Dung Khách Hàng & Customer Journey
@@ -19,12 +19,12 @@ core-output: "Customer Avatar Profile 1 chân dung chính · Pain-Desire-Fear-Ob
 ## 1. 🎯 Mục Tiêu Ngày Học
 
 **Core Output (bắt buộc — điều kiện qua ngày):**
-- ✅ **Customer Avatar Profile (hồ sơ chân dung khách hàng)** — 1 chân dung chính, đủ 8 trường nhân khẩu + bối cảnh.
-- ✅ **Pain–Desire–Fear–Objection Map (bản đồ Nỗi đau – Mong muốn – Nỗi sợ – Phản đối)** — mỗi nhóm tối thiểu 5 mục, viết bằng NGÔN NGỮ KHÁCH HÀNG (câu khách thật sự nói), không phải ngôn ngữ chủ DN.
-- ✅ **Customer Journey Map (bản đồ hành trình khách hàng)** — đủ 7 giai đoạn, mỗi giai đoạn có: khách nghĩ gì + DN cần làm gì + kênh chạm.
+- ✅ **Customer Avatar Profile (hồ sơ chân dung khách hàng)** — 1 chân dung chính, đủ 8 trường nhân khẩu + bối cảnh (trong đó trường "Câu nói vàng" chứa ≥3 câu nguyên văn của khách thật), cộng trường thứ 9: **Mức nhận thức** (1 trong 5 mức — xem Khối 3).
+- ✅ **Pain–Desire–Fear–Objection Map (bản đồ Nỗi đau – Mong muốn – Nỗi sợ – Phản đối)** — mỗi nhóm tối thiểu 5 mục, viết bằng NGÔN NGỮ KHÁCH HÀNG (câu khách thật sự nói), không phải ngôn ngữ chủ DN + **≥3 cặp Fear↔Objection được nối** (AI sẽ tạo dư 7 mục/4 cặp để bạn lọc — xem Prompt 2).
+- ✅ **Customer Journey Map (bản đồ hành trình khách hàng)** — **bảng chuẩn 7 giai đoạn × 4 cột: Giai đoạn / Khách nghĩ gì / DN cần làm gì / Kênh** + đánh dấu ⚡ ≥2 giai đoạn DN đang bỏ trống.
 
 **Bonus Output (nâng cao):**
-- ⭐ **Customer Insight Document (tài liệu thấu hiểu khách hàng)** — bản tổng hợp 1 file gộp cả 3 tài sản trên + 10 "câu nói vàng" của khách.
+- ⭐ **Mở rộng "Câu nói vàng" lên 10 câu nguyên văn** — kho hook content cho Tuần 2.
 - ⭐ **Bộ 30 câu hỏi nghiên cứu khách hàng** — 10 phỏng vấn khách cũ, 10 khảo sát khách tiềm năng, 10 cho đội sale khai thác nhu cầu.
 - ⭐ Chân dung phụ thứ 2 (nếu DN có 2 tệp khách rõ rệt).
 
@@ -32,17 +32,19 @@ core-output: "Customer Avatar Profile 1 chân dung chính · Pain-Desire-Fear-Ob
 
 ### Khối 1 — Customer Avatar là gì & vì sao thiếu nó thì AI viết dở (5')
 - **Ý chính:** Customer Avatar (chân dung khách hàng) = bản mô tả MỘT con người đại diện cho tệp khách tốt nhất, cụ thể đến mức "gọi được tên". AI không viết dở — AI thiếu dữ liệu. Cho AI avatar mơ hồ ("phụ nữ quan tâm làm đẹp") thì nhận content mơ hồ.
-- **Cách giảng:** Chiếu 2 output AI cạnh nhau — cùng 1 prompt viết bài, một bên input "phụ nữ thích làm đẹp", một bên input avatar chị Mai đầy đủ (xem mục 4). Sự khác biệt tự nói lên tất cả.
-- **Ví dụ Sen Spa:** Khách tốt nhất của Sen Spa không phải "nữ 25-50" mà là "chị Mai, 36 tuổi, trưởng phòng hành chính, nám hai gò má 3 năm, từng bôi kem trộn bị dị ứng, sợ tốn tiền vô ích lần nữa".
+- **Cách giảng:** Chiếu 2 output AI cạnh nhau — cùng 1 prompt viết bài, một bên input "người quan tâm sức khỏe", một bên input avatar chị Hương đầy đủ (xem mục 4). Sự khác biệt tự nói lên tất cả.
+- **Ví dụ 🍵 MSX:** MSX Group (Mẫu Sơn Xanh — học viên thật của chương trình, bán trà thảo mộc & dược liệu Mẫu Sơn online, xem [[Case Study Mẫu — RocketAI & MSX Group]]). Khách tốt nhất của MSX không phải "người quan tâm sức khỏe 25-60" mà là "**chị Hương, 40 tuổi, nhân viên văn phòng Hà Nội**, khó ngủ vì căng thẳng công việc, từng mua trà thảo mộc trôi nổi uống vài lần rồi bỏ, chỉ xuống tiền khi chắc nguồn gốc — vì còn mua cho bố mẹ".
+- **Đối chiếu B2B 🚀 RocketAI (công ty của người dạy — bán dịch vụ cài hệ thống AI cho SME):** avatar khách của RocketAI là chị Mai, 35 tuổi, chủ Spa ABC 10 nhân viên, doanh thu ~500tr/tháng. B2B khác B2C ở chỗ **người mua ≠ người dùng**: chị Mai quyết định chi tiền nhưng nhân viên spa mới là người dùng hệ thống hằng ngày — avatar chính luôn là người RA QUYẾT ĐỊNH (xem FAQ Q5).
 
 ### Khối 2 — Bộ tứ Pain–Desire–Fear–Objection (8')
 - **Ý chính:** 4 lớp tâm lý quyết định mua hàng: **Pain (nỗi đau)** — điều đang khó chịu hằng ngày; **Desire (mong muốn)** — kết quả + con người họ muốn trở thành; **Fear (nỗi sợ)** — điều ngăn họ hành động; **Objection (phản đối)** — lý do cụ thể họ nói ra để từ chối. Pain viết content thu hút, Desire viết offer, Fear viết bảo chứng, Objection viết kịch bản sale.
-- **Cách giảng:** Phân biệt Fear và Objection bằng ví dụ: Fear = "sợ bị dụ ký liệu trình đắt" (cảm xúc ngầm); Objection = "để em về hỏi chồng đã" (câu nói ra miệng). Objection là mặt nạ của Fear — kịch bản sale phải xử lý cả hai.
-- **Quy tắc vàng:** Viết bằng câu khách NÓI, trong ngoặc kép. "Da em dạo này xỉn quá, họp toàn phải bật filter" mạnh gấp 10 lần "khách hàng có nhu cầu cải thiện sắc tố da".
+- **Cách giảng:** Phân biệt Fear và Objection bằng ví dụ MSX: Fear = "sợ hàng thảo mộc trôi nổi, công dụng bị thổi phồng" (cảm xúc ngầm, ít khi nói ra); Objection = "sao đắt hơn trà ngoài siêu thị?" (câu nói ra miệng). Objection là mặt nạ của Fear — kịch bản sale phải xử lý cả hai.
+- **Quy tắc vàng:** Viết bằng câu khách NÓI, trong ngoặc kép. "Dạo này ngủ không sâu, sáng dậy vẫn mệt" mạnh gấp 10 lần "khách hàng có nhu cầu cải thiện giấc ngủ".
 
 ### Khối 3 — Phân nhóm theo mức độ nhận thức (5 Levels of Awareness) (5')
 - **Ý chính:** 5 mức nhận thức (theo Eugene Schwartz): (1) Unaware (chưa biết mình có vấn đề) → (2) Problem Aware (biết vấn đề) → (3) Solution Aware (biết có giải pháp) → (4) Product Aware (biết sản phẩm của bạn) → (5) Most Aware (chỉ chờ lý do mua). Mỗi mức cần một loại nội dung khác nhau.
-- **Ví dụ Sen Spa:** Mức 2 cần bài "5 nguyên nhân nám nặng hơn sau tuổi 35"; mức 4 cần bài case study kèm ảnh trước–sau; gửi bài báo giá cho người mức 2 = đốt tiền.
+- **Ví dụ MSX:** Mức 2 cần bài "5 lý do dân văn phòng sau 35 tuổi ngủ không sâu"; mức 4 cần review khách thật + chứng nhận OCOP 3★ + video vùng nguyên liệu Mẫu Sơn; gửi bảng giá combo cho người mức 2 = đốt tiền.
+- **Nối vào deliverable:** mức nhận thức của avatar được ghi thành trường thứ 9 trong [[Template 2.1 — Customer Avatar Profile]] (Prompt 1 tự đề xuất, bạn xác nhận/sửa) — Tuần 2 dùng đúng trường này để chọn loại content mở đầu.
 
 ### Khối 4 — Customer Journey 7 giai đoạn (7')
 - **Ý chính:** 7 giai đoạn: Chưa biết vấn đề → Nhận ra vấn đề → Tìm giải pháp → So sánh lựa chọn → Ra quyết định mua → Sử dụng → Mua lại/Giới thiệu. Mỗi giai đoạn trả lời 3 câu: khách đang nghĩ/cảm thấy gì? · DN cần đưa nội dung/hành động gì? · qua kênh nào?

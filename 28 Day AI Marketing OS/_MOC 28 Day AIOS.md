@@ -50,9 +50,9 @@ tags: [project, aios, moc]
 
 1. 🔴 Duyệt 2 bản đánh giá (chương trình + framework) — chốt khuyến nghị với 2 founder còn lại
 2. 🔴 Bổ sung 6 module 🔨 còn thiếu vào vault gốc `ai-marketing-system/` + file Baseline Ngày 0 (danh sách trong [[Bản Đồ Vault SME ↔ Giáo Án 28 Ngày]]) — build 1 lần, mọi cohort nhận qua 1 lần clone
-3. 🔴 Điền bản **Sen Spa mẫu đầy đủ** vào vault demo (chuẩn demo live + chuẩn chấm bài) + Ngày 0 Install Pack (video cài Obsidian/Claude Code 20')
+3. 🔴 Hoàn thiện **MSX Group — Mẫu Sơn Xanh** thành vault demo sống (chuẩn demo live + chuẩn chấm bài) + Ngày 0 Install Pack (video cài Obsidian/Claude Code 20')
 4. 🔴 Build Sprint 1 template vận hành (T41-T44: baseline form, onboarding, AI Grader, tracker) — điều kiện tuyển sinh cohort đầu
-5. 🔴 Chuẩn bị Zoom 26/07 (phép thử PMF) — demo sống: hỏi agent 10 câu về Sen Spa, agent trả lời từ vault
+5. 🔴 Chuẩn bị Zoom 26/07 (phép thử PMF) — demo sống: hỏi agent 10 câu về MSX Group/Mẫu Sơn Xanh, agent trả lời từ vault
 6. 🟡 Beta test Tuần 1 với 1-2 khách consulting hiện tại (luật lọc khách vàng) · Đóng gói 3 tầng giá (Transfer / Installed / Managed) · Spec cầu nối Hermes trong `AI-Sale-Assistant.md`
 
 ## 🔗 Kết nối với

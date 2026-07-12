@@ -5,7 +5,7 @@ created: 2026-07-08
 tags: [project, aios, giao-an]
 week: 1
 day: 3
-core-output: "Core Offer Document (Grand Slam Offer đủ 7 khối) · Value Proposition Statement · Sales Message Pack (1 hook chủ đạo + 3 headline + 3 CTA + 5 angle + 10 câu ads)"
+core-output: "Core Offer Document (7 khối: Tên · Big Promise · Thành phần chính · Bonus ≥2 · Cam kết & Risk Reversal đo được · Lý do mua ngay thật · Giá & trình bày) · Value Proposition Statement (1 câu, công thức 5 thành phần) · Sales Message Pack (1 hook chủ đạo + 3 headline + 3 CTA + 5 angle + 10 câu ads — MỖI câu chú thích nguồn Pain/Desire/Fear)"
 ---
 
 # Ngày 03 — Offer, Định Vị & Thông Điệp Bán Hàng
@@ -19,9 +19,16 @@ core-output: "Core Offer Document (Grand Slam Offer đủ 7 khối) · Value Pro
 ## 1. 🎯 Mục Tiêu Ngày Học
 
 **Core Output (bắt buộc — điều kiện qua ngày):**
-- ✅ **Core Offer Document (tài liệu offer lõi)** — 1 offer chủ lực đóng gói theo khung Grand Slam Offer (offer không thể chối từ): Kết quả hứa hẹn + Sản phẩm chính + ≥2 Bonus + Cam kết/Bảo hành + Lý do mua ngay + Giá & cách trình bày giá.
-- ✅ **Value Proposition Statement (tuyên bố giá trị)** — 1 câu chuẩn theo công thức, dùng được làm tiêu đề trang, lời giới thiệu, bio.
-- ✅ **Sales Message Pack (bộ thông điệp bán hàng)** — 1 hook (câu móc) chủ đạo, 3 headline (tiêu đề), 3 CTA (Call To Action — lời kêu gọi hành động), 5 angle (góc truyền thông), 10 câu quảng cáo ngắn.
+- ✅ **Core Offer Document (tài liệu offer lõi)** — 1 offer chủ lực đóng gói theo khung Grand Slam Offer (offer không thể chối từ), **đủ 7 khối** — đây là danh sách DUY NHẤT, mọi mục trong giáo án/bài tập/template/rubric đều theo nó:
+	- **① Tên offer** (chứa kết quả + mốc thời gian)
+	- **② Big Promise (lời hứa lớn)** = kết quả + thời hạn + cơ chế
+	- **③ Thành phần chính** (mọi thứ khách nhận, gồm cả hỗ trợ sau mua)
+	- **④ Bonus ≥2** — mỗi bonus trỏ về 1 nỗi lo trong **PDFO Map (Pain–Desire–Fear–Objection Map — bản đồ Nỗi đau–Mong muốn–Nỗi sợ–Phản đối, tài sản Ngày 02)**
+	- **⑤ Cam kết & Risk Reversal (đảo ngược rủi ro) ĐO ĐƯỢC** — điều kiện đo được + DN làm gì nếu không đạt
+	- **⑥ Lý do mua ngay THẬT** (công suất/lịch/giá có căn cứ — cấm khan hiếm giả)
+	- **⑦ Giá & cách trình bày giá** (giá neo, bậc gói, trả đợt)
+- ✅ **Value Proposition Statement (tuyên bố giá trị)** — 1 câu theo công thức 5 thành phần: giúp [ai] đạt [kết quả] trong [thời gian] bằng [cơ chế riêng] mà không cần [điều khách sợ/ghét] — dùng làm tiêu đề trang, lời giới thiệu, bio.
+- ✅ **Sales Message Pack (bộ thông điệp bán hàng)** — 1 hook (câu móc) chủ đạo, 3 headline (tiêu đề), 3 CTA (Call To Action — lời kêu gọi hành động), 5 angle (góc truyền thông), 10 câu quảng cáo ngắn — **MỖI câu (hook, headline, CTA, ads) chú thích lấy từ Pain/Desire/Fear nào**.
 
 **Bonus Output (nâng cao):**
 - ⭐ **USP & Positioning Map (bản đồ định vị & điểm khác biệt)** — so mình với 2-3 đối thủ trên 2 trục quan trọng với khách.
@@ -30,14 +37,14 @@ core-output: "Core Offer Document (Grand Slam Offer đủ 7 khối) · Value Pro
 ## 2. 📚 Kiến Thức Trọng Tâm
 
 ### Khối 1 — Sản phẩm ≠ Offer (5')
-- **Ý chính:** Sản phẩm là THỨ bạn làm ("liệu trình nám 10 buổi"). Offer là toàn bộ GÓI GIÁ TRỊ + LỜI HỨA + GIẢM RỦI RO khiến khách thấy "không mua mới là dại". Cùng một dịch vụ, offer khác nhau → tỷ lệ chốt khác nhau 3-5 lần.
-- **Cách giảng:** Chiếu cạnh nhau: (A) "Liệu trình trị nám 10 buổi — 15.000.000đ" vs (B) "Lộ trình 'Da Sáng Đều Màu 90 Ngày': 10 buổi công nghệ + soi da định kỳ + phác đồ chăm tại nhà + chụp ảnh đối chứng từng tháng; không cải thiện rõ sau buổi 5 → tặng thêm 2 buổi và hoàn 50% phần chưa dùng nếu vẫn không tiến triển — 15.000.000đ, tháng này còn 5 suất kèm bộ kem chống nắng y khoa". Hỏi lớp: cái nào dễ nói "để em hỏi chồng"?
-- **Ví dụ Sen Spa:** Sen Spa lâu nay bán (A). Hôm nay đóng gói thành (B) — không thay đổi dịch vụ lõi, chỉ thay cách đóng gói và cam kết.
+- **Ý chính:** Sản phẩm là THỨ bạn làm ("khoá đào tạo AI 28 ngày"). Offer là toàn bộ GÓI GIÁ TRỊ + LỜI HỨA + GIẢM RỦI RO khiến khách thấy "không mua mới là dại". Cùng một sản phẩm, offer khác nhau → tỷ lệ chốt khác nhau 3-5 lần.
+- **Cách giảng (Build In Public — người dạy mổ xẻ chính offer mình đang bán):** Chiếu cạnh nhau: (A) "Khoá đào tạo AI Marketing 28 ngày — 25.000.000đ" vs (B) "**AI Marketing & Sale OS™ — 28 Ngày Cài Hệ Thống Chạy Thật** (gói OS Installed 25tr): Rocket cài đặt + custom cùng bạn trong 28 ngày; tặng Vault SME dựng sẵn (trị giá 5tr) + 50 prompt mẫu + 30 ngày support sau khoá; nghiệm thu bằng Scorecard 100 điểm — chưa đạt mức 'hệ thống chạy được' thì Rocket kèm 1:1 thêm 14 ngày miễn phí, sau đó vẫn không đạt → hoàn 100% học phí; mỗi cohort chỉ nhận 20 học viên vì mentor kèm 1:10". Hỏi lớp: cái nào dễ nói "để anh/chị suy nghĩ thêm"?
+- **Đối chiếu B2C (🍵 MSX Group):** MSX từng bán (A): "Trà Mẩy Gòm An Giấc — 200K/hộp". Đóng gói lại thành (B): combo 3 hộp 500K (tiết kiệm 100K + freeship) và set quà 800K (3 hộp + hộp quà + thiệp viết tay) — không đổi sản phẩm lõi, chỉ đổi cách đóng gói, bằng chứng và lý do mua ngay.
 
 ### Khối 2 — Công thức Grand Slam Offer & Phương trình giá trị (8')
 - **Ý chính:** Phương trình giá trị (theo Alex Hormozi): **Giá trị = (Kết quả mơ ước × Xác suất đạt được) ÷ (Thời gian chờ × Công sức bỏ ra)**. Muốn offer mạnh: tăng tử số (hứa kết quả rõ + tăng niềm tin bằng bằng chứng/cam kết), giảm mẫu số (rút ngắn thời gian thấy kết quả + giảm công sức của khách).
-- **Cách giảng:** Đi từng biến với Sen Spa: Kết quả mơ ước = "ra đường không cần che nám" (lấy từ Desire Ngày 02) · Xác suất = ảnh trước–sau + cam kết mốc buổi 5 · Thời gian = "thấy khác biệt từ tháng đầu" · Công sức = spa nhắc lịch, phác đồ tại nhà chỉ 5 phút/ngày.
-- **7 khối của offer:** Sản phẩm chính → Bonus 1-3 (giải quyết nỗi lo phụ) → Cam kết/Bảo hành → Hỗ trợ sau mua → Lý do mua ngay (khan hiếm/hạn chót THẬT) → Giá & cách nêu giá → Tên offer.
+- **Cách giảng:** Đi từng biến với offer RocketAI (avatar: chị Mai, 35t, chủ Spa ABC, 10 nhân viên, ~500tr/tháng): Kết quả mơ ước = "content tự ra, khách tự đến, không phải túc trực ở spa" (lấy từ Desire Ngày 02) · Xác suất = demo hệ thống chạy live + cam kết nghiệm thu bằng Scorecard · Thời gian = 28 ngày, agent đầu tiên chạy ngay Tuần 1 · Công sức = Rocket cài cùng, template điền sẵn, không phải tự mò công nghệ. Đối chiếu nhanh MSX: Xác suất = OCOP 3★ + 5.000+ khách hàng đã dùng · Công sức = pha 1 gói trà mỗi tối, 2 phút.
+- **7 khối của offer (đúng danh sách duy nhất ở mục 1):** ① Tên offer → ② Big Promise → ③ Thành phần chính → ④ Bonus ≥2 (mỗi bonus trỏ 1 nỗi lo PDFO) → ⑤ Cam kết & Risk Reversal đo được → ⑥ Lý do mua ngay THẬT → ⑦ Giá & cách trình bày giá.
 
 ### Khối 3 — USP, Big Promise, Risk Reversal (7')
 - **Ý chính:** **USP (Unique Selling Proposition — điểm bán hàng độc nhất)** trả lời "vì sao chọn tôi mà không phải 10 spa cùng phố" — đến từ: phương pháp riêng có tên, con số kinh nghiệm, cam kết không ai dám theo, hoặc chuyên sâu 1 ngách. **Big Promise (lời hứa lớn)** = kết quả + thời hạn + cơ chế. **Risk Reversal (đảo ngược rủi ro)** = chuyển rủi ro từ khách sang DN — trực tiếp đánh vào Fear số 1 ("sợ mất tiền vô ích").

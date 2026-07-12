@@ -13,10 +13,11 @@ tags: [project, aios, giao-an, template]
 
 0. **Chuyển giao, không phải khoá học** — chương trình là **solutions chuyển giao hệ điều hành AI Marketing & Sale OS (Rocket Agent OPC / Hermes)**: framework, agent, template, hệ thống được ĐÓNG GÓI SẴN và bàn giao theo từng module mỗi ngày. Bài tập của học viên = **nạp dữ liệu DN mình → custom → test → tối ưu** module đã nhận, không xây từ số 0. Hệ điều hành sau bàn giao vận hành bằng Agent 24/7: tạo lead, tư vấn, follow-up, chăm sóc khách hàng, đo lường tăng trưởng.
 1. **Không dạy lý thuyết suông** — mỗi ngày học viên phải ĐÓNG XONG một nhóm tài sản cho doanh nghiệp thật của mình (module đã custom chạy được).
-2. **Ví dụ gốc = ngách Spa/Thẩm mỹ** (theo [[Định Hướng 2027 — Một Mũi Nhọn]]). Mỗi demo, prompt mẫu, template đều minh hoạ bằng Spa, kèm ghi chú "Thích ứng ngành khác" (nha khoa, giáo dục, gym, coaching — các ngành DNA "bán qua tư vấn").
+2. **Case study = 2 case THẬT, 0 case bịa** (theo [[Case Study Kép — RocketAI + MSX Group]]): 🚀 RocketAI Solutions (B2B dịch vụ — case DẠY, avatar khách hàng là chị Mai chủ spa) + 🍵 MSX Group — Mẫu Sơn Xanh (B2C sản phẩm — case CHỨNG MINH, vault demo sống `ai-marketing-system-msx-demo/`). Sen Spa (hư cấu) đã loại bỏ toàn bộ. Mỗi demo, prompt mẫu, template minh hoạ bằng case thật theo mapping trong [[_Chuẩn Đồng Bộ Tuần 1]], kèm ghi chú "Thích ứng ngành khác" (spa/thẩm mỹ, nha khoa, giáo dục, gym, coaching — các ngành DNA "bán qua tư vấn").
 3. **Core vs Bonus** — mỗi ngày phân biệt rõ output BẮT BUỘC (Core — điều kiện qua ngày) và output NÂNG CAO (Bonus). Chủ SME chỉ có 1.5–2h/ngày ngoài giờ live.
 4. **Template dựng sẵn 80%** — học viên điền 20% dữ liệu doanh nghiệp mình, không xây từ khung trống.
 5. **Chấm được bằng rubric** — tiêu chí nghiệm thu phải đo được, để mentor + AI Grader chấm nhất quán (xem [[Hệ Thống Chấm Chữa & Support Hàng Ngày]]).
+6. **Một nguồn sự thật thông số** — mọi con số (deadline 23h59, số FAQ/prompt/test, cấu trúc bảng, track công cụ A/B/C) theo [[_Chuẩn Đồng Bộ Tuần 1]]; khi hai tài liệu lệch nhau, file chuẩn là trọng tài.
 
 ## Cấu trúc 12 phần (bắt buộc)
 
@@ -41,8 +42,8 @@ Bảng: Thời lượng | Hoạt động | Chi tiết. Khung chuẩn:
 - 15' — Học viên bắt đầu làm tại chỗ, Q&A
 - 10' — Giao bài tập + tiêu chí nghiệm thu + nhắc deadline
 
-## 4. 🎬 Kịch Bản Demo (Ví dụ Spa)
-- Từng bước demo cụ thể trainer làm live, với dữ liệu Spa mẫu (tên spa giả định: "Sen Spa — spa chăm sóc da tại Hà Nội, AOV 1.5tr, liệu trình 8-12 buổi").
+## 4. 🎬 Kịch Bản Demo (Case thật)
+- Từng bước demo cụ thể trainer làm live, với dữ liệu case thật theo mapping [[_Chuẩn Đồng Bộ Tuần 1]]: 🚀 RocketAI ("Build In Public" — demo trên chính công ty người dạy) hoặc 🍵 MSX Group (demo trên vault `ai-marketing-system-msx-demo/` đã điền sẵn).
 - Mỗi bước: làm gì → công cụ nào → kết quả trông như thế nào.
 
 ## 5. ✅ Checklist Thực Thi (Học viên tự làm)

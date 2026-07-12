@@ -12,17 +12,17 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 > 📦 **Chuyển giao — không phải khoá học:** module hôm nay đã được đóng gói sẵn (framework + template + agent trên RocketAgent/Hermes). Việc của học viên: **nạp dữ liệu doanh nghiệp mình → custom → test → nghiệm thu** để module chạy thật trên chính doanh nghiệp — không xây từ số 0, không lý thuyết suông.
 
-> 🗂️ **Trong Vault SME (framework bàn giao `ai-marketing-system/`):** Demo Day 1 = agent trả lời đúng 10 câu về DN từ vault trước cả lớp — demo qua RocketAgent UI **hoặc nhắn thẳng cho Jarvis qua Telegram** (đã cài Ngày 0, "tỉnh dậy" từ Ngày 6 — ấn tượng hơn hẳn với người xem); cập nhật Foundation Scorecard vào `00. Business Context/Baseline & Mục Tiêu 28 Ngày.md`.
+> 🗂️ **Trong Vault SME (framework bàn giao `ai-marketing-system/`):** Demo Day 1 = agent trả lời đúng 10 câu về DN từ vault trước cả lớp — demo qua RocketAgent UI **hoặc nhắn thẳng cho Jarvis qua Telegram** (đã cài từ [[Ngày 00 — Install Pack & Baseline|Ngày 0]], "tỉnh dậy" từ Ngày 6 — ấn tượng hơn hẳn với người xem); cập nhật Foundation Scorecard vào `ai-marketing-system/00. Business Context/Baseline & Mục Tiêu 28 Ngày.md`.
 
 > Hôm nay không học gì mới. Bạn tổng kiểm tra 6 tài sản nền móng, vá những gì còn 🔧/🔴, và đứng lên DEMO bộ não AI của doanh nghiệp mình trước cohort trong 5-7 phút — lần đầu tiên "hệ điều hành" của bạn chạy trước mắt người khác.
 
 ## 1. 🎯 Mục Tiêu Ngày Học
 
 **Core Output (bắt buộc — điều kiện qua tuần):**
-- ✅ **AI Foundation Pack (bộ tài liệu nền tảng)** — 1 thư mục/1 file mục lục gom đủ 6 nhóm tài sản Tuần 1: Snapshot & Top 10 (N1) · Avatar & Journey (N2) · Offer & Message (N3) · Knowledge Base (N4) · Prompt Library (N5) · Business Brain + Test Report (N6), tất cả ở phiên bản đã sửa theo feedback.
+- ✅ **AI Foundation Pack (bộ tài liệu nền tảng)** — 1 thư mục/1 file mục lục gom đủ 6 nhóm tài sản Tuần 1: BMC 9 khối + Snapshot & Top 10 (N1) · Avatar + PDFO + Journey (N2) · Offer + Value Prop Statement + Message Pack (N3) · Knowledge Base + Data Access & Security Rule (N4) · Prompt Library (N5) · Business Brain (Sales + Marketing Assistant) + Test Report (N6), tất cả ở phiên bản đã sửa theo feedback.
 - ✅ **Business Brain Demo** — demo trực tiếp 5-7 phút theo format chuẩn (mục 4), AI trả lời sống 3 câu về DN mình.
-- ✅ **Foundation Scorecard (bảng điểm nền móng)** — tự chấm 25 tiêu chí + nhận điểm demo chéo + điểm mentor.
-- ✅ **Foundation Gate 5/5 (cổng kiểm chứng độ khớp)** — trả lời xong 5 câu kiểm chứng ở mục 2, kết quả ghi vào file `00. Business Context/Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` trong Vault SME. Đây là điều kiện THẬT để vào Tuần 2 — không phải "nộp đủ bài".
+- ✅ **Foundation Scorecard (bảng điểm nền móng)** — tự chấm 25 tiêu chí phủ đủ Core N1-N6 (mỗi tiêu chí 4 điểm, tổng tròn 100) theo [[Template 7.1 — Foundation Scorecard]] + nhận điểm demo chéo + điểm mentor.
+- ✅ **Foundation Gate 5/5 (cổng kiểm chứng độ khớp)** — trả lời xong 5 câu kiểm chứng ở mục 2, kết quả ghi vào file `ai-marketing-system/00. Business Context/Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` trong Vault SME. Đây là điều kiện THẬT để vào Tuần 2 — không phải "nộp đủ bài".
 - ✅ **Marketing Brief cho Tuần 2** — 1 trang: chủ đề nội dung, sản phẩm đẩy, kênh ưu tiên, tệp ưu tiên.
 
 **Bonus Output (nâng cao):**
@@ -47,11 +47,11 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 | # | Câu kiểm chứng | Đo bằng | Nguồn tài sản |
 |---|---|---|---|
-| 1 | **Mô hình nhất quán chưa?** Mỗi PK có GT phục vụ riêng, kênh đang dùng chạm đúng PK, dòng doanh thu chính đến từ PK nào — 9 khối có khớp nhau không? | Chạy phần "Kiểm tra nhất quán" của Prompt 1; kết luận ghi vào `Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` | BMC + PK/GT (N1) |
-| 2 | **Insight đủ THẬT chưa?** Nguyên liệu viết content là lời khách hay lời AI đoán? | PDFO có ≥5 câu nói NGUYÊN VĂN của khách thật; mỗi Pain chính có ≥1 bằng chứng (inbox/feedback) | Avatar & PDFO (N2) |
+| 1 | **Mô hình nhất quán chưa?** Mỗi PK có GT phục vụ riêng, kênh đang dùng chạm đúng PK, dòng doanh thu chính đến từ PK nào — 9 khối có khớp nhau không? | Chạy phần "Kiểm tra nhất quán" của Prompt 1; kết luận ghi vào `ai-marketing-system/00. Business Context/Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` | BMC + PK/GT (N1) |
+| 2 | **Insight đủ THẬT chưa?** Nguyên liệu viết content là lời khách hay lời AI đoán? | Toàn hồ sơ N2 có **≥5 câu nói NGUYÊN VĂN của khách thật** — nguồn đếm: ≥3 câu trong Avatar + ≥2 câu trong PDFO Map (cùng một chuẩn đếm với Scorecard tiêu chí 7); mỗi Pain chính có ≥1 bằng chứng (inbox/feedback) | Avatar & PDFO (N2) |
 | 3 | **Offer đã PHÙ HỢP chưa?** — câu quan trọng nhất cổng này | Offer chủ lực giải đúng Pain #1 của avatar chính · giá khớp khả năng chi của PK · cam kết gánh được về vận hành · đã pass phản biện "khách đa nghi" | Offer (N3) ↔ Avatar (N2) ↔ BMC (N1) |
 | 4 | **Một nguồn sự thật chưa?** | Giá/dịch vụ/chính sách trong Offer = Product Knowledge = FAQ, không mâu thuẫn; Brain trả lời từ KB, ca ngoài KB biết từ chối | KB (N4) + Test Report (N6) |
-| 5 | **Đo được chưa?** | Baseline Ngày 0 có số thật; mục tiêu 28 ngày có 3 chỉ số; Marketing Brief nối thẳng vào ≥1 chỉ số đó | Baseline (N0) + Snapshot (N1) + Brief (N7) |
+| 5 | **Đo được chưa?** | Baseline (số đo gốc) trong `ai-marketing-system/00. Business Context/Baseline & Mục Tiêu 28 Ngày.md` có số thật; mục tiêu 28 ngày có 3 chỉ số; Marketing Brief nối thẳng vào ≥1 chỉ số đó | Baseline ([[Ngày 00 — Install Pack & Baseline|N0]]) + Snapshot (N1) + Brief (N7) |
 
 **Luật qua cổng:** 5/5 ✅ → vào Tuần 2. Fail 1-2 câu → vá trong Catch-up 48h đầu Tuần 2 (mentor kèm), riêng **fail câu 3 thì SỬA OFFER TRƯỚC KHI VIẾT CONTENT** — thà lùi 2 ngày còn hơn 3 tuần content bán một offer lệch. Fail ≥3 câu → họp 1:1 với mentor, Tuần 2 chỉ chạy phần Core.
 
@@ -59,7 +59,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 - Demo không phải thi — là NGHIỆM THU + học chéo: xem 8-10 DN khác cùng khung sẽ thấy ngay lỗ hổng của mình.
 - Luật demo: chạy THẬT trên màn hình (không slide chụp sẵn trừ phần mở đầu); lỗi live là bình thường — cách bạn XỬ LÝ lỗi mới là thứ được chấm; đúng giờ 7 phút, quá giờ bị cắt.
 
-> **Thích ứng ngành khác:** Format demo giữ nguyên cho mọi ngành. Khác biệt duy nhất ở 3 câu hỏi test — mỗi học viên dùng câu của khách ngành mình (nha khoa: "bọc sứ bên em bao nhiêu, có đau không?"; giáo dục: "con em mất gốc, học 6 tháng kịp thi không?"; gym: "em bận lắm, tuần tập 2 buổi có kết quả không?").
+> **Thích ứng ngành khác:** Format demo giữ nguyên cho mọi ngành. Khác biệt duy nhất ở 3 câu hỏi test — mỗi học viên dùng câu của khách ngành mình (spa/thẩm mỹ: "liệu trình 15 triệu — chỗ khác có 8 triệu, sao bên em đắt vậy?"; nha khoa: "bọc sứ bên em bao nhiêu, có đau không?"; giáo dục: "con em mất gốc, học 6 tháng kịp thi không?"; gym: "em bận lắm, tuần tập 2 buổi có kết quả không?").
 
 ## 3. 🖥️ Agenda Buổi Live (90 phút — format Demo Day)
 
@@ -134,18 +134,13 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 ## 7. 📄 Template Đi Kèm
 
-**Template 7.1 — Foundation Scorecard (bảng tự chấm 25 tiêu chí Có/Không).**
-- *Snapshot & Top 10 (4):* đủ 10 trường có số thật? · ≥3 điểm nghẽn có lý do mất tiền? · Top 10 có điểm ICE và ≥7 bám lộ trình? · mục tiêu có 3 chỉ số "hiện tại→mục tiêu→cách đo"?
-- *Avatar & Journey (4):* avatar là MỘT người đủ 8 trường? · ≥3 câu nói thật? · ≥3 cặp Fear↔Objection? · journey 7 giai đoạn có đánh dấu ⚡ chỗ trống?
-- *Offer & Message (4):* offer đủ 7 khối? · cam kết đo được + xử lý khi không đạt? · lý do mua ngay là thật? · message pack đủ số lượng và có chú thích nguồn tâm lý?
-- *Knowledge Base (5):* đủ 10 thư mục? · Product Knowledge phủ 100% dịch vụ? · ≥30 FAQ trong đó ≥10 từ inbox thật? · có mục từ chối + "🚨 chuyển người thật"? · 3 tài liệu lõi đã nạp và test?
-- *Prompt Library (4):* đủ 50 khung + 7 cột? · ≥20 cá nhân hóa? · ≥10 test có ghi kết quả? · 2 khối ngữ cảnh chuẩn?
-- *Business Brain (4):* instruction 7 phần? · test ≥4/6 ✅? · ≥1 lỗi đã truy nguyên-sửa-chạy lại? · Sales Assistant hoạt động?
-- Cách tính: mỗi Có = 4 điểm → tối đa 100. Dòng cuối: 3 việc sẽ vá trong 48h.
+**[[Template 7.1 — Foundation Scorecard]]** — bảng tự chấm 25 tiêu chí Có/Không, mỗi tiêu chí 4 điểm, tổng 100 điểm. Bao phủ 6 nhóm tài sản: Snapshot/Top 10, Avatar/Journey, Offer/Message, Knowledge Base, Prompt Library, Business Brain.
 
-**Template 7.2 — Marketing Brief Tuần 2 (1 trang).** 4 mục + 2 dòng đối chiếu: Chủ đề nội dung chính (1-2 chủ đề, lấy từ cột "DN cần làm gì" trong Journey) | Sản phẩm muốn đẩy (= offer Ngày 03) | Kênh marketing ưu tiên (kênh đang có khách nhất) | Tệp khách ưu tiên (avatar chính + trạng thái: mới/đã inbox chưa chốt/khách cũ) | Đối chiếu: brief này phục vụ chỉ số nào trong Mục tiêu 28 ngày? · giai đoạn nào của Journey? *Kèm bản Sen Spa điền mẫu: chủ đề "nám mùa hè + bằng chứng khách thật"; đẩy "Da Sáng Đều Màu 90 Ngày"; kênh Facebook fanpage; tệp ưu tiên: 40+ người đã inbox 3 tháng qua chưa chốt.*
+**[[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]]** — bản mẫu Mẫu Sơn Xanh được chấm ~80 điểm để học viên hiểu “đủ demo sống” khác gì “production 100%”.
 
-**Template 7.3 — Form Peer Score (chấm chéo khi xem demo).** 5 tiêu chí × thang 1-5 (xem mục 10) + 1 ô "điều tôi học được từ demo này" (bắt buộc điền — để người xem học chủ động).
+**[[Template 7.2 — Marketing Brief Tuần 2]]** — 1 trang gồm: mục tiêu tuần 2, chủ đề nội dung chính, offer/sản phẩm muốn đẩy, kênh ưu tiên, tệp khách ưu tiên, đối chiếu với mục tiêu 28 ngày và Customer Journey.
+
+**[[Template 7.3 — Peer Score Demo Day]]** — form chấm chéo 5 tiêu chí: đúng format/thời lượng, Brain chạy sống, dữ liệu thật, kết nối hệ thống, xử lý tình huống.
 
 ## 8. 🤖 Prompt Mẫu
 

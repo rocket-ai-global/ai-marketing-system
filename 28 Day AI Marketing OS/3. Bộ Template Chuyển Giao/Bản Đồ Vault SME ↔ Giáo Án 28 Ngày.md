@@ -4,7 +4,7 @@ up:
 created: 2026-07-08
 tags: [project, aios, framework, giao-an]
 ---
-
+22x`
 # 🗂️ Bản Đồ Vault SME ↔ Giáo Án 28 Ngày
 
 > Bảng ánh xạ cho trainer & mentor: mỗi ngày học viên **thao tác ở đâu trong framework bàn giao** (`ai-marketing-system/` — Vault SME), chạy skill nào, phần nào thuộc lớp động cơ RocketAgent/Hermes, và module nào còn thiếu phải build. Nguồn đánh giá: [[Đánh Giá Framework Vault SME (ai-marketing-system) — 2026-07-08]].

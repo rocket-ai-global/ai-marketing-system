@@ -30,7 +30,7 @@ up:
 
 | Lỗi | Cách sửa | Link tài liệu |
 |-----|----------|---------------|
-| Chân dung KH quá chung ("nữ 25-45") | Phải cụ thể: nghề, thu nhập, nỗi đau, nỗi sợ | [[Checklist Review BMC — Tuần 1]] |
+| Chân dung KH quá chung ("nữ 25-45") | Phải cụ thể: nghề, thu nhập, nỗi đau, nỗi sợ | [[Checklist Review BMC — Tuần 1 1]] |
 | Offer không có USP | Phải trả lời: "Tại sao chọn tôi mà không phải đối thủ?" | [[Demo Case Study — Rocket AI BMC Mẫu]] |
 | Thiếu dữ liệu công ty | Phải có: tầm nhìn, sứ mệnh, giá trị cốt lõi, FAQ, quy trình bán hàng | Phần 3 của BMC Mẫu |
 | Không có objection | Luôn có ít nhất 3 lý do KH từ chối → phải viết ra | Phần 1 của BMC Mẫu |

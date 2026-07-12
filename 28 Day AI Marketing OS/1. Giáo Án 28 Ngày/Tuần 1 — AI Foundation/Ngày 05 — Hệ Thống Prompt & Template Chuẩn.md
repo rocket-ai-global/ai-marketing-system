@@ -10,9 +10,9 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 
 # Ngày 05 — Hệ Thống Prompt & Template Chuẩn
 
-> 📦 **Chuyển giao — không phải khoá học:** module hôm nay đã được đóng gói sẵn (framework + template + agent trên RocketAgent/Hermes). Việc của học viên: **nạp dữ liệu doanh nghiệp mình → custom → test → nghiệm thu** để module chạy thật trên chính doanh nghiệp — không xây từ số 0, không lý thuyết suông.
+> 📦 **Chuyển giao — không phải khoá học:** module hôm nay đã được đóng gói sẵn (framework + template + agent trên RocketAgent/Hermes — Hermes là agent AI của Rocket vận hành qua Telegram, dành cho gói OS Installed). Việc của học viên: **nạp dữ liệu doanh nghiệp mình → custom → test → nghiệm thu** để module chạy thật trên chính doanh nghiệp — không xây từ số 0, không lý thuyết suông.
 
-> 🗂️ **Trong Vault SME (framework bàn giao `ai-marketing-system/`):** Nạp bộ 50+ prompt bản Spa vào `04. Resources/Prompt Library/` (module bổ sung của chương trình) — học viên chỉ thay 20% dữ liệu DN mình, không viết prompt từ đầu.
+> 🗂️ **Trong Vault SME (framework bàn giao `ai-marketing-system/`):** Nạp bộ 50 prompt khung ([[Template 5.1 — Prompt Library 50 Prompt Khung]]) vào `04. Resources/Prompt Library/` — học viên chỉ thay ~20% dữ liệu DN mình, không viết prompt từ đầu. Bản mẫu đã điền hoàn chỉnh của học viên thật để đối chiếu: [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 
 > Hôm nay bạn xây "tủ công cụ câu lệnh": một Prompt Library (thư viện câu lệnh) ≥50 prompt chuẩn hóa theo khung Role–Context–Task–Input–Output–Constraint, để bạn và nhân viên dùng AI nhất quán như dùng quy trình — hết cảnh mỗi lần hỏi AI một kiểu, ra kết quả một kiểu.
 
@@ -24,8 +24,16 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 - ✅ **Khối ngữ cảnh chuẩn** — 2 đoạn văn bản tái sử dụng: `[BỐI CẢNH DN]` và `[GIỌNG]` — dán vào đầu mọi prompt về sau.
 
 **Bonus Output (nâng cao):**
-- ⭐ **Prompt Usage Guide (hướng dẫn dùng prompt)** — 1 trang quy ước cho nhân viên: dùng prompt nào khi nào, được sửa gì, cấm gì.
-- ⭐ Cá nhân hóa thêm 10-20 prompt còn lại; tạo 3-5 prompt riêng cho tình huống đặc thù của DN.
+- ⭐ **Prompt Usage Guide (hướng dẫn dùng prompt)** — 1 trang quy ước cho nhân viên: dùng prompt nào khi nào, được sửa gì, cấm gì (khung: [[Template 5.3 — Prompt Usage Guide]]).
+- ⭐ Cá nhân hoá nốt 30 prompt còn lại; tạo 3-5 prompt riêng cho tình huống đặc thù của DN.
+
+**Track công cụ (theo [[_Chuẩn Đồng Bộ Tuần 1]] — bạn thuộc track nào thì test prompt trên nhánh đó, KHÔNG làm cả 3):**
+
+| Track | Bạn là ai | Test prompt ở đâu |
+|---|---|---|
+| **A — RocketAgent** (mặc định) | Được cấp tài khoản RocketAgent | Chạy prompt trong Assistant — KB đã nạp Ngày 04 |
+| **B — Claude/ChatGPT Projects** | Chưa có tài khoản RocketAgent | Chạy trong Project đã upload 3 tài liệu lõi Ngày 04 |
+| **C — Hermes/Jarvis qua Telegram** | Gói OS Installed (Rocket cài sẵn) hoặc Bonus | Nhắn prompt trực tiếp cho Hermes — xem [[Hướng Dẫn Cài Đặt Hermes Agent & Siêu Trợ Lý Jarvis]] |
 
 ## 2. 📚 Kiến Thức Trọng Tâm
 
@@ -123,7 +131,9 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 
 ## 7. 📄 Template Đi Kèm
 
-**Template 5.1 — File "Prompt Library — 50 Prompt Khung" (tài sản phát sẵn quan trọng nhất hôm nay).** Google Sheets 7 cột: Mã | Tên prompt | Nhóm | Dùng khi nào | Prompt đầy đủ (khung 6 phần, có chỗ `{{[BỐI CẢNH DN]}}` `{{[GIỌNG]}}` và các `{{trường dữ liệu}}`) | Trạng thái test (Đạt/Chưa đạt/Chưa test) | Ghi chú kết quả. Danh mục 50 prompt:
+**Template 5.1 — File "Prompt Library — 50 Prompt Khung" (tài sản phát sẵn quan trọng nhất hôm nay).** Google Sheets/Markdown 7 cột: Mã | Tên prompt | Nhóm | Dùng khi nào | Prompt đầy đủ (khung 6 phần, có chỗ `{{[BỐI CẢNH DN]}}` `{{[GIỌNG]}}` và các `{{trường dữ liệu}}`) | Trạng thái test (Đạt/Chưa đạt/Chưa test) | Ghi chú kết quả. Link template: [[Template 5.1 — Prompt Library 50 Prompt Khung]]. Danh mục 50 prompt:
+
+**Template 5.1A — Bản mẫu dự án thực tế MSX.** File đã điền mẫu dựa trên Mẫu Sơn Xanh/MSX Group: có sẵn `[BỐI CẢNH DN]`, `[GIỌNG]`, 20 prompt đã cá nhân hóa và 10 dòng test mẫu để học viên nhìn là hiểu cách làm. Link: [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 - **Marketing (M01-M15):** bài Facebook theo angle · bài kể chuyện khách hàng · email/tin nhắn broadcast · kịch bản video ngắn 30-60s · kịch bản livestream · nội dung quảng cáo (3 phiên bản A/B) · content calendar (lịch nội dung) tháng · phân tích insight từ comment/inbox · viết landing page theo StoryBrand · lead magnet (mồi thu hút) · caption ảnh trước-sau đúng luật · trả lời comment · brief ảnh cho designer/AI ảnh · biến 1 bài dài thành 5 định dạng · tối ưu bài cũ.
 - **Sales (S01-S15):** kịch bản tư vấn đầy đủ theo SPIN · mở đầu cuộc tư vấn · xử lý từ chối (điền objection bất kỳ) · proposal (đề xuất) · báo giá cá nhân hóa · tin follow-up 3 chạm · phân loại lead nóng/ấm/lạnh từ hội thoại · tóm tắt lịch sử tư vấn 1 khách · kịch bản gọi điện hẹn lịch · tin nhắn "cứu" khách im lặng · so sánh khéo với đối thủ · chốt kèm khan hiếm thật · xin giới thiệu (referral) · tái ký/gia hạn · kịch bản khảo sát nhu cầu nhanh.
 - **CSKH (CS01-CS10):** trả lời FAQ theo KB · tin chăm sau buổi/lần dùng đầu · xử lý khiếu nại theo mức độ · kịch bản gọi lại khách bỏ ngang · nhắc lịch không gây phiền · chúc mừng mốc (buổi 5/10, sinh nhật) · gợi ý upsell đúng lúc · gợi ý cross-sell (bán chéo) · xin review/feedback · tin nhắn "hâm nóng" khách lâu không quay lại.
