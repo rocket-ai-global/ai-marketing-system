@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIOS — Hệ Điều Hành Doanh Nghiệp AI Agents</title>
+<style>
+  :root{
+    --bg:#080B16;
+    --bg-2:#0B1020;
+    --panel:#111A2E;
+    --panel-2:#152036;
+    --panel-hi:#16213c;
+    --line:rgba(126,148,196,.14);
+    --line-2:rgba(126,148,196,.26);
+    --ink:#EAF0FE;
+    --ink-2:#9AA7C6;
+    --ink-3:#69769a;
+    --cyan:#34D6C0;
+    --cyan-dim:rgba(52,214,192,.16);
+    --amber:#FFA23D;
+    --amber-dim:rgba(255,162,61,.16);
+    --good:#57E08A;
+    --warn:#FBBF24;
+    --crit:#FB6A5E;
+    --maxw:1180px;
+    --r:14px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 620px at 50% -8%, rgba(255,162,61,.10), transparent 62%),
+      radial-gradient(900px 700px at 92% 108%, rgba(52,214,192,.09), transparent 60%),
+      linear-gradient(180deg, var(--bg-2), var(--bg));
+    background-attachment:fixed;
+    color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:.1px;
+  }
+  .grid-bg{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:46px 46px;
+    -webkit-mask-image:radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 82%);
+            mask-image:radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 82%);
+    opacity:.5;
+  }
+  .wrap{position:relative; z-index:1; max-width:var(--maxw); margin:0 auto; padding:34px 22px 70px}
+
+  /* ---------- mono utility ---------- */
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,"Cascadia Code",monospace}
+  .eyebrow{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:11px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--ink-3);
+  }
+
+  /* ---------- header ---------- */
+  header{margin-bottom:26px}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px; flex-wrap:wrap;
+    padding-bottom:16px; border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; align-items:center; gap:12px}
+  .brand .dot{
+    width:11px; height:11px; border-radius:50%;
+    background:var(--good); box-shadow:0 0 0 4px rgba(87,224,138,.16), 0 0 14px var(--good);
+    animation:blink 2.6s ease-in-out infinite;
+  }
+  .brand .who{font-size:12.5px; color:var(--ink-2)}
+  .brand .who b{color:var(--ink); font-weight:650}
+  .telem{display:flex; gap:8px; flex-wrap:wrap}
+  .tchip{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink-2); background:rgba(126,148,196,.07);
+    border:1px solid var(--line); border-radius:999px; padding:5px 11px;
+    white-space:nowrap;
+  }
+  .tchip b{color:var(--cyan); font-weight:700}
+  .tchip.amb b{color:var(--amber)}
+
+  .hero{margin-top:26px}
+  .kicker{margin-bottom:12px}
+  h1{
+    margin:0; font-size:clamp(40px,7.4vw,78px); line-height:.94;
+    font-weight:820; letter-spacing:-.02em; text-wrap:balance;
+  }
+  h1 .a{color:var(--amber)}
+  h1 .c{color:var(--cyan)}
+  .lede{
+    margin:18px 0 0; max-width:70ch; font-size:clamp(15px,1.9vw,18px);
+    color:var(--ink-2);
+  }
+  .lede b{color:var(--ink); font-weight:640}
+  .readguide{
+    margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+  }
+  .flowkey{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12.5px; color:var(--ink-2);
+    border:1px solid var(--line); border-radius:10px; padding:7px 12px;
+    background:rgba(126,148,196,.05);
+  }
+  .flowkey .ar{font-family:ui-monospace,monospace; font-weight:700}
+  .flowkey .down{color:var(--amber)}
+  .flowkey .up{color:var(--cyan)}
+
+  /* ---------- section head ---------- */
+  .sec{margin-top:44px}
+  .sechead{display:flex; align-items:baseline; gap:14px; margin-bottom:16px}
+  .sechead h2{
+    margin:0; font-size:16px; font-weight:720; letter-spacing:.02em;
+  }
+  .sechead .n{font-family:ui-monospace,monospace; font-size:12px; color:var(--ink-3)}
+  .sechead .rule{flex:1; height:1px; background:linear-gradient(90deg,var(--line-2),transparent)}
+
+  /* ---------- the stack ---------- */
+  .stack{
+    border:1px solid var(--line-2); border-radius:var(--r); overflow:hidden;
+    background:linear-gradient(180deg, rgba(255,255,255,.014), rgba(0,0,0,.10));
+    box-shadow:0 30px 80px -40px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.03);
+  }
+  .layer{
+    display:grid;
+    grid-template-columns:74px 1fr 214px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    transition:background .25s ease;
+  }
+  .layer:last-child{border-bottom:0}
+  .layer:hover{background:rgba(126,148,196,.045)}
+
+  /* rail + spine */
+  .rail{position:relative}
+  .rail::before{ /* continuous bus line */
+    content:""; position:absolute; left:37px; top:0; bottom:0; width:2px;
+    background:linear-gradient(180deg, var(--acc), color-mix(in srgb, var(--acc) 55%, transparent));
+    opacity:.55;
+  }
+  .layer:first-child .rail::before{top:26px}
+  .layer:last-child .rail::before{bottom:26px}
+  .node{
+    position:absolute; left:29px; top:26px; width:18px; height:18px; border-radius:50%;
+    background:var(--bg-2); border:2px solid var(--acc);
+    box-shadow:0 0 0 4px color-mix(in srgb, var(--acc) 18%, transparent), 0 0 14px color-mix(in srgb, var(--acc) 60%, transparent);
+    display:grid; place-items:center;
+  }
+  .node::after{content:""; width:6px; height:6px; border-radius:50%; background:var(--acc)}
+  .depth{
+    position:absolute; left:0; right:14px; top:52px; text-align:center;
+    font-family:ui-monospace,monospace; font-weight:700;
+    font-size:26px; color:var(--acc); opacity:.9; letter-spacing:-.02em;
+  }
+
+  /* body */
+  .body{padding:22px 22px 22px 6px; min-width:0}
+  .lhead{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:6px}
+  .icon{
+    width:34px; height:34px; flex:none; color:var(--acc);
+    border:1px solid color-mix(in srgb, var(--acc) 40%, var(--line));
+    border-radius:9px; background:color-mix(in srgb, var(--acc) 9%, transparent);
+    display:grid; place-items:center;
+  }
+  .icon svg{width:19px; height:19px; stroke:currentColor; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round}
+  .titles h3{margin:0; font-size:19px; font-weight:740; letter-spacing:-.01em}
+  .titles .en{
+    font-family:ui-monospace,monospace; font-size:11px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--acc); opacity:.85;
+  }
+  .meta{
+    display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 12px;
+    font-size:12px; color:var(--ink-2);
+  }
+  .meta .m{
+    display:inline-flex; align-items:center; gap:6px;
+    background:rgba(126,148,196,.06); border:1px solid var(--line);
+    border-radius:7px; padding:4px 9px;
+  }
+  .meta .m .k{color:var(--ink-3); font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase}
+  .purpose{margin:0 0 13px; font-size:14.5px; color:var(--ink); max-width:64ch}
+  .purpose b{color:var(--acc); font-weight:640}
+  .chips{display:flex; gap:7px; flex-wrap:wrap}
+  .chip{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:11.5px; color:var(--ink-2);
+    background:rgba(126,148,196,.055); border:1px solid var(--line);
+    border-radius:999px; padding:5px 11px; white-space:nowrap;
+    transition:border-color .2s, color .2s;
+  }
+  .layer:hover .chip{border-color:color-mix(in srgb, var(--acc) 30%, var(--line))}
+
+  /* handoff */
+  .handoff{
+    padding:22px 22px 22px 18px;
+    border-left:1px solid var(--line);
+    display:flex; flex-direction:column; gap:8px; justify-content:center;
+    background:linear-gradient(180deg, transparent, color-mix(in srgb, var(--acc) 5%, transparent));
+  }
+  .handoff .lab{
+    font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--ink-3);
+    display:flex; align-items:center; gap:7px;
+  }
+  .handoff .lab .arrow{color:var(--acc); font-weight:700}
+  .handoff .owner{font-size:15px; font-weight:700; color:var(--ink); line-height:1.25}
+  .handoff .role{font-size:12px; color:var(--ink-2)}
+  .handoff .asset{
+    margin-top:4px; font-family:ui-monospace,monospace; font-size:10.5px;
+    letter-spacing:.12em; text-transform:uppercase;
+    color:var(--acc); display:flex; align-items:center; gap:6px;
+  }
+  .handoff .asset::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--acc); box-shadow:0 0 8px var(--acc)}
+
+  .layer.cyan{--acc:var(--cyan)}
+  .layer.amber{--acc:var(--amber)}
+
+  /* ---------- cross-cutting ---------- */
+  .cross{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  .xcard{
+    border:1px solid var(--line-2); border-radius:var(--r); padding:20px 22px;
+    background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.12));
+    position:relative; overflow:hidden;
+  }
+  .xcard::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+    background:var(--acc);
+  }
+  .xcard.cyan{--acc:var(--cyan)}
+  .xcard.amber{--acc:var(--amber)}
+  .xtop{display:flex; align-items:center; gap:11px; margin-bottom:8px}
+  .xtop .icon{width:32px; height:32px}
+  .xtop h3{margin:0; font-size:16px; font-weight:730}
+  .xtop .en{font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--acc)}
+  .xcard p{margin:0 0 12px; font-size:13.5px; color:var(--ink-2); max-width:52ch}
+  .perp{
+    font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--ink-3); margin-bottom:12px;
+    display:flex; align-items:center; gap:7px;
+  }
+  .perp b{color:var(--acc)}
+
+  /* ---------- lifecycle ---------- */
+  .lifecycle{
+    border:1px solid var(--line-2); border-radius:var(--r); padding:22px;
+    background:linear-gradient(180deg, rgba(255,255,255,.015), rgba(0,0,0,.12));
+  }
+  .flow{display:flex; align-items:stretch; gap:8px; flex-wrap:wrap}
+  .step{
+    flex:1 1 130px; min-width:130px;
+    border:1px solid var(--line); border-radius:11px; padding:12px 13px;
+    background:rgba(126,148,196,.045); position:relative;
+  }
+  .step .s-n{font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.14em; color:var(--acc); text-transform:uppercase}
+  .step .s-t{font-size:13.5px; font-weight:660; margin-top:4px; color:var(--ink)}
+  .step .s-d{font-size:11.5px; color:var(--ink-2); margin-top:3px; line-height:1.4}
+  .step.cyan{--acc:var(--cyan)} .step.amber{--acc:var(--amber)}
+  .arrowcol{display:flex; align-items:center; color:var(--ink-3); font-family:ui-monospace,monospace; font-size:18px}
+  .loopnote{
+    margin-top:14px; font-size:12.5px; color:var(--ink-2);
+    display:flex; align-items:center; gap:9px;
+  }
+  .loopnote .badge{
+    font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--good); border:1px solid color-mix(in srgb, var(--good) 40%, transparent);
+    background:rgba(87,224,138,.08); border-radius:999px; padding:3px 9px;
+  }
+
+  /* ---------- handoff note ---------- */
+  .kit{
+    margin-top:16px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
+  }
+  .kitcard{
+    border:1px solid var(--line); border-radius:12px; padding:16px 17px;
+    background:rgba(126,148,196,.04);
+  }
+  .kitcard .num{font-family:ui-monospace,monospace; font-size:12px; color:var(--amber); letter-spacing:.1em}
+  .kitcard h4{margin:6px 0 6px; font-size:14.5px; font-weight:700}
+  .kitcard p{margin:0; font-size:12.5px; color:var(--ink-2); line-height:1.5}
+
+  /* ---------- USP rows ---------- */
+  .usps{display:flex; flex-direction:column; gap:14px}
+  .usp{
+    border:1px solid var(--line-2); border-radius:var(--r); overflow:hidden;
+    background:linear-gradient(180deg, rgba(255,255,255,.015), rgba(0,0,0,.12));
+  }
+  .usp-head{
+    display:flex; align-items:center; gap:13px; padding:14px 20px;
+    border-bottom:1px solid var(--line);
+    background:rgba(126,148,196,.04);
+  }
+  .usp-num{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace; font-weight:800;
+    font-size:15px; color:var(--amber); letter-spacing:.06em; flex:none;
+  }
+  .usp-head h3{margin:0; font-size:16.5px; font-weight:730; letter-spacing:-.01em}
+  .usp-head .en{
+    margin-left:auto; font-family:ui-monospace,monospace; font-size:10px;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); white-space:nowrap;
+  }
+  .usp-body{display:grid; grid-template-columns:1fr 1.25fr}
+  .pain, .power{padding:15px 20px}
+  .pain{border-right:1px solid var(--line)}
+  .pp-tag{
+    font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.18em;
+    text-transform:uppercase; display:flex; align-items:center; gap:7px; margin-bottom:7px;
+  }
+  .pp-tag::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor; box-shadow:0 0 8px currentColor}
+  .pain .pp-tag{color:var(--crit)}
+  .power .pp-tag{color:var(--good)}
+  .pain p, .power p{margin:0; font-size:13px; color:var(--ink-2); line-height:1.55}
+  .power p b{color:var(--ink); font-weight:650}
+  .power p .hl{color:var(--cyan); font-weight:650}
+  .usp-quote{
+    margin-top:18px; border:1px solid var(--line-2); border-left:3px solid var(--amber);
+    border-radius:12px; padding:18px 22px;
+    background:linear-gradient(90deg, var(--amber-dim), transparent 55%);
+    font-size:15.5px; line-height:1.6; color:var(--ink); max-width:78ch;
+  }
+  .usp-quote b{color:var(--amber)}
+  .usp-quote .vs{color:var(--cyan); font-weight:700}
+  @media (max-width:860px){
+    .usp-body{grid-template-columns:1fr}
+    .pain{border-right:0; border-bottom:1px solid var(--line)}
+    .usp-head .en{display:none}
+  }
+
+  /* ---------- desktop band ---------- */
+  .desk{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  .dcard{
+    border:1px solid var(--line-2); border-radius:var(--r); padding:18px 20px;
+    background:linear-gradient(180deg, rgba(255,255,255,.015), rgba(0,0,0,.12));
+    position:relative; overflow:hidden;
+  }
+  .dcard::before{
+    content:""; position:absolute; left:0; right:0; top:0; height:3px;
+    background:linear-gradient(90deg, var(--acc), transparent 70%);
+  }
+  .dcard.cyan{--acc:var(--cyan)} .dcard.amber{--acc:var(--amber)}
+  .dcard p{margin:0 0 12px; font-size:13px; color:var(--ink-2); line-height:1.55}
+  .dcard p b{color:var(--ink); font-weight:650}
+  .syncbar{
+    margin-top:14px; border:1px dashed var(--line-2); border-radius:12px;
+    padding:14px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:rgba(52,214,192,.03);
+  }
+  .syncnode{display:flex; align-items:center; gap:9px; font-size:12.5px; color:var(--ink-2); white-space:nowrap}
+  .syncnode b{color:var(--ink); font-weight:680}
+  .syncnode .pulse{
+    width:9px; height:9px; border-radius:50%; background:var(--cyan);
+    box-shadow:0 0 0 3px rgba(52,214,192,.15), 0 0 10px var(--cyan);
+    animation:blink 2.2s ease-in-out infinite;
+  }
+  .synclink{
+    flex:1; min-width:36px; height:2px; border-radius:2px;
+    background:repeating-linear-gradient(90deg, var(--cyan) 0 6px, transparent 6px 13px);
+    opacity:.45;
+  }
+  .synctext{
+    width:100%; margin-top:4px; font-size:12px; color:var(--ink-2);
+  }
+  .synctext b{color:var(--cyan); font-weight:650}
+  @media (max-width:860px){
+    .desk{grid-template-columns:1fr}
+    .syncnode{white-space:normal}
+  }
+
+  /* ---------- stat band ---------- */
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+  .stat{
+    border:1px solid var(--line-2); border-radius:12px; padding:16px 18px;
+    background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.12));
+    position:relative; overflow:hidden;
+  }
+  .stat::after{
+    content:""; position:absolute; left:18px; right:18px; bottom:0; height:2px;
+    background:linear-gradient(90deg, var(--acc), transparent);
+    opacity:.6;
+  }
+  .stat .v{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:clamp(26px,3.2vw,36px); font-weight:800; letter-spacing:-.02em; color:var(--acc); line-height:1.05}
+  .stat .l{font-size:13.5px; font-weight:720; margin-top:5px}
+  .stat .d{font-size:11.5px; color:var(--ink-2); margin-top:4px; line-height:1.45}
+  .stat.cyan{--acc:var(--cyan)} .stat.amber{--acc:var(--amber)}
+  @media (max-width:860px){ .stats{grid-template-columns:1fr 1fr} }
+
+  footer{
+    margin-top:48px; padding-top:20px; border-top:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    font-size:12px; color:var(--ink-3);
+  }
+  footer .mk{display:flex; align-items:center; gap:9px; color:var(--ink-2)}
+  footer .mk b{color:var(--ink); font-weight:700}
+  footer .rk{color:var(--amber)}
+
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:860px){
+    .layer{grid-template-columns:56px 1fr}
+    .rail::before{left:28px}
+    .node{left:20px}
+    .depth{right:10px; font-size:22px}
+    .handoff{
+      grid-column:1 / -1; border-left:0; border-top:1px solid var(--line);
+      flex-direction:row; align-items:center; flex-wrap:wrap; gap:6px 16px;
+      padding:14px 22px 16px 56px;
+    }
+    .cross{grid-template-columns:1fr}
+    .kit{grid-template-columns:1fr}
+    .arrowcol{transform:rotate(90deg); width:100%; justify-content:center; height:14px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important}
+  }
+  @page{size:A3 portrait; margin:0}
+  @media print{
+    *{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+    body{background:var(--bg); background-attachment:scroll}
+    .grid-bg{display:none}
+    .layer, .xcard, .stat, .kitcard, .lifecycle{break-inside:avoid}
+    .sec{break-inside:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="wrap">
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="who"><b>AIOS</b> · Rocket AI Solutions — Bản đồ hệ thống cho học viên</span>
+      </div>
+      <div class="telem">
+        <span class="tchip amb">GIẢI PHÁP <b>ROCKET AGENT</b></span>
+        <span class="tchip">LÕI MỞ <b>MIT</b></span>
+        <span class="tchip">6 <b>TẦNG</b> · 2 <b>TRỤC</b></span>
+        <span class="tchip amb">VẬN HÀNH <b>24/7</b></span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="kicker eyebrow">Hệ Điều Hành cho Doanh Nghiệp Vận Hành bằng AI Agents</div>
+      <h1>Một công ty <span class="c">agents</span><br>cần một <span class="a">hệ điều hành</span>.</h1>
+      <p class="lede">
+        Máy tính có hệ điều hành để mọi phần chạy nhịp nhàng. Doanh nghiệp AI của bạn cũng vậy: <b>AIOS</b> xếp toàn bộ hạ tầng thành <b>6 tầng module</b> — từ <b>Lõi Trí Tuệ</b> (nơi AI suy nghĩ) lên tới <b>Phòng Điều Khiển</b> (nơi bạn ra lệnh). Toàn bộ chạy bằng <b>Rocket Agent</b> — giải pháp do chúng tôi phát triển và cải tiến mạnh từ nền mã nguồn mở (MIT) cho doanh nghiệp Việt — mỗi khối là một mảnh <b>độc lập, bàn giao được</b> cho một người phụ trách.
+      </p>
+      <div class="readguide">
+        <span class="flowkey"><span class="ar down">▼</span> Lệnh &amp; yêu cầu đi <span style="color:var(--amber)">xuống</span></span>
+        <span class="flowkey"><span class="ar up">▲</span> Kết quả &amp; dữ liệu đi <span style="color:var(--cyan)">lên</span></span>
+        <span class="flowkey"><span class="mono" style="color:var(--cyan)">■</span> Tầng máy</span>
+        <span class="flowkey"><span class="mono" style="color:var(--amber)">■</span> Tầng người</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== PROMISE ===================== -->
+  <section class="sec" aria-label="Cam kết hiệu quả" style="margin-top:34px">
+    <div class="stats">
+      <div class="stat cyan">
+        <div class="v">0đ</div>
+        <div class="l">Phí bản quyền lõi</div>
+        <div class="d">Rocket Agent xây trên lõi mã nguồn mở MIT — tiền của bạn dồn vào vận hành, không nuôi license.</div>
+      </div>
+      <div class="stat amber">
+        <div class="v">24/7</div>
+        <div class="l">Nhân sự số không nghỉ</div>
+        <div class="d">Agents chạy liên tục trên máy chủ của bạn — không lương tháng, không nghỉ phép.</div>
+      </div>
+      <div class="stat amber">
+        <div class="v">×10</div>
+        <div class="l">Hiệu suất mục tiêu</div>
+        <div class="d">1 người + đội agents vận hành khối việc của cả một phòng ban.</div>
+      </div>
+      <div class="stat cyan">
+        <div class="v">100%</div>
+        <div class="l">Dữ liệu tại chỗ</div>
+        <div class="d">Self-host, không telemetry — tri thức doanh nghiệp nằm trên hạ tầng của chính bạn.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STACK ===================== -->
+  <section class="sec" aria-labelledby="stack-h">
+    <div class="sechead">
+      <span class="n">A</span>
+      <h2 id="stack-h">Kiến trúc 6 tầng — đọc từ mặt tiền xuống lõi</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="stack">
+
+      <!-- 01 DASHBOARD -->
+      <div class="layer amber">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">01</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13a9 9 0 0 1 18 0"/><path d="M3 13h2M19 13h2M12 4v2"/><path d="M12 13l4-3"/><circle cx="12" cy="13" r="1.4"/></svg></span>
+            <div class="titles">
+              <h3>Dashboard &amp; Điều Khiển</h3>
+              <div class="en">Command Deck</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Màn hình / Giao diện</span>
+            <span class="m"><span class="k">Vai trò</span> Ghế CEO</span>
+          </div>
+          <p class="purpose">Nơi <b>con người ngồi</b> nhìn toàn cảnh, phê duyệt, bật/tắt. Bạn lái — hệ thống chạy. Giao diện chính là <b>Rocket Desktop</b>: dùng qua web/app, hoặc điều hành ngay trong Telegram/Zalo khi di chuyển — mọi thiết bị đồng bộ một mạch làm việc.</p>
+          <div class="chips">
+            <span class="chip">Rocket Desktop</span><span class="chip">Web / App</span><span class="chip">Telegram / Zalo</span><span class="chip">KPI realtime</span><span class="chip">Phê duyệt</span><span class="chip">Bật/Tắt agent</span><span class="chip">Đồng bộ đa thiết bị</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">CEO / Chủ doanh nghiệp</div>
+          <div class="role">Người ra quyết định cuối</div>
+          <div class="asset">Dashboard KPI</div>
+        </div>
+      </div>
+
+      <!-- 02 MISSION CONTROL -->
+      <div class="layer amber">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">02</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.4"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/><path d="M12 12l5-3.4"/></svg></span>
+            <div class="titles">
+              <h3>Mission Control</h3>
+              <div class="en">Orchestration</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Bộ lập lịch &amp; quản lý tác vụ</span>
+            <span class="m"><span class="k">Vai trò</span> Ban điều hành (COO)</span>
+          </div>
+          <p class="purpose">Trái tim vận hành: <b>nhận việc → chia đúng agent → theo dõi → đặt rào chắn → ghi log</b>. Gateway đa kênh + nhịp tim (heartbeat) của Rocket Agent cho phép hệ thống <b>tự thức dậy làm việc theo lịch, 24/7</b> — không cần ai bấm nút.</p>
+          <div class="chips">
+            <span class="chip">Orchestrator</span><span class="chip">Routing</span><span class="chip">Heartbeat / Lịch 24/7</span><span class="chip">Gateway đa kênh</span><span class="chip">Guardrails</span><span class="chip">Logs &amp; Trace</span><span class="chip">Human-in-loop</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">COO / Trưởng Vận hành</div>
+          <div class="role">Điều phối &amp; giám sát</div>
+          <div class="asset">Automation Workflow</div>
+        </div>
+      </div>
+
+      <!-- 03 BUSINESS MODULES -->
+      <div class="layer amber">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">03</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.4"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.4"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.4"/></svg></span>
+            <div class="titles">
+              <h3>Các Phòng Ban</h3>
+              <div class="en">Business Modules</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Ứng dụng đã cài đặt</span>
+            <span class="m"><span class="k">Vai trò</span> Phòng ban chức năng</span>
+          </div>
+          <p class="purpose">Nơi <b>công việc thật xảy ra</b> — mỗi module là một phòng ban chạy bằng agent. Cắm thêm module = mở thêm phòng ban, không cần tuyển người.</p>
+          <div class="chips">
+            <span class="chip">CRM &amp; Pipeline</span><span class="chip">Marketing Engine</span><span class="chip">Sales Engine</span><span class="chip">Research</span><span class="chip">Content Factory</span><span class="chip">Customer Success</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">Trưởng phòng từng mảng</div>
+          <div class="role">Marketing · Sales · CS</div>
+          <div class="asset">SOP + KPI mỗi phòng</div>
+        </div>
+      </div>
+
+      <!-- 04 AGENTS -->
+      <div class="layer cyan">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">04</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="10" rx="2.5"/><path d="M12 8V5M12 5a1.4 1.4 0 1 0 0-2.8A1.4 1.4 0 0 0 12 5Z"/><circle cx="9.3" cy="13" r="1.1"/><circle cx="14.7" cy="13" r="1.1"/><path d="M3 12v3M21 12v3"/></svg></span>
+            <div class="titles">
+              <h3>Agents &amp; Skills</h3>
+              <div class="en">Digital Workforce</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Tiến trình &amp; ứng dụng chạy</span>
+            <span class="m"><span class="k">Vai trò</span> Nhân sự số</span>
+          </div>
+          <p class="purpose">Những <b>"nhân viên số" làm việc 24/7</b> — mỗi agent một vai trò, được trang bị bộ kỹ năng (skill/tool) riêng. Điểm ăn tiền của Rocket Agent: sau mỗi tác vụ khó, agent <b>tự đóng gói thành skill mới và tự cải thiện khi dùng</b> — nhân sự số càng làm càng giỏi, không tốn chi phí đào tạo lại.</p>
+          <div class="chips">
+            <span class="chip">Agent Marketing</span><span class="chip">Agent Sales</span><span class="chip">Agent Research</span><span class="chip">Agent Content</span><span class="chip">Skill tự sinh</span><span class="chip">Skill / Tool Library</span><span class="chip">Sub-agents</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">Trưởng nhóm Agent</div>
+          <div class="role">Xây &amp; huấn luyện agent</div>
+          <div class="asset">AI Agents Team</div>
+        </div>
+      </div>
+
+      <!-- 05 SECOND BRAIN -->
+      <div class="layer cyan">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">05</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.8"/><path d="M5 6v6c0 1.55 3.13 2.8 7 2.8s7-1.25 7-2.8V6"/><path d="M5 12v6c0 1.55 3.13 2.8 7 2.8s7-1.25 7-2.8v-6"/></svg></span>
+            <div class="titles">
+              <h3>Second Brain</h3>
+              <div class="en">Memory &amp; Knowledge</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Bộ nhớ + Ổ cứng</span>
+            <span class="m"><span class="k">Vai trò</span> Ký ức doanh nghiệp</span>
+          </div>
+          <p class="purpose">Toàn bộ <b>tri thức, tài liệu, dữ liệu công ty</b> — để agent trả lời đúng "chất" doanh nghiệp bạn, <b>không bịa</b>. Rocket Agent có <b>memory tự quản</b>: agent tự chắt lọc và ghi nhớ điều đáng nhớ sau mỗi phiên — ký ức doanh nghiệp lớn dần theo thời gian, nằm 100% trên máy chủ của bạn.</p>
+          <div class="chips">
+            <span class="chip">Memory tự quản</span><span class="chip">Knowledge Base</span><span class="chip">Vault tri thức</span><span class="chip">Vector DB</span><span class="chip">RAG</span><span class="chip">SOP &amp; Tài liệu</span><span class="chip">Brand Voice</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">Quản lý tri thức</div>
+          <div class="role">Nạp &amp; làm sạch dữ liệu</div>
+          <div class="asset">AI Business Brain</div>
+        </div>
+      </div>
+
+      <!-- 06 LLM CORE -->
+      <div class="layer cyan">
+        <div class="rail">
+          <span class="node" aria-hidden="true"></span>
+          <span class="depth">06</span>
+        </div>
+        <div class="body">
+          <div class="lhead">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 4v3M14 4v3M10 17v3M14 17v3M4 10h3M4 14h3M17 10h3M17 14h3"/></svg></span>
+            <div class="titles">
+              <h3>Lõi Trí Tuệ (LLM)</h3>
+              <div class="en">Reasoning Kernel</div>
+            </div>
+          </div>
+          <div class="meta">
+            <span class="m"><span class="k">Như OS</span> Nhân hệ điều hành (CPU)</span>
+            <span class="m"><span class="k">Vai trò</span> Bộ não suy luận</span>
+          </div>
+          <p class="purpose">Nơi mọi <b>suy nghĩ, viết, phân tích</b> được sinh ra. Rocket Agent <b>model-agnostic</b> — cắm Claude, GLM hay bất kỳ model tương thích nào, đổi lúc nào cũng được, không khoá nhà cung cấp. Đòn bẩy chi phí lớn nhất: <b>model mạnh cho việc khó, model rẻ cho việc lặp lại</b>.</p>
+          <div class="chips">
+            <span class="chip">Claude</span><span class="chip">GLM</span><span class="chip">GPT</span><span class="chip">Gemini</span><span class="chip">Model Router</span><span class="chip">Prompt Library</span><span class="chip">Fallback</span>
+          </div>
+        </div>
+        <div class="handoff">
+          <div class="lab"><span class="arrow">↳</span> Bàn giao cho</div>
+          <div class="owner">Kỹ sư AI / AI Lead</div>
+          <div class="role">Chọn model &amp; prompt</div>
+          <div class="asset">Prompt Library</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== OPEN CORE × ROCKET AGENT ===================== -->
+  <section class="sec" aria-labelledby="core-h">
+    <div class="sechead">
+      <span class="n">B</span>
+      <h2 id="core-h">Nền móng — lõi mở × tầng cải tiến Rocket Agent</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="cross">
+      <div class="xcard cyan">
+        <div class="perp">◇ Nền tảng kế thừa — <b>mã nguồn mở · giấy phép MIT</b></div>
+        <div class="xtop">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M12 3l-4 4M12 3l4 4"/><path d="M5 14c0 4 3 6 7 6s7-2 7-6"/></svg></span>
+          <div>
+            <h3>Open Core</h3>
+            <div class="en">Open-Source Kernel</div>
+          </div>
+        </div>
+        <p>Agent tự cải thiện, chạy trên máy chủ riêng: <b style="color:var(--ink)">nhớ những gì đã học, tự đóng gói skill sau tác vụ khó, càng chạy càng giỏi</b>. Cắm model nào cũng được — không khoá vào một nhà cung cấp.</p>
+        <div class="chips">
+          <span class="chip">Memory tự quản</span><span class="chip">Skill tự sinh &amp; tự cải thiện</span><span class="chip">Model-agnostic</span><span class="chip">Gateway đa kênh</span><span class="chip">Self-host</span><span class="chip">Không telemetry</span>
+        </div>
+      </div>
+      <div class="xcard amber">
+        <div class="perp">◆ Cải tiến độc quyền — <b>cho doanh nghiệp Việt vận hành thật</b></div>
+        <div class="xtop">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15c-2 0-3.5-1.5-3.5-3.5C8.5 7 12 3.5 12 3.5S15.5 7 15.5 11.5c0 2-1.5 3.5-3.5 3.5Z"/><path d="M8.5 12.5 5.5 15l2 .8L8.3 18l2.7-2.4M15.5 12.5 18.5 15l-2 .8L15.7 18 13 15.6"/><path d="M12 18.5V21"/></svg></span>
+          <div>
+            <h3>Rocket Agent</h3>
+            <div class="en">Business Layer</div>
+          </div>
+        </div>
+        <p>Biến một agent kỹ thuật thành <b style="color:var(--ink)">hệ điều hành doanh nghiệp</b>: kênh Việt, quy trình phòng ban, số liệu để ra quyết định — đóng gói bàn giao trong 28 ngày.</p>
+        <div class="chips">
+          <span class="chip">Rocket Desktop</span><span class="chip">Failover đa model</span><span class="chip">Tiered Memory</span><span class="chip">Hội đồng AI (MoA)</span><span class="chip">Native Vision</span><span class="chip">ACL Guard</span><span class="chip">Zalo &amp; kênh Việt</span><span class="chip">CRM &amp; Sales OS</span><span class="chip">SOP 28 ngày</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5 USP ===================== -->
+  <section class="sec" aria-labelledby="usp-h">
+    <div class="sechead">
+      <span class="n">C</span>
+      <h2 id="usp-h">5 nâng cấp độc quyền — vì sao Rocket Agent vượt trội bản cũ (OPC)</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="usps">
+
+      <div class="usp">
+        <div class="usp-head">
+          <span class="usp-num">USP 01</span>
+          <h3>Trải nghiệm "Bất tử" — công việc không bao giờ đứt đoạn</h3>
+          <span class="en">Ultimate Safety Net</span>
+        </div>
+        <div class="usp-body">
+          <div class="pain">
+            <div class="pp-tag">Nỗi đau bản cũ</div>
+            <p>Đang viết dở tính năng quan trọng thì API hết tiền (Billing), hết hạn mức (429) hoặc đứt mạng — lỗi đỏ lòm, mất mạch công việc, config lại từ đầu.</p>
+          </div>
+          <div class="power">
+            <div class="pp-tag">Quyền năng Rocket Agent</div>
+            <p>Cơ chế <b>tự động sang số trong tích tắc</b>: API trả phí cạn ngân sách hay server sập, hệ thống <span class="hl">âm thầm chuyển sang model dự phòng miễn phí</span> (DeepSeek Flash, Kilo-Auto) hoàn thành nốt việc. Mọi thứ diễn ra ngầm — <b>công việc không bao giờ dừng lại</b>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usp">
+        <div class="usp-head">
+          <span class="usp-num">USP 02</span>
+          <h3>Bộ não "Nhớ lâu — Hiểu sâu"</h3>
+          <span class="en">Tiered Memory</span>
+        </div>
+        <div class="usp-body">
+          <div class="pain">
+            <div class="pp-tag">Nỗi đau bản cũ</div>
+            <p>Chat càng dài AI càng "lú" — quên yêu cầu dặn từ đầu buổi; gửi lại toàn bộ lịch sử chat khiến chi phí token đốt cực nhanh.</p>
+          </div>
+          <div class="power">
+            <div class="pp-tag">Quyền năng Rocket Agent</div>
+            <p>Hệ trí nhớ phân tầng như con người (nền Letta): tự đọc hiểu và <b>"cất" thói quen, rules dự án vào bộ nhớ dài hạn</b> (Archival Memory), lần sau tự lôi ra dùng không cần nhắc. AI <span class="hl">thông minh dần theo thời gian</span> — tiết kiệm <b>~30% chi phí token</b>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usp">
+        <div class="usp-head">
+          <span class="usp-num">USP 03</span>
+          <h3>Chất lượng hoàn hảo nhờ "Hội đồng AI"</h3>
+          <span class="en">Rocket MoA — Mixture of Agents</span>
+        </div>
+        <div class="usp-body">
+          <div class="pain">
+            <div class="pp-tag">Nỗi đau bản cũ</div>
+            <p>Giao task khó (cả một module lớn), 1 AI ôm hết → ảo giác (hallucination), code lỗi tùm lum, bạn tự ngồi debug mệt mỏi.</p>
+          </div>
+          <div class="power">
+            <div class="pp-tag">Quyền năng Rocket Agent</div>
+            <p>Kích hoạt cả một "phòng ban": <b>AI vạch kế hoạch · AI viết code · AI Tester nghiêm khắc review chéo</b>. Chúng tự tranh luận, tự sửa lỗi ngầm với nhau — output cuối là <span class="hl">bản sạch nhất, ít bug nhất</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usp">
+        <div class="usp-head">
+          <span class="usp-num">USP 04</span>
+          <h3>Đôi mắt "Thần thánh" — nhìn ảnh, xem video</h3>
+          <span class="en">Native Vision · Multimodal</span>
+        </div>
+        <div class="usp-body">
+          <div class="pain">
+            <div class="pp-tag">Nỗi đau bản cũ</div>
+            <p>Chỉ giỏi đọc text. Có video quay màn hình bị bug hay bản thiết kế Figma phức tạp — ngồi mô tả lại bằng lời cho AI hiểu rất vất vả.</p>
+          </div>
+          <div class="power">
+            <div class="pp-tag">Quyền năng Rocket Agent</div>
+            <p>Gắn "mắt thần" (Gemini Native Adapter &amp; Vision): <b>quăng thẳng video báo lỗi hoặc ảnh UI vào chat</b> — Rocket Agent xem, chỉ ra lỗi ở dòng nào, hoặc <span class="hl">viết luôn code frontend giống hệt ảnh thiết kế</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usp">
+        <div class="usp-head">
+          <span class="usp-num">USP 05</span>
+          <h3>Vệ sĩ bảo vệ mã nguồn</h3>
+          <span class="en">ACL Guard</span>
+        </div>
+        <div class="usp-body">
+          <div class="pain">
+            <div class="pp-tag">Nỗi đau bản cũ</div>
+            <p>AI "quá nhiệt tình" — tự ý chạy lệnh terminal nguy hiểm, sửa nhầm hoặc xoá nhầm file cấu hình quan trọng của dự án.</p>
+          </div>
+          <div class="power">
+            <div class="pp-tag">Quyền năng Rocket Agent</div>
+            <p>Ranh giới rõ ràng: hệ biết file nào nhạy cảm (<b>.env, file hệ thống</b>) và <span class="hl">chặn đứng ngay hành vi rủi ro</span>. Yên tâm giao toàn quyền workspace cho AI mà không lo bị "phá nhà".</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="usp-quote">
+      Nếu bản cũ là <b>"cậu thực tập sinh giỏi nhưng cần cầm tay chỉ việc và dễ bỏ cuộc"</b>, thì Rocket Agent là <span class="vs">"một đội ngũ kỹ sư trưởng tự trị — nhớ dai, tự gánh team, và không bao giờ biết bỏ cuộc là gì."</span>
+    </div>
+  </section>
+
+  <!-- ===================== ROCKET DESKTOP ===================== -->
+  <section class="sec" aria-labelledby="desk-h">
+    <div class="sechead">
+      <span class="n">D</span>
+      <h2 id="desk-h">Rocket Desktop — điều khiển toàn hệ thống, làm việc mọi nơi</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="desk">
+
+      <div class="dcard amber">
+        <div class="xtop">
+          <span class="icon" aria-hidden="true" style="--acc:var(--amber)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg></span>
+          <div>
+            <h3 style="margin:0;font-size:16px;font-weight:730">Trung tâm chỉ huy</h3>
+            <div class="en" style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber)">Web / App</div>
+          </div>
+        </div>
+        <p style="margin-top:10px">Một màn hình quản lý <b>toàn bộ 6 tầng</b>: bật/tắt agent, duyệt output, xem KPI &amp; log, chỉnh guardrails — <b>không cần biết code</b>. Đây là "buồng lái" của cả hệ thống.</p>
+        <div class="chips">
+          <span class="chip">Dashboard KPI</span><span class="chip">Bật/Tắt agent</span><span class="chip">Duyệt output</span><span class="chip">Xem log</span><span class="chip">Cấu hình guardrails</span>
+        </div>
+      </div>
+
+      <div class="dcard cyan">
+        <div class="xtop">
+          <span class="icon" aria-hidden="true" style="--acc:var(--cyan)"><svg viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-4 3.5V6Z"/><path d="M8.5 9h7M8.5 12.5h4.5"/></svg></span>
+          <div>
+            <h3 style="margin:0;font-size:16px;font-weight:730">Làm việc trong chat</h3>
+            <div class="en" style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)">Telegram · Zalo</div>
+          </div>
+        </div>
+        <p style="margin-top:10px">Ra lệnh, nhận báo cáo, <b>phê duyệt bằng một tin nhắn</b> — ngay trong app chat quen dùng hằng ngày. Đang trên đường vẫn điều hành được cả công ty.</p>
+        <div class="chips">
+          <span class="chip">Ra lệnh bằng chat</span><span class="chip">Nhận báo cáo</span><span class="chip">Phê duyệt nhanh</span><span class="chip">Cảnh báo đẩy</span><span class="chip">Voice memo</span>
+        </div>
+      </div>
+
+      <div class="dcard cyan">
+        <div class="xtop">
+          <span class="icon" aria-hidden="true" style="--acc:var(--cyan)"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.9-3M4 13a8 8 0 0 0 14.9 3"/><path d="M5 4v4h4M19 20v-4h-4"/></svg></span>
+          <div>
+            <h3 style="margin:0;font-size:16px;font-weight:730">Đồng bộ liền mạch</h3>
+            <div class="en" style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)">Seamless Sync</div>
+          </div>
+        </div>
+        <p style="margin-top:10px"><b>Một phiên làm việc xuyên mọi thiết bị</b>: bật/tắt agent từ xa, trạng thái &amp; hội thoại đồng bộ realtime. Đóng laptop ở văn phòng — mở điện thoại làm tiếp <b>đúng chỗ vừa dừng</b>.</p>
+        <div class="chips">
+          <span class="chip">On/Off từ xa</span><span class="chip">Trạng thái realtime</span><span class="chip">Hội thoại nối mạch</span><span class="chip">Đa thiết bị</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="syncbar">
+      <span class="syncnode"><span class="pulse"></span> <b>Văn phòng</b> · Desktop / Web</span>
+      <span class="synclink" aria-hidden="true"></span>
+      <span class="syncnode"><span class="pulse"></span> <b>Di chuyển</b> · Telegram / Zalo</span>
+      <span class="synclink" aria-hidden="true"></span>
+      <span class="syncnode"><span class="pulse"></span> <b>Ở nhà</b> · Laptop / App</span>
+      <span class="synctext">Hệ thống chạy trên máy chủ 24/7 — thiết bị chỉ là <b>cửa sổ nhìn vào</b>. Đổi thiết bị, không đổi mạch công việc; agents vẫn làm việc kể cả khi bạn offline.</span>
+    </div>
+  </section>
+
+  <!-- ===================== CROSS-CUTTING ===================== -->
+  <section class="sec" aria-labelledby="cross-h">
+    <div class="sechead">
+      <span class="n">E</span>
+      <h2 id="cross-h">2 trục xuyên suốt — chạy dọc qua cả 6 tầng</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="cross">
+      <div class="xcard cyan">
+        <div class="perp">⟂ Xuyên suốt tầng 01 → 06</div>
+        <div class="xtop">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 7V4M15 7V4"/><rect x="6" y="7" width="12" height="5" rx="1.5"/><path d="M12 12v4"/><circle cx="12" cy="18" r="2.2"/></svg></span>
+          <div>
+            <h3>Data Bus &amp; Tích Hợp</h3>
+            <div class="en">Connectivity</div>
+          </div>
+        </div>
+        <p>Đường ống nối hệ thống với thế giới thật — một gateway, mọi kênh, hội thoại liền mạch xuyên nền tảng (kể cả voice). Rocket Agent phủ cả kênh quốc tế lẫn kênh Việt.</p>
+        <div class="chips">
+          <span class="chip">Zalo</span><span class="chip">Facebook</span><span class="chip">Telegram</span><span class="chip">WhatsApp</span><span class="chip">Slack / Discord</span><span class="chip">Email</span><span class="chip">Google Sheets</span><span class="chip">Webhook / API</span>
+        </div>
+      </div>
+      <div class="xcard amber">
+        <div class="perp">⟂ Bọc quanh mọi tầng</div>
+        <div class="xtop">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6l7-3Z"/><path d="M9.3 12l1.9 1.9 3.5-3.8"/></svg></span>
+          <div>
+            <h3>Guardrails &amp; Bảo Mật</h3>
+            <div class="en">Trust Layer</div>
+          </div>
+        </div>
+        <p>Vành đai an toàn để bạn dám giao việc cho AI mà vẫn ngủ ngon: phân quyền rõ, kiểm duyệt đầu ra, chặn chi phí vượt ngưỡng, mọi thứ đều có nhật ký. Self-host = dữ liệu không rời khỏi hạ tầng của bạn.</p>
+        <div class="chips">
+          <span class="chip">Phân quyền</span><span class="chip">Kiểm duyệt output</span><span class="chip">Giới hạn chi phí</span><span class="chip">Nhật ký / Audit</span><span class="chip">Self-host · dữ liệu tại chỗ</span><span class="chip">Sao lưu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIFECYCLE ===================== -->
+  <section class="sec" aria-labelledby="life-h">
+    <div class="sechead">
+      <span class="n">F</span>
+      <h2 id="life-h">Vòng đời một yêu cầu — hệ thống chạy như thế nào</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="lifecycle">
+      <div class="flow">
+        <div class="step amber"><div class="s-n">01 · Vào</div><div class="s-t">Yêu cầu</div><div class="s-d">Bạn ra lệnh ở Dashboard, hoặc khách nhắn qua Zalo/FB.</div></div>
+        <div class="arrowcol">▶</div>
+        <div class="step amber"><div class="s-n">02 · Chia</div><div class="s-t">Mission Control</div><div class="s-d">Nhận việc, chia cho đúng agent, đặt rào chắn.</div></div>
+        <div class="arrowcol">▶</div>
+        <div class="step cyan"><div class="s-n">03 · Làm</div><div class="s-t">Agents thực thi</div><div class="s-d">Rút tri thức từ Second Brain, suy luận bằng LLM Core.</div></div>
+        <div class="arrowcol">▶</div>
+        <div class="step amber"><div class="s-n">04 · Ghi</div><div class="s-t">Phòng ban</div><div class="s-d">Kết quả đổ vào CRM / Marketing / Sales.</div></div>
+        <div class="arrowcol">▶</div>
+        <div class="step amber"><div class="s-n">05 · Báo</div><div class="s-t">Dashboard</div><div class="s-d">Lên KPI &amp; cảnh báo. Bạn duyệt hoặc chỉnh.</div></div>
+      </div>
+      <div class="loopnote">
+        <span class="badge">Vòng lặp</span>
+        Mỗi vòng chạy xong, dữ liệu &amp; bài học được nạp lại vào <b style="color:var(--cyan)">Second Brain</b> — hệ thống càng dùng càng khôn.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HANDOFF KIT ===================== -->
+  <section class="sec" aria-labelledby="kit-h">
+    <div class="sechead">
+      <span class="n">G</span>
+      <h2 id="kit-h">Cách chuyển giao từng khối cho học viên</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="kit">
+      <div class="kitcard">
+        <div class="num">CÁCH 01</div>
+        <h4>Mỗi tầng = một buổi học</h4>
+        <p>Dạy từ tầng 06 (Lõi) lên tầng 01 (Dashboard), hoặc ngược lại. Mỗi buổi học viên sở hữu 1 khối hoàn chỉnh, có tài sản số bàn giao kèm.</p>
+      </div>
+      <div class="kitcard">
+        <div class="num">CÁCH 02</div>
+        <h4>Mỗi khối có một người chủ</h4>
+        <p>Cột "Bàn giao cho" đã gán sẵn vai trò. Học viên biết ngay ai chịu trách nhiệm khối nào — không chồng chéo, không mồ côi.</p>
+      </div>
+      <div class="kitcard">
+        <div class="num">CÁCH 03</div>
+        <h4>Lắp dần, chạy được ngay</h4>
+        <p>Không cần đủ 6 tầng mới chạy. Dựng Lõi + Brain + 1 Agent + 1 Module là đã có một dây chuyền sống. Cắm thêm module sau.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="mk"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px var(--amber);display:inline-block"></span> <b>AIOS</b> — vận hành bởi <b>Rocket Agent</b> (phát triển từ nền mã nguồn mở · MIT) · <span class="rk">Rocket AI Solutions</span></div>
+    <div>28 ngày · 1 hệ thống · vận hành tự động — <span style="color:var(--ink-2)">AI là công cụ, hệ thống mới là tài sản.</span></div>
+  </footer>
+
+</div>
+
+</body>
+</html>

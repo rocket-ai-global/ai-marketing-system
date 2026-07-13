@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"bmc-title","type":"text","text":"# 📊 BUSINESS MODEL CANVAS — An Nhiên Spa\nSpa trị liệu & chăm sóc da tại Q7, TP.HCM, đã có doanh thu, đang mở chi nhánh 2 · Chi tiết: [[Business Model Canvas — An Nhiên Spa]]","x":0,"y":-200,"width":2300,"height":120,"color":"#7c3aed"},
+		{"id":"bmc-key-partnerships","type":"text","text":"## 🤝 Key Partnerships\n(Đối tác chính)\n\n- Nhà cung cấp mỹ phẩm/tinh dầu, thiết bị trị liệu\n- KOL/influencer địa phương (đổi review lấy dịch vụ)\n- Đơn vị đào tạo KTV ngoài khi cần tuyển gấp\n- Cần để giảm rủi ro nguồn cung & tối ưu chi phí marketing","x":0,"y":0,"width":440,"height":1000,"color":"6"},
+		{"id":"bmc-key-activities","type":"text","text":"## ⚙️ Key Activities\n(Hoạt động chính)\n\n- Thực hiện dịch vụ massage/chăm sóc da\n- Đào tạo & quản lý chất lượng KTV\n- Marketing digital hàng ngày\n- Thuê ngoài: video TikTok, thiết kế\n- Sống còn: vận hành lịch hẹn","x":460,"y":0,"width":440,"height":460,"color":"6"},
+		{"id":"bmc-key-resources","type":"text","text":"## 🧱 Key Resources\n(Nguồn lực chính)\n\n- Mặt bằng 150m² Q7, 6 phòng trị liệu\n- SOP dịch vụ riêng, thương hiệu 3 năm\n- 8 KTV tay nghề cao\n- Thiếu: CRM tự động, mặt bằng chi nhánh 2","x":460,"y":480,"width":440,"height":400,"color":"6"},
+		{"id":"bmc-value-propositions","type":"text","text":"## 🎁 Value Propositions\n(Giá trị cốt lõi)\n\n**NVVP:** massage trị liệu 60-90p, 300-500k (rẻ hơn spa 5 sao), đặt lịch linh hoạt qua Zalo\n\n**Mẹ sau sinh:** liệu trình phục hồi 10 buổi, riêng tư, tư vấn dinh dưỡng kèm\n\n70% khách mua gói liệu trình sau buổi đầu trải nghiệm","x":920,"y":0,"width":460,"height":1000,"color":"3"},
+		{"id":"bmc-customer-relationships","type":"text","text":"## ❤️ Customer Relationships\n(Quan hệ khách hàng)\n\n- KTV cố định theo dõi từng khách\n- Chi phí acquisition ~150-250k/khách\n- Retention: thẻ tích điểm, ưu đãi sinh nhật\n- Upsell: gói lẻ → liệu trình, bán mỹ phẩm","x":1400,"y":0,"width":440,"height":400,"color":"5"},
+		{"id":"bmc-channels","type":"text","text":"## 📢 Channels\n(Kênh phân phối)\n\n- Nhận biết: FB/TikTok ads, Google Maps, truyền miệng\n- Đánh giá: fanpage review, Google 4.8⭐\n- Mua: Zalo OA / gọi điện\n- Hậu mãi: nhắc lịch qua Zalo, nhóm ưu đãi","x":1400,"y":420,"width":440,"height":460,"color":"5"},
+		{"id":"bmc-customer-segments","type":"text","text":"## 👥 Customer Segments\n(Phân khúc khách hàng)\n\n🥇 NV văn phòng nữ 28-45t, quanh Q7, đau vai gáy/stress\n\n🥈 Phụ nữ sau sinh 25-38t, cần phục hồi cơ thể\n\n🥉 Nam doanh nhân bận rộn (dài hạn, chưa làm)","x":1860,"y":0,"width":440,"height":1000,"color":"5"},
+		{"id":"bmc-cost-structure","type":"text","text":"## 💸 Cost Structure\n(Cơ cấu chi phí)\n\n- Lớn nhất: lương KTV + mặt bằng\n- Thiên value-driven (đầu tư chất lượng)\n- Cố định: mặt bằng, lương cứng · Biến đổi: hoa hồng KTV, mỹ phẩm, ads\n- Lợi ích quy mô khi nhân bản SOP cho chi nhánh mới","x":0,"y":1040,"width":1140,"height":340,"color":"1"},
+		{"id":"bmc-revenue-streams","type":"text","text":"## 💰 Revenue Streams\n(Dòng doanh thu)\n\n- Dịch vụ lẻ 300-600k (~40%, one-off)\n- Gói liệu trình trả trước (~45%, recurring, đã có khách thật)\n- Bán mỹ phẩm mang về (~15%)\n- Thẻ VIP năm (mới thử nghiệm)","x":1160,"y":1040,"width":1140,"height":340,"color":"4"}
+	],
+	"edges":[
+		{"id":"bmc-edge-01","fromNode":"bmc-key-partnerships","fromSide":"right","toNode":"bmc-key-activities","toSide":"left"},
+		{"id":"bmc-edge-02","fromNode":"bmc-value-propositions","fromSide":"right","toNode":"bmc-customer-segments","toSide":"left","label":"giá trị → khách"},
+		{"id":"bmc-edge-03","fromNode":"bmc-cost-structure","fromSide":"right","toNode":"bmc-revenue-streams","toSide":"left","color":"4","label":"lợi nhuận = DT − CP"}
+	]
+}

@@ -1,0 +1,75 @@
+mark.red,
+mark.orange,
+mark.yellow,
+mark.green,
+mark.blue,
+mark.purple,
+mark.indigo,
+mark.violet,
+mark.white,
+mark.gray,
+mark.black {
+	margin: 0 -0.05em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone !important;
+    text-shadow: 0 0 0.75em var(--background-primary-alt);
+}
+
+mark.red {
+	background: firebrick;
+	background-color: firebrick !important;
+}
+
+mark.orange {
+	background: orange;
+	background-color: orange !important;
+}
+
+mark.yellow {
+	background: gold;
+	background-color: gold !important;
+}
+
+mark.green {
+	background: ForestGreen;
+	background-color: ForestGreen !important;
+}
+
+mark.blue {
+	background: steelblue;
+	background-color: steelblue !important;
+}
+
+mark.purple {
+	background: purple;
+	background-color: purple !important;
+}
+
+mark.indigo {
+	background: indigo;
+	color: var(--text-normal) !important;
+	background-color: indigo !important;
+}
+
+mark.violet {
+	background: violet;
+	background-color: violet !important;
+}
+
+mark.white {
+	background: whitesmoke;
+	background-color: whitesmoke !important;
+}
+
+mark.gray {
+	background: gray;
+	background-color: gray !important;
+}
+
+mark.black {
+	background: black;
+	color: var(--text-normal) !important;
+	background-color: black !important;
+}
