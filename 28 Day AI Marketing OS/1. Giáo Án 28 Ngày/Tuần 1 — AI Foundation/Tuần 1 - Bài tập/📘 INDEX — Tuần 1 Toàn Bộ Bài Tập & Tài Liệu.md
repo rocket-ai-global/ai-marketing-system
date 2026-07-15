@@ -21,7 +21,7 @@ up:
 | **3** | Offer, Định Vị & Thông Điệp | 🍵 MSX + 🚀 Rocket | [[Bài Tập Ngày 3 — Offer & Định Vị]] | 65' |
 | **4** | Knowledge Base Cho DN | 🍵 MSX | [[Bài Tập Ngày 4 — Knowledge Base]] | 90' |
 | **5** | Hệ Thống Prompt & Template | 🚀 Rocket + 🍵 MSX | [[Bài Tập Ngày 5 — Hệ Thống Prompt & Template]] | 90' |
-| **6** | AI Business Brain | 🚀+🍵 | [[Bài Tập Ngày 6 — AI Business Brain]] | 100' |
+| **6** | AI Business Brain | 🚀+🍵 | [[Bài Tập Ngày 6 — AI Business Brain]] · [[Tài Liệu Thực Hành Buổi 06 — AI Business Brain & 2 Trợ Lý Nội Bộ]] | 100' |
 | **7** | Foundation Review & Demo Day | 🚀+🍵 | [[Bài Tập Ngày 7 — Foundation Review & Demo Day]] | 90' |
 
 ---

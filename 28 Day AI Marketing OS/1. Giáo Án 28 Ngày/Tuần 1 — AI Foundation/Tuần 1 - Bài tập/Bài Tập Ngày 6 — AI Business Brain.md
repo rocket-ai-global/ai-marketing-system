@@ -8,6 +8,10 @@ up:
 
 > **Mục tiêu:** Biến Knowledge Base Ngày 4 + Prompt Library Ngày 5 thành **AI Business Brain v1** có thể trả lời đúng về doanh nghiệp và hỗ trợ Sales/Marketing.
 
+> **Tài liệu thực hành gửi học viên:** [[Tài Liệu Thực Hành Buổi 06 — AI Business Brain & 2 Trợ Lý Nội Bộ]]
+
+> **Lưu ý quan trọng:** Sales Assistant và Marketing Assistant hôm nay là **trợ lý nội bộ** cho founder/team dùng trong vận hành. Chưa bắt buộc public ra website/Zalo/Messenger cho khách tự chat. Vẫn phải test kỹ vì team sẽ dùng output của AI để tư vấn, viết content, follow-up và ra quyết định.
+
 ## Bài nộp — 5 output bắt buộc
 
 ### Output 1 — AI Instruction Document

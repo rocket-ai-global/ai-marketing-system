@@ -19,7 +19,7 @@ week: 1
 ## 0. Nguyên tắc sản xuất (đọc trước khi quay)
 
 1. **1 video = 1 thao tác trọn vẹn**, ≤15 phút. Học viên tua lại được, không phải xem 1 tiếng tìm 1 bước.
-2. **Quay trên vault demo Sen Spa đã điền đầy** — dependency: phải build xong bản Sen Spa mẫu TRƯỚC khi quay (xem Việc kế tiếp trong [[_MOC 28 Day AIOS]]). Học viên thấy "kết quả trông như thế nào" bằng dữ liệu thật, không phải placeholder.
+2. **Quay trên vault demo 🍵 MSX đã điền đầy** (`ai-marketing-system-msx-demo/` — case thật: Mẫu Sơn Xanh, dược liệu Lạng Sơn) — vault này **đã build sẵn**, không còn dependency chặn. Học viên thấy "kết quả trông như thế nào" bằng dữ liệu thật, không phải placeholder. 🚀 RocketAI chỉ mở ra khi cần đối chiếu B2B (theo mapping [[_Chuẩn Đồng Bộ Tuần 1]]).
 3. **Cấu trúc chuẩn mỗi video (4 phần):**
    - 0:00–0:30 — *Kết quả cuối*: chiếu ngay cái sẽ có sau video ("xem này, xong video bạn có file BMC như này")
    - 0:30–x — *Từng bước*: thao tác chậm, đọc to lệnh gõ, zoom chỗ click
@@ -37,7 +37,7 @@ week: 1
 
 | Mã | Video | Dài | Phục vụ |
 |---|---|---|---|
-| V0.1 | **Đây là hệ thống bạn sẽ có sau 28 ngày** — tour bản Sen Spa hoàn chỉnh | 10' | Động lực + hình dung đích |
+| V0.1 | **Đây là hệ thống bạn sẽ có sau 28 ngày** — tour vault MSX hoàn chỉnh | 10' | Động lực + hình dung đích |
 | V0.2 | Cài Obsidian + mở Vault SME (Mac & Windows) | 8' | Điều kiện vào Ngày 1 |
 | V0.3 | Cài Claude Code + đăng nhập + chạy lệnh đầu tiên trong vault | 10' | Điều kiện vào Ngày 1 |
 | V0.4 | Tour cấu trúc Vault SME: não của doanh nghiệp nằm ở đâu | 10' | Nền cho mọi ngày |
@@ -45,28 +45,28 @@ week: 1
 | V0.6 | Cài Hermes Agent + Telegram Gateway — "Jarvis chào sếp" | 12' | Lớp động cơ sẵn sàng (gói Installed: Rocket cài sẵn, học viên chỉ xem để hiểu + test) |
 
 **Outline chi tiết:**
-- **V0.1:** Mở vault Sen Spa đã vận hành → lướt `00. Business Context/` (BMC, Brand Voice, offer) → mở `Content Đã Đăng/` xem 30 bài → mở `MOC Sales Pipeline` xem lead đang chảy → hỏi agent 3 câu ("khách chê giá trả lời sao?") agent trả lời đúng từ vault → chốt: "28 ngày tới, mỗi ngày bạn lắp 1 mảnh của cái này cho DN mình". **Kiến trúc 2 lớp: vault = não 🧠, RocketAgent/Hermes = động cơ ⚙️** — vẽ 1 slide duy nhất.
+- **V0.1:** Mở vault MSX đã vận hành (`ai-marketing-system-msx-demo/`) → lướt `00. Business Context/` (BMC Mẫu Sơn Xanh, Brand Voice, 6 sản phẩm) → mở `Content Đã Đăng/` xem 30 bài → mở `MOC Sales Pipeline` xem lead đang chảy → hỏi agent 3 câu ("khách chê trà này đắt hơn trà ngoài chợ thì trả lời sao?") agent trả lời đúng từ vault → chốt: "28 ngày tới, mỗi ngày bạn lắp 1 mảnh của cái này cho DN mình". **Kiến trúc 2 lớp: vault = não 🧠, RocketAgent/Hermes = động cơ ⚙️** — vẽ 1 slide duy nhất.
 - **V0.2:** Tải Obsidian → giải nén vault bàn giao → Open folder as vault → tin tưởng plugin → kiểm tra: mở được `README.md`, thấy cây thư mục. Lỗi hay gặp: mở nhầm thư mục cha, font tiếng Việt.
 - **V0.3:** Cài Claude Code (hoặc app Claude) → đăng nhập tài khoản được cấp → mở terminal trong thư mục vault → gõ thử "đọc README và nói vault này là gì" → thấy agent trả lời = cài thành công. Lỗi: chưa đăng nhập, mở sai thư mục, mạng công ty chặn.
 - **V0.4:** Đi theo 3 lớp dữ liệu: `00. Business Context/` (nguồn sự thật — "hộ khẩu doanh nghiệp") → PARA `01→05` (dòng công việc) → Entity `People/Companies/Meetings/Decisions` (ai-cái gì-quyết định nào) + `Nhật Ký CEO/` (chất liệu content có hồn). Nêu 2 quy tắc vàng: 1 vault = 1 công ty duy nhất · không note mồ côi.
-- **V0.5:** Nhịp 1 ngày (live 19h30 → làm bài ≤2h → nộp trước 23h59 → AI Grader chấm sáng → office hours trưa) → format tên bài nộp → demo điền `Baseline & Mục Tiêu 28 Ngày.md` với số thật của Sen Spa (lead/tháng, tỷ lệ booking, doanh thu, giờ làm thủ công) — nhấn: *không có số này thì Ngày 28 không chứng minh được gì*.
+- **V0.5:** Nhịp 1 ngày (live 19h30 → làm bài ≤2h → nộp trước 23h59 → AI Grader chấm sáng → office hours trưa) → format tên bài nộp → demo điền `Baseline & Mục Tiêu 28 Ngày.md` bằng bản mẫu MSX trong vault demo (lead/tháng 85, tỷ lệ chốt 22%, doanh thu 95tr, giờ marketing thủ công 12h/tuần) — nói rõ đây là **số demo minh hoạ**, và nhấn: *không có số này thì Ngày 28 không chứng minh được gì*.
 - **V0.6:** Theo 6 bước của [[Hướng Dẫn Cài Đặt Hermes Agent & Siêu Trợ Lý Jarvis]]: cài Hermes core lên máy chạy 24/7 → trỏ workspace vào Vault SME → khai API key vào `.env` (cấm dán key vào note) → tạo bot Telegram qua @BotFather, nối gateway → nhắn câu đầu tiên "Jarvis, doanh nghiệp của tôi bán gì?" và thấy nó trả lời từ vault → chạy 4 mục Definition of Done. Kết video bằng cảnh Jarvis của Tony gửi Morning Brief thật — "cuối chương trình, cái này là của bạn".
 
 ### 🧩 Ngày 1 — Business Model Canvas & Cơ Hội AI
 
 | Mã | Video | Dài | Phục vụ output |
 |---|---|---|---|
-| V1.1 | **Chạy `/mo-hinh-kinh-doanh` từ A-Z** (demo Sen Spa full) | 15' | BMC 9 khối + Business Snapshot |
+| V1.1 | **Chạy `/mo-hinh-kinh-doanh` từ A-Z** (demo 🍵 MSX full) | 15' | BMC 9 khối + Business Snapshot |
 | V1.2 | Duyệt & sửa kết quả AI sinh + chốt Top 10 cơ hội AI | 8' | Process Map + Top 10 Use Cases + Mục tiêu 28 ngày |
 
-- **V1.1:** Gõ `/mo-hinh-kinh-doanh` → trả lời phỏng vấn 9 khối bằng dữ liệu Sen Spa (đọc to cách trả lời NGẮN mà đủ; demo cả tình huống "không biết trả lời — nói 'bạn hỏi tôi đi'") → xem file tự sinh: `Chân Dung Doanh Nghiệp`, `Business Model Canvas` + mở `.canvas` bản vẽ, từng file PK/GT trong `MHKD/` → đối chiếu checklist rubric.
+- **V1.1:** Gõ `/mo-hinh-kinh-doanh` → trả lời phỏng vấn 9 khối bằng dữ liệu MSX (đọc to cách trả lời NGẮN mà đủ; demo cả tình huống "không biết trả lời — nói 'bạn hỏi tôi đi'") → xem file tự sinh: `Chân Dung Doanh Nghiệp`, `Business Model Canvas` + mở `.canvas` bản vẽ, từng file PK/GT trong `MHKD/` → đối chiếu với bản hoàn chỉnh sẵn có trong vault demo + checklist rubric. **Chèn 60 giây đối chiếu 🚀 RocketAI:** cùng 9 khối nhưng B2B khác B2C ở Revenue Streams (gói dịch vụ 12-50tr thay vì bán lẻ 520k) và Channels (cộng đồng/referral thay vì TikTok/ads) — nhắc học viên: copy KHUNG, không copy nội dung.
 - **V1.2:** Đọc lại BMC bằng 3 câu hỏi duyệt (số đúng chưa? khối nào AI đoán mò? thiếu dòng doanh thu nào?) → sửa trực tiếp 1 khối sai làm mẫu → từ BMC rút Business Process Map (marketing→sale→CSKH hiện tại) → chấm Top 10 việc AI hoá theo 2 trục (tăng doanh thu × dễ làm) → viết Mục tiêu 28 ngày: 1 mục tiêu chính + 3 chỉ số.
 
 ### 🎯 Ngày 2 — Chân Dung Khách Hàng & Journey
 
 | Mã | Video | Dài | Phục vụ output |
 |---|---|---|---|
-| V2.1 | Đào sâu file PK: PDFO Map + Journey 7 giai đoạn (demo PK1 Sen Spa) | 10' | Avatar + PDFO ≥5 mục/nhóm + Journey |
+| V2.1 | Đào sâu file PK: PDFO Map + Journey 7 giai đoạn (demo PK1 🍵 MSX — chị Hương) | 10' | Avatar + PDFO ≥5 mục/nhóm + Journey |
 | V2.2 | Moi insight thật: đưa "câu nói vàng" của khách vào AI | 6' | Chất liệu PDFO không bịa |
 
 - **V2.1:** Mở `MHKD/Phân Khúc Khách Hàng/PK1...md` (đã sinh từ Ngày 1) → dùng prompt trong giáo án đào PDFO (mỗi nhóm ≥5, mỗi mục 1 câu nói thật của khách) → vẽ Journey 7 giai đoạn ngay trong file PK → cách phát hiện avatar "là mọi người" (lỗi trừ điểm nặng nhất).
@@ -79,7 +79,7 @@ week: 1
 | V3.1 | Chạy `/thiet-ke-offer`: 3 phương án → chọn → đóng gói đủ 7 khối | 12' | Core Offer Document |
 | V3.2 | Sinh Sales Message Pack + phản biện bằng "khách đa nghi ảo" | 8' | Message Pack + offer đã vá lỗ hổng |
 
-- **V3.1:** Chạy skill với offer liệu trình nám 15tr của Sen Spa → nhận 3 phương án (an toàn/cân bằng/táo bạo) → khung quyết định "cam kết nào tôi gánh được vận hành" → đóng gói: tên offer, promise, 3 bonus (mỗi bonus trỏ 1 nỗi lo trong PDFO), cam kết đo được, lý do mua ngay THẬT → lưu vào `Sản Phẩm & Dịch Vụ/`. Cảnh báo ngành sức khoẻ: không hứa kết quả y khoa tuyệt đối.
+- **V3.1:** Ngày 3 là ngày **so offer B2C vs B2B** — chạy skill 2 lần. Lần 1 với offer 🍵 MSX (combo trà mua 3 tặng 1, ~1tr) → lần 2 với offer 🚀 RocketAI (gói OS Transfer 12tr) → nhận 3 phương án mỗi bên (an toàn/cân bằng/táo bạo) → khung quyết định "cam kết nào tôi gánh được vận hành" → đóng gói: tên offer, promise, 3 bonus (mỗi bonus trỏ 1 nỗi lo trong PDFO), cam kết đo được, lý do mua ngay THẬT → lưu vào `Sản Phẩm & Dịch Vụ/`. **Cảnh báo ngành sức khoẻ (bắt buộc, dùng chính MSX làm ví dụ):** dùng ngôn ngữ "hỗ trợ / đồng hành cùng thói quen" — KHÔNG hứa chữa bệnh, không hứa kết quả tuyệt đối.
 - **V3.2:** Sinh pack (hook/headline/CTA/5 angle/10 ads) → lọc bỏ câu "không phải giọng mình" → chạy prompt khách-đa-nghi tấn công offer → sửa 2 điểm hở làm mẫu → lưu `04. Resources/Playbooks/`.
 
 ### 📚 Ngày 4 — Knowledge Base
@@ -116,11 +116,11 @@ week: 1
 
 | Mã | Video | Dài | Phục vụ output |
 |---|---|---|---|
-| V7.1 | Cách demo 5-7' + xem 1 bài demo mẫu (Sen Spa) đạt điểm ⭐ | 8' | Business Brain Demo |
+| V7.1 | Cách demo 5-7' + xem 1 bài demo mẫu (🍵 MSX) đạt điểm ⭐ | 8' | Business Brain Demo |
 | V7.2 | Tự chấm Foundation Scorecard + viết Marketing Brief cho Tuần 2 | 6' | Scorecard + Brief |
 
-- **V7.1:** Format demo chuẩn: *Tôi đã xây gì (1') → chạy thử sống: hỏi Brain 3 câu khó nhất (3') → số liệu baseline & mục tiêu (1') → 1 điều kẹt nhất (1')* → chiếu nguyên 1 bài demo mẫu 6' của Sen Spa → 3 lỗi demo hay gặp (nói lý thuyết, không dám hỏi câu khó, quá giờ).
-- **V7.2:** Mở Foundation Scorecard tự chấm từng mục → **chạy Foundation Gate 5 câu kiểm chứng độ khớp** (mô hình nhất quán? insight thật? OFFER PHÙ HỢP CHƯA? một nguồn sự thật? đo được?) — demo trên Sen Spa cả tình huống fail câu 3 và cách sửa offer trước khi vào content → ghi kết quả vào `Đánh Giá Mô Hình Kinh Doanh` → điền Marketing Brief (chủ đề, sản phẩm đẩy, kênh ưu tiên, tệp ưu tiên) làm đầu vào Tuần 2.
+- **V7.1:** Format demo chuẩn: *Tôi đã xây gì (1') → chạy thử sống: hỏi Brain 3 câu khó nhất (3') → số liệu baseline & mục tiêu (1') → 1 điều kẹt nhất (1')* → chiếu nguyên 1 bài demo mẫu 6' trên vault MSX → 3 lỗi demo hay gặp (nói lý thuyết, không dám hỏi câu khó, quá giờ).
+- **V7.2:** Mở Foundation Scorecard tự chấm từng mục → **chạy Foundation Gate 5 câu kiểm chứng độ khớp** (mô hình nhất quán? insight thật? OFFER PHÙ HỢP CHƯA? một nguồn sự thật? đo được?) — demo trên MSX cả tình huống fail câu 3 và cách sửa offer trước khi vào content → ghi kết quả vào `Đánh Giá Mô Hình Kinh Doanh` → điền Marketing Brief (chủ đề, sản phẩm đẩy, kênh ưu tiên, tệp ưu tiên) làm đầu vào Tuần 2.
 
 ---
 
@@ -128,7 +128,7 @@ week: 1
 
 | Đợt | Quay | Deadline | Ghi chú |
 |---|---|---|---|
-| **Đợt 0 — điều kiện quay** | Build xong **bản Sen Spa demo điền đầy** + bộ 50 prompt + file Baseline | trước khi quay bất kỳ video nào | Không có Sen Spa thật thì mọi video chỉ chiếu placeholder — mất 80% sức thuyết phục |
+| **Đợt 0 — điều kiện quay** | ✅ Vault demo 🍵 MSX **đã build sẵn** (`ai-marketing-system-msx-demo/`) — chỉ còn thiếu **bộ 50 prompt** + file **Baseline** trong vault gốc | trước khi quay bất kỳ video nào | Dependency cũ ("build Sen Spa trước") **đã gỡ bỏ** — vault MSX là bản thật, quay được ngay. Thiếu 50 prompt + Baseline thì V0.5 và V5.x vẫn phải chiếu placeholder |
 | **Đợt 1** | V0.1 → V0.6 (Install Pack) | ≥5 ngày trước khai giảng | Gửi kèm thư mời nhập học; ai chưa cài xong không vào Ngày 1. V0.6 cần T46 (Hermes Install Pack) đóng gói xong trước |
 | **Đợt 2** | V1.x, V3.x, V6.x | trước khai giảng | 3 ngày nặng thao tác nhất — rủi ro nghẽn support cao nhất |
 | **Đợt 3** | V2.x, V4.x, V5.x, V7.x | trước Ngày 2 | Có thể quay trong tuần đầu cohort chạy nếu thiếu thời gian |

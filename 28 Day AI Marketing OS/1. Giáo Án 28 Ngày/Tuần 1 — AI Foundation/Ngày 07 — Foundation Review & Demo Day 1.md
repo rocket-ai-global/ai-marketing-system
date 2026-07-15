@@ -33,7 +33,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 *(Theo quy ước Demo Day: không dạy kiến thức mới — chỉ ôn khung đánh giá để học viên tự review và chấm chéo.)*
 
-### Khung review 5 câu hỏi cho 6 tài sản (dùng trong phần tổng kết 15')
+### Khung review 5 câu hỏi cho 6 tài sản (dùng trong phần tổng kết 10')
 - **Business Snapshot & Top 10:** Mô hình đã rõ chưa? Mục tiêu 28 ngày có 3 chỉ số đo được không? Top 10 có khả thi và bám lộ trình không?
 - **Customer Avatar & Journey:** Avatar có phải MỘT con người không? Pain có câu nói thật không? Objection có thực tế không? Journey có logic, có đánh dấu chỗ bỏ trống không?
 - **Offer & Message:** Offer có lời hứa + cam kết đo được không? USP có bằng chứng không? Bonus có trỏ về nỗi lo không? CTA có rõ không?
@@ -56,7 +56,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 **Luật qua cổng:** 5/5 ✅ → vào Tuần 2. Fail 1-2 câu → vá trong Catch-up 48h đầu Tuần 2 (mentor kèm), riêng **fail câu 3 thì SỬA OFFER TRƯỚC KHI VIẾT CONTENT** — thà lùi 2 ngày còn hơn 3 tuần content bán một offer lệch. Fail ≥3 câu → họp 1:1 với mentor, Tuần 2 chỉ chạy phần Core.
 
 ### Tinh thần Demo Day (nói 2 phút đầu buổi)
-- Demo không phải thi — là NGHIỆM THU + học chéo: xem 8-10 DN khác cùng khung sẽ thấy ngay lỗ hổng của mình.
+- Demo không phải thi — là NGHIỆM THU + học chéo: xem 7-9 DN khác cùng khung (kể cả bài demo mẫu MSX) sẽ thấy ngay lỗ hổng của mình.
 - Luật demo: chạy THẬT trên màn hình (không slide chụp sẵn trừ phần mở đầu); lỗi live là bình thường — cách bạn XỬ LÝ lỗi mới là thứ được chấm; đúng giờ 7 phút, quá giờ bị cắt.
 
 > **Thích ứng ngành khác:** Format demo giữ nguyên cho mọi ngành. Khác biệt duy nhất ở 3 câu hỏi test — mỗi học viên dùng câu của khách ngành mình (spa/thẩm mỹ: "liệu trình 15 triệu — chỗ khác có 8 triệu, sao bên em đắt vậy?"; nha khoa: "bọc sứ bên em bao nhiêu, có đau không?"; giáo dục: "con em mất gốc, học 6 tháng kịp thi không?"; gym: "em bận lắm, tuần tập 2 buổi có kết quả không?").
@@ -65,61 +65,69 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 | Thời lượng | Hoạt động | Chi tiết |
 |---|---|---|
-| 15' | Tổng kết tuần | Trainer chiếu khung review 5 câu hỏi × 6 tài sản; thống kê nhanh cohort (bao nhiêu bài ⭐/✅/🔧/🔴 từng ngày); nêu 3 lỗi phổ biến nhất tuần và 3 bài làm hay nhất (mỗi cái 1 phút). Công bố thứ tự demo (đã bốc thăm trước trong thread). |
-| 60' | Học viên demo | Mỗi người 5-7' theo format chuẩn (mục 4). Cohort 8 người: 8×7' = 56'. Trainer giữ đồng hồ nghiêm; mỗi demo xong, người được phân công phản biện đặt 1 câu hỏi (đã phân cặp trước). Người xem chấm Peer Score (điểm chấm chéo) qua form 5 tiêu chí ngay khi xem. |
-| 15' | Chấm chéo + công bố scorecard | Tổng hợp Peer Score + điểm mentor; công bố Foundation Scorecard từng người (điểm tuần = trung bình N1-N6 + điểm demo); vinh danh Top 3 ⭐; mỗi người viết 1 dòng cam kết vá lỗi vào thread; trainer brief nhanh 2' về Tuần 2 — Marketing Engine và dặn nộp Marketing Brief tối nay. |
+| 10' | Tổng kết tuần | Trainer chiếu khung review 5 câu hỏi × 6 tài sản (3') → thống kê nhanh cohort: bao nhiêu bài ⭐/✅/🔧/🔴 từng ngày (2') → 3 lỗi phổ biến nhất tuần + 3 bài làm hay nhất, mỗi cái 30 giây (3') → nhắc luật demo + thứ tự demo đã bốc thăm trước trong thread (2'). Cộng: 3+2+3+2 = 10'. |
+| 70' | Demo | Mở màn: trainer chạy **bài demo mẫu 6' đạt chuẩn ⭐ trên vault thật `ai-marketing-system-msx-demo/` (🍵 MSX)** — cohort thấy "thế nào là đạt" trước khi tự demo. Sau đó mỗi học viên: **5' demo chuẩn (trần 7') + 1' chuyển giao** (người xem nộp Peer Score (điểm chấm chéo), người kế tiếp bật chia sẻ màn hình). Người phản biện được phân cặp đặt câu ③ NGAY TRONG nhịp 3 — không hỏi thêm sau demo. Quỹ giờ cohort 8 người: trần = 6' + 8×(7'+1') = 70' — vừa khít; đường chuẩn = 6' + 8×(5'+1') = 54', dư 16' làm dự phòng sự cố kỹ thuật + hỏi-đáp tự do cuối phần. Trainer giữ đồng hồ nghiêm. |
+| 10' | Công bố scorecard | Tổng hợp Peer Score + điểm mentor (3') → công bố Foundation Scorecard từng người — điểm tuần = 60% × TB N1-N6 + 40% × điểm demo (4') → vinh danh Top 3 ⭐ + mỗi người viết 1 dòng cam kết vá lỗi vào thread (1') → trainer brief 2' về Tuần 2 — Marketing Engine, dặn nộp Marketing Brief trước 23h59. Cộng: 3+4+1+2 = 10'. |
+
+> **Scale khi cohort đông:** cohort >8 người → chia 2 phòng breakout (phòng nhỏ tách riêng trên Zoom), mentor phụ chấm phòng 2, format giữ nguyên — bài demo mẫu MSX chiếu chung cho cả lớp TRƯỚC khi tách phòng, mỗi phòng tối đa 8 lượt demo theo đúng quỹ giờ trên.
 
 **Checklist chuẩn bị của trainer (trước buổi 1 ngày):**
 - [ ] Chấm xong toàn bộ bài N6, cập nhật bảng điểm N1-N6 của từng học viên.
 - [ ] Đăng thứ tự demo + phân cặp phản biện (A hỏi B, B hỏi C... vòng tròn) vào thread từ tối hôm trước.
-- [ ] Tạo form Peer Score 5 tiêu chí (mục 10) — link ghim sẵn.
+- [ ] Cohort >8 người: chốt danh sách chia 2 phòng breakout + mời mentor phụ chấm phòng 2.
+- [ ] Dựng Google Form chấm chéo theo [[Template 7.3 — Peer Score Demo Day]] (5 tiêu chí × 20 điểm, khớp rubric mục 10) — ghim link vào thread cohort.
+- [ ] Chạy thử bài demo mẫu MSX 6' trên vault `ai-marketing-system-msx-demo/` — bảo đảm Brain trả lời ổn định 3 câu mẫu ở mục 4.
 - [ ] Chuẩn bị bảng Foundation Scorecard tổng (Google Sheets) điền sẵn điểm N1-N6, chừa cột demo.
 - [ ] Nhắc học viên trước 24h: test lại Brain, chuẩn bị 3 câu hỏi demo, sạc máy, tắt thông báo màn hình (tránh lộ tin nhắn riêng khi chia sẻ màn hình).
 
-## 4. 🎬 Kịch Bản Demo (format chuẩn 7 phút — minh họa bằng Sen Spa)
+## 4. 🎬 Kịch Bản Demo (format chuẩn 5' — trần 7' | bài demo mẫu ⭐: 🍵 MSX)
 
-*Mỗi học viên demo theo đúng 4 nhịp sau. Trainer làm mẫu nhịp nhanh 3' bằng Sen Spa trước lượt đầu tiên nếu cohort còn lúng túng.*
+*Mỗi học viên demo theo đúng 4 nhịp sau — khung chuẩn 5' (45'' + 45'' + 3' + 30''), được nới tối đa 7' (1' + 1' + 4' + 1'). Bài demo mẫu 6' đạt chuẩn ⭐ do trainer chạy mở màn buổi live trên vault thật `ai-marketing-system-msx-demo/` — MSX Group (Mẫu Sơn Xanh), học viên thật của chương trình.*
 
-**Nhịp 1 (1') — DN của tôi & mục tiêu 28 ngày.**
+**Nhịp 1 (45'' — trần 1') — DN của tôi & mục tiêu 28 ngày.**
 - Làm gì: 3 câu giới thiệu: bán gì – cho ai – đau gì + đọc mục tiêu 28 ngày.
-- Mẫu Sen Spa: "Tôi là Lan, Sen Spa Hà Nội, bán liệu trình trị nám 15tr cho phụ nữ 30-45. Trước tuần này: lead ít, không follow-up, sale phụ thuộc 1 bạn. Mục tiêu 28 ngày: 55→80 inbox/tháng, 100% khách hỏi giá được follow-up, 5 kịch bản sale không phụ thuộc Hương."
+- Mẫu MSX: "MSX Group — Mẫu Sơn Xanh, bán trà thảo mộc & dược liệu từ Mẫu Sơn 1.541m (6 sản phẩm, OCOP 3★) cho dân văn phòng 30-45 tuổi quan tâm sức khoẻ, bán online toàn quốc. Trước tuần này: 5.000+ khách cũ nhưng gần như không được chăm lại, content phụ thuộc 1 người. Mục tiêu 28 ngày: 80→120 đơn online/tháng · 100% khách hỏi giá được follow-up trong 24h · 200 khách cũ được chăm lại."
 
-**Nhịp 2 (1') — Tôi đã xây gì tuần này.**
-- Làm gì: chia sẻ màn hình, lướt nhanh (mỗi thứ 10 giây): cây Knowledge Base 10 thư mục → file Prompt Library (chỉ vào cột test) → màn hình Business Brain trên RocketAgent.
-- Mẫu Sen Spa: "10 thư mục — 3 tài liệu lõi đã nạp; 50 prompt — 22 đã cá nhân hóa, 11 đã test; đây là Brain và Sales Assistant."
+**Nhịp 2 (45'' — trần 1') — Tôi đã xây gì tuần này.**
+- Làm gì: chia sẻ màn hình, lướt nhanh (mỗi thứ 10 giây): Vault SME 10 nhóm tri thức → file Prompt Library (chỉ vào cột test) → màn hình Business Brain trên RocketAgent.
+- Mẫu MSX: "Vault 10 nhóm — 3 tài liệu lõi đã nạp; 50 prompt — 20 đã cá nhân hoá, 12 đã test; đây là Brain với Sales Assistant + Marketing Assistant."
 
-**Nhịp 3 (3-4') — Trái tim demo: Brain trả lời sống 3 câu.**
+**Nhịp 3 (3' — trần 4') — Trái tim demo: Brain trả lời sống 3 câu.**
 - Làm gì: chạy live 3 câu theo cơ cấu bắt buộc: ① 1 câu KHÁCH HỎI KHÓ (giá/so sánh/chê đắt) → ② 1 câu NỘI BỘ (viết content hoặc gợi ý xử lý từ chối cho sale) → ③ 1 câu do NGƯỜI PHẢN BIỆN đặt tại chỗ (không chuẩn bị trước). Vừa chạy vừa thuyết minh 1 câu: "để ý nó lấy đúng giá từ KB và kết bằng CTA".
-- Mẫu Sen Spa: ① "15 triệu đắt quá, chỗ khác 8 triệu" → Brain đồng cảm + cam kết mốc buổi 5 + mời soi da; ② "Gợi ý Hương 3 câu xử lý khách 'để em hỏi chồng'" → 3 phương án kèm câu ⭐; ③ phản biện hỏi: "Khách hỏi 'bên em có trị nám bằng laser không?'" (Sen Spa không có laser) → Brain trả lời trung thực theo KB, không bịa dịch vụ — khoảnh khắc ăn điểm nhất.
+- Mẫu MSX: ① "Trà bên em 200k/hộp mà ngoài chợ có 50k — khác gì nhau, sao đắt thế?" → Brain đồng cảm + khác biệt kiểm chứng được (dược liệu hái thủ công ở 1.541m, OCOP 3★, 5.000+ khách đã dùng) + CTA mời dùng thử hộp đơn; ② "Viết 3 câu mở bài Facebook cho Trà Mẩy Gòm An Giấc nhắm dân văn phòng khó ngủ, đúng giọng MSX" → 3 phương án kèm câu ⭐; ③ phản biện hỏi tại chỗ: "Trà này có CHỮA được mất ngủ mãn tính không?" → Brain trả lời trung thực theo Security Rule: sản phẩm hỗ trợ thư giãn, KHÔNG phải thuốc, không cam kết chữa bệnh — mời tham vấn bác sĩ + 🚨 chuyển người thật. Khoảnh khắc ăn điểm nhất.
+- Bộ 3 câu tham khảo theo case 🚀 RocketAI (B2B dịch vụ): ① "12 triệu chỉ để cài mấy con AI? Tôi thuê sinh viên viết content 3 triệu/tháng còn rẻ hơn" → Brain tách bạch "thuê người làm content" với "cài hệ điều hành chạy 24/7 + đào tạo đội ngũ", dẫn đúng 3 gói giá từ KB; ② "Gợi ý 3 câu xử lý khách nói 'để anh bàn lại với kế toán đã'"; ③ tại chỗ: "RocketAgent có quay video quảng cáo được không?" (ngoài phạm vi gói) → trả lời trung thực theo KB, không hứa bừa.
 - Xử lý khi lỗi live: nói to lỗi ("nó vừa bịa số — đây là ca ❌"), ghi vào Improvement List trước mặt mọi người, chuyển câu tiếp — thao tác này được CỘNG điểm demo (tiêu chí 5), không trừ.
 
-**Nhịp 4 (1') — Số liệu, lỗ hổng & tuần tới.**
+**Nhịp 4 (30'' — trần 1') — Số liệu, lỗ hổng & tuần tới.**
 - Làm gì: đọc kết quả test (X/6 ✅), 1 lỗ hổng lớn nhất còn lại, 1 dòng Marketing Brief tuần 2.
-- Mẫu Sen Spa: "Test 5/6 ✅ sau 2 vòng. Lỗ hổng: chưa có case study nào trong KB — tuần này xin phép 2 khách. Tuần 2 tôi đẩy offer 'Da Sáng Đều Màu 90 Ngày' trên Facebook, tệp ưu tiên: phụ nữ 30-45 đã từng inbox mà chưa chốt."
+- Mẫu MSX: "Test 5/6 ✅ sau 2 vòng. Lỗ hổng: KB chưa có feedback đúng tệp văn phòng — tuần này xin 3 feedback thật. Tuần 2 tôi đẩy Combo 3 hộp Trà Mẩy Gòm An Giấc trên Facebook, tệp ưu tiên: khách cũ 3 tháng chưa mua lại."
 
 ## 5. ✅ Checklist Thực Thi (Học viên tự làm — trong ngày, TRƯỚC giờ live)
 
-**Cụm A — Tổng kiểm 6 tài sản bằng Scorecard + chạy Foundation Gate (50'):**
-- [ ] Mở Template 7.1, tự chấm 25 tiêu chí Có/Không cho 6 tài sản (20')
-- [ ] Chạy Prompt 1 (phần Kiểm tra nhất quán) → tự trả lời 5 câu Foundation Gate, ghi kết quả + kết luận "offer có cần sửa không" vào `00. Business Context/Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` (15')
+**Cụm A — Tổng kiểm 6 tài sản bằng Scorecard + chạy Foundation Gate (⏱ dùng template điền sẵn: 45' · lần đầu tự làm: 70'):**
+- [ ] Mở [[Template 7.1 — Foundation Scorecard]], tự chấm 25 tiêu chí Có/Không cho 6 nhóm tài sản — mỗi "Có" phải có bằng chứng/link (15')
+- [ ] Chạy Prompt 1 (phần Kiểm tra nhất quán) → tự trả lời 5 câu Foundation Gate, ghi kết quả + kết luận "offer có cần sửa không" vào `ai-marketing-system/00. Business Context/Đánh Giá Mô Hình Kinh Doanh — [Tên DN].md` (15')
 - [ ] Với mỗi "Không"/câu gate fail: phân loại — sửa được trong 30' (làm ngay hôm nay) / cần vài ngày (ghi vào Improvement List kèm hạn) (10')
 - [ ] Cập nhật các file theo feedback mentor các ngày 🔧 còn tồn (5')
 
-**Cụm B — Gom AI Foundation Pack (20'):**
-- [ ] Tạo file mục lục `[Tên DN] — AI Foundation Pack` link đến 6 tài sản phiên bản mới nhất (10')
-- [ ] Kiểm tra quyền truy cập từng link — mở được bằng trình duyệt ẩn danh (10')
+**Cụm B — Gom AI Foundation Pack (⏱ template: 15' · lần đầu: 25'):**
+- [ ] Tạo file mục lục `[Tên DN] — AI Foundation Pack` link đến 6 nhóm tài sản phiên bản mới nhất (10')
+- [ ] Kiểm tra quyền truy cập từng link — mở được bằng trình duyệt ẩn danh (5')
 
-**Cụm C — Chuẩn bị demo (35'):**
+**Cụm C — Chuẩn bị demo (⏱ template: 35' · lần đầu: 50'):**
 - [ ] Chọn 2 câu demo (1 khách hỏi khó + 1 nội bộ), chạy thử 2 lần — chọn câu Brain trả lời ỔN ĐỊNH (15')
-- [ ] Tập nói nhịp 1 + nhịp 4 thành tiếng, bấm giờ — tổng demo ≤7' (10')
-- [ ] Kỹ thuật: đăng nhập sẵn RocketAgent, đóng tab thừa, tắt thông báo, thử chia sẻ màn hình (10')
+- [ ] Tập nói nhịp 1 + nhịp 4 thành tiếng, bấm giờ — tổng demo 5', không quá trần 7' (10')
+- [ ] Kỹ thuật: đăng nhập sẵn RocketAgent (hoặc công cụ track B/C của bạn), đóng tab thừa, tắt thông báo, thử chia sẻ màn hình (10')
 
-**Cụm D — Marketing Brief cho Tuần 2 (20'):**
-- [ ] Điền Template 7.2 — 4 mục: chủ đề nội dung chính / sản phẩm muốn đẩy / kênh ưu tiên / tệp khách ưu tiên (15')
+**Cụm D — Marketing Brief cho Tuần 2 (⏱ template: 20' · lần đầu: 30'):**
+- [ ] Điền [[Template 7.2 — Marketing Brief Tuần 2]] — 4 mục cốt lõi: chủ đề nội dung chính / sản phẩm muốn đẩy / kênh ưu tiên / tệp khách ưu tiên (15')
 - [ ] Đối chiếu brief với Mục tiêu 28 ngày (N1) và Journey (N2) — 3 thứ phải cùng hướng (5')
 
-**Cụm E — Sau buổi live (Catch-up, phần bài tập về nhà):**
-- [ ] Sửa các mục 🔧/🔴 tồn đọng theo cam kết đã ghi trong thread
+> **Tổng Core (A+B+C+D): đường template 45+15+35+20 = 115' (dưới 2h) · lần đầu tự làm có thể tới 70+25+50+30 = 175' (~3h).** Quá giờ: làm theo thứ tự ưu tiên A → C → D → B (Gate và demo trước; Cụm B gom pack có thể hoàn tất sau buổi live, trước 23h59). Bonus không bắt buộc, không trừ điểm.
+
+**Cụm E — Sau buổi live (Catch-up — vá nợ, khung tối đa gợi ý: ≤90'):**
+- [ ] Sửa các mục 🔧/🔴 tồn đọng theo cam kết đã ghi trong thread — theo luật Catch-up: bài 🔧 sửa trong 24h; còn 🔴 sau deadline → mentor kèm 1:1 trong 48h đầu Tuần 2
+- [ ] Quá 90' vẫn chưa hết nợ → DỪNG, ghi phần còn lại vào Improvement List kèm hạn cụ thể — không thức khuya vá nợ trước ngày mở màn Tuần 2
 
 ## 6. 📝 Bài Tập Về Nhà (Catch-up Day — theo quy ước Demo Day)
 
@@ -128,19 +136,20 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 **Deliverable nộp:**
 - `[Tên DN] — Ngày 07 — AI Foundation Pack` (file mục lục link 6 tài sản bản chốt + Foundation Scorecard tự chấm + **kết quả Foundation Gate 5 câu**, ghi rõ câu nào fail và kế hoạch vá)
 - `[Tên DN] — Ngày 07 — Marketing Brief Tuần 2` (1 trang)
-- Ví dụ: `Sen Spa — Ngày 07 — AI Foundation Pack` · `Sen Spa — Ngày 07 — Marketing Brief Tuần 2`
+- Ví dụ: `MSX Group — Ngày 07 — AI Foundation Pack` · `MSX Group — Ngày 07 — Marketing Brief Tuần 2`
+- **Vắng buổi live?** Nộp thêm video demo 5' đúng 4 nhịp (quay màn hình chạy sống, không dựng cắt ghép; câu ③ thay bằng 1 câu mentor gửi riêng ngay trước khi quay — giữ tính "tại chỗ"). Mentor chấm theo đúng rubric mục 10; cohort xem video trong thread và chấm Peer Score như demo live.
 
 **Deadline:** 23h59 cùng ngày. Học viên còn mục 🔴 sau deadline → mentor hẹn kèm 1:1 trong 48h đầu Tuần 2 (không để nợ kéo sang Ngày 09).
 
 ## 7. 📄 Template Đi Kèm
 
-**[[Template 7.1 — Foundation Scorecard]]** — bảng tự chấm 25 tiêu chí Có/Không, mỗi tiêu chí 4 điểm, tổng 100 điểm. Bao phủ 6 nhóm tài sản: Snapshot/Top 10, Avatar/Journey, Offer/Message, Knowledge Base, Prompt Library, Business Brain.
+**[[Template 7.1 — Foundation Scorecard]]** — bảng tự chấm **25 tiêu chí Có/Không phủ đủ Core N1-N6**, chia 6 nhóm: BMC + Snapshot & Top 10 (5 tiêu chí) · Avatar + PDFO + Journey (4) · Offer + Value Prop + Message (4) · Knowledge Base + Security Rule (5) · Prompt Library (3) · Business Brain 2 Assistant (4). Mỗi "Có" = 4 điểm → tổng tròn 100; 3 cột chấm Tự chấm / Peer / Mentor; kèm bảng ghi kết quả Foundation Gate 5 câu + "3 việc vá trong 48h".
 
-**[[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]]** — bản mẫu Mẫu Sơn Xanh được chấm ~80 điểm để học viên hiểu “đủ demo sống” khác gì “production 100%”.
+**[[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]]** — bản mẫu Mẫu Sơn Xanh tự chấm 20/25 = 80 điểm ⭐, để học viên hiểu "đủ demo sống" khác gì "production 100%".
 
-**[[Template 7.2 — Marketing Brief Tuần 2]]** — 1 trang gồm: mục tiêu tuần 2, chủ đề nội dung chính, offer/sản phẩm muốn đẩy, kênh ưu tiên, tệp khách ưu tiên, đối chiếu với mục tiêu 28 ngày và Customer Journey.
+**[[Template 7.2 — Marketing Brief Tuần 2]]** — 1 trang, 4 mục cốt lõi + đối chiếu: chủ đề nội dung chính (lấy từ cột "DN cần làm gì" trong Journey) · sản phẩm/offer muốn đẩy (= offer Ngày 03) · kênh ưu tiên + tần suất khả thi · tệp khách ưu tiên (avatar chính + trạng thái: mới / đã inbox chưa chốt / khách cũ) · 2 dòng đối chiếu với Mục tiêu 28 ngày và Journey. Kèm bản điền mẫu MSX.
 
-**[[Template 7.3 — Peer Score Demo Day]]** — form chấm chéo 5 tiêu chí: đúng format/thời lượng, Brain chạy sống, dữ liệu thật, kết nối hệ thống, xử lý tình huống.
+**[[Template 7.3 — Peer Score Demo Day]]** — form chấm chéo 5 tiêu chí × 20 điểm (khớp đúng rubric mục 10) + ô bắt buộc "điều tôi học được từ demo này"; kèm hướng dẫn dựng Google Form và luật chống chấm khống.
 
 ## 8. 🤖 Prompt Mẫu
 
@@ -155,14 +164,14 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 [NHIỆM VỤ] Đối chiếu các tài liệu tôi dán dưới đây với 25 tiêu chí trong scorecard đính kèm: (1) chấm Có/Không từng tiêu chí, dẫn chứng 1 dòng; (2) chỉ ra 3 lỗi NGHIÊM TRỌNG nhất (ảnh hưởng đến demo hoặc đến tuần 2) + cách sửa trong ≤30 phút mỗi lỗi; (3) kiểm tra tính NHẤT QUÁN chéo: giá trong Offer vs Product Knowledge vs FAQ có khớp không; avatar vs tệp ưu tiên trong Marketing Brief có khớp không; mục tiêu 28 ngày vs Top 10 use case có cùng hướng không; (4) dự đoán 3 câu hỏi khó nhất người phản biện có thể hỏi khi xem demo của tôi.
 
-[DỮ LIỆU ĐẦU VÀO] Bảng 25 tiêu chí: {{dán Template 7.1}}. Các tài liệu: {{dán lần lượt: Snapshot, Avatar rút gọn, Core Offer, mục lục KB + 5 FAQ mẫu, 2 khối ngữ cảnh, Instruction Document, Test Case Report, Marketing Brief}}.
+[DỮ LIỆU ĐẦU VÀO] Bảng 25 tiêu chí: {{dán Template 7.1}}. Các tài liệu: {{dán lần lượt: BMC 9 khối (tóm tắt), Snapshot, Avatar rút gọn + 5 câu nguyên văn, Core Offer + Value Prop Statement, mục lục KB + Security Rule + 5 FAQ mẫu, 2 khối ngữ cảnh, Instruction Document, Test Case Report, Marketing Brief}}.
 
 [ĐỊNH DẠNG ĐẦU RA] Bảng chấm 25 dòng (Tiêu chí | Có/Không | Dẫn chứng) → mục "3 lỗi ưu tiên + cách sửa" → mục "Kiểm tra nhất quán" (3 phép đối chiếu) → mục "3 câu phản biện dự đoán".
 
 [RÀNG BUỘC] Chấm chặt: thiếu dẫn chứng = Không. Không khen xã giao. Cách sửa phải làm được trong 30 phút với công cụ sẵn có. Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** audit phát hiện — FAQ A1 ghi "15tr chia 2 đợt" nhưng Product Knowledge chưa có mục trả đợt → lỗi nhất quán, sửa 10' (thêm vào chính sách chung, nạp lại KB); dự đoán phản biện: "Nếu Hương nghỉ ngay tuần sau, hệ thống này thay được bao nhiêu % việc của bạn ấy?"
+**Ví dụ đã điền (🍵 MSX):** audit phát hiện — FAQ ghi "freeship đơn TỪ 500K" nhưng Product Knowledge mục Combo 3 hộp ghi "500K + freeship" không nói rõ đơn đúng 500K có được freeship không → lỗi nhất quán ca biên, sửa 10' (chốt "từ 500K", cập nhật cả 2 file, nạp lại KB); dự đoán phản biện: "5.000 khách cũ mà mỗi tháng chỉ 80 đơn — hệ thống này đóng góp cụ thể gì vào con số đó trong 28 ngày?"
 
 ### Prompt 2 — Luyện demo: AI đóng vai người phản biện
 
@@ -180,7 +189,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 [RÀNG BUỘC] Hỏi như người thật trong buổi Zoom — ngắn, sắc, không học thuật. Không cho tôi né: nếu tôi trả lời chung chung, truy tiếp 1 lần. Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** câu phản biện AI đặt ra — "Chị nói 5/6 test đạt. Ca trượt là ca gì, và nếu ca đó xảy ra với khách thật tối nay thì chuyện gì xảy ra?" — đúng loại câu hỏi sẽ gặp thật trong buổi demo.
+**Ví dụ đã điền (🍵 MSX):** câu phản biện AI đặt ra — "Bạn nói 5/6 test đạt. Ca trượt là ca gì, và nếu ca đó xảy ra với một khách đặt Combo 3 hộp tối nay thì chuyện gì xảy ra?" — đúng loại câu hỏi sẽ gặp thật trong buổi demo.
 
 ### Prompt 3 — Chốt Marketing Brief Tuần 2 từ tài sản tuần 1
 
@@ -189,7 +198,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 
 [BỐI CẢNH] Tuần tới tôi bắt đầu xây Marketing Engine (cỗ máy nội dung + quảng cáo). Tôi cần 1 trang brief để mọi content tuần 2 bắn cùng một hướng, thay vì nghĩ gì đăng nấy.
 
-[NHIỆM VỤ] Từ 4 tài sản dưới đây, đề xuất Marketing Brief gồm: (1) 2 chủ đề nội dung chính cho 2 tuần tới — lấy từ cột "DN cần làm gì" của các giai đoạn Journey đang bỏ trống ⚡ và điểm nghẽn Top 10; (2) sản phẩm đẩy chính (mặc định = offer chủ lực, nêu lý do); (3) kênh ưu tiên + tần suất khả thi với nguồn lực của tôi; (4) tệp khách ưu tiên xếp hạng: tệp nào ra tiền nhanh nhất trước (gợi ý cân nhắc: người đã inbox chưa chốt > khách cũ hết liệu trình > tệp lạnh); (5) 2 dòng đối chiếu: brief phục vụ chỉ số nào trong mục tiêu 28 ngày, giai đoạn nào của Journey. Nếu tài sản của tôi mâu thuẫn nhau (mục tiêu một đằng, tệp một nẻo), chỉ ra và hỏi tôi trước khi chốt.
+[NHIỆM VỤ] Từ 4 tài sản dưới đây, đề xuất Marketing Brief gồm: (1) 2 chủ đề nội dung chính cho 2 tuần tới — lấy từ cột "DN cần làm gì" của các giai đoạn Journey đang bỏ trống ⚡ và điểm nghẽn Top 10; (2) sản phẩm đẩy chính (mặc định = offer chủ lực, nêu lý do); (3) kênh ưu tiên + tần suất khả thi với nguồn lực của tôi; (4) tệp khách ưu tiên xếp hạng: tệp nào ra tiền nhanh nhất trước (gợi ý cân nhắc: người đã inbox chưa chốt > khách cũ đến hạn mua lại/hết liệu trình > tệp lạnh); (5) 2 dòng đối chiếu: brief phục vụ chỉ số nào trong mục tiêu 28 ngày, giai đoạn nào của Journey. Nếu tài sản của tôi mâu thuẫn nhau (mục tiêu một đằng, tệp một nẻo), chỉ ra và hỏi tôi trước khi chốt.
 
 [DỮ LIỆU ĐẦU VÀO] Mục tiêu 28 ngày + Top 10: {{dán}}. Customer Journey (các dòng ⚡): {{dán}}. Core Offer: {{dán phần chính}}. Nguồn lực thực tế: {{VD: mình tôi + lễ tân, mỗi ngày 1h cho marketing, ngân sách ads 3tr/tháng}}.
 
@@ -198,7 +207,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 [RÀNG BUỘC] Không đề xuất kênh mới cần >2h/tuần để vận hành. Tần suất content phải khả thi với nguồn lực khai báo (thà 3 bài/tuần đều đặn còn hơn 7 bài/tuần được 1 tuần). Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** `{{nguồn lực}}` = "chị Lan 1h/ngày + lễ tân hỗ trợ đăng bài, ads 3tr/tháng" → brief chốt: chủ đề "sự thật về nám sau 35 + hành trình khách thật theo mốc soi da"; đẩy "Da Sáng Đều Màu 90 Ngày"; Facebook 4 bài/tuần (AI viết, chị Lan duyệt 15'/ngày); tệp #1: 40+ người đã inbox 3 tháng chưa chốt (phục vụ chỉ số follow-up 0%→100%).
+**Ví dụ đã điền (🍵 MSX):** `{{nguồn lực}}` = "1 người phụ trách 1h/ngày + 1 bạn CSKH hỗ trợ đăng bài, ads 5tr/tháng" → brief chốt: chủ đề "giấc ngủ tự nhiên của dân văn phòng + hành trình vùng nguyên liệu Mẫu Sơn"; đẩy "Combo 3 hộp Trà Mẩy Gòm An Giấc"; Facebook 4 bài/tuần (AI viết, người phụ trách duyệt 15'/ngày); tệp #1: khách cũ 3 tháng chưa mua lại (phục vụ chỉ số follow-up 24h và 200 khách cũ được chăm lại).
 
 ## 9. 📋 SOP Thao Tác (dùng lặp lại sau khóa học)
 
@@ -220,7 +229,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 ### Điểm Demo (thang 100 = 5 tiêu chí × 20, lấy trung bình mentor 50% + peer 50%)
 | # | Tiêu chí (mỗi tiêu chí 0-20) | Cách đo |
 |---|---|---|
-| 1 | Đúng format & thời lượng | Đủ 4 nhịp, 5-7 phút (quá/thiếu >1' : tối đa 10) |
+| 1 | Đúng format & thời lượng | Đủ 4 nhịp, trong khung 5' chuẩn — 7' trần (ra ngoài khung: tối đa 10) |
 | 2 | Brain chạy sống & đúng dữ liệu | 3 câu chạy live; trả lời đúng giá/dịch vụ thật; câu ③ là câu không chuẩn bị trước |
 | 3 | Số liệu trung thực | Nêu kết quả test X/6 kèm bằng chứng; nói rõ 1 lỗ hổng còn lại (không "mọi thứ hoàn hảo") |
 | 4 | Kết nối hệ thống | Chỉ ra được tài sản nào nuôi câu trả lời nào (KB → giá; PDFO → xử lý chê đắt) và brief tuần 2 nối với mục tiêu |
@@ -231,7 +240,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 **Lỗi trừ điểm điển hình của Demo Day:**
 1. Demo bằng ảnh chụp màn hình/slide thay vì chạy sống (trừ khi sự cố nền tảng đã báo trước): tiêu chí 2 tối đa 5/20.
 2. 3 câu demo đều là câu dễ, không có câu khách hỏi khó: −10 tổng điểm demo.
-3. Quá giờ >2 phút (chiếm giờ người khác): −5 và bị cắt phần còn lại.
+3. Quá trần 7' (chiếm giờ chuyển giao của người khác): nhắc 1 lần; quá 8' → bị cắt phần còn lại và −5.
 4. Không nộp Peer Score cho người khác (xem mà không chấm): −5 vào điểm tuần của CHÍNH người không chấm.
 5. Marketing Brief nộp muộn/lệch hoàn toàn với mục tiêu 28 ngày mà không giải thích: −5 điểm tuần.
 
@@ -256,7 +265,7 @@ core-output: "AI Foundation Pack hoàn chỉnh · Business Brain Demo 5-7 phút 
 → Không khóa cứng nhưng là mặc định: tuần 2 mọi bài học sẽ lấy brief này làm đầu vào. Muốn đổi giữa tuần phải nêu lý do bằng số liệu (VD: tệp ưu tiên không phản hồi sau 20 tin nhắn) — đổi theo dữ liệu thì tốt, đổi theo cảm hứng thì cấm.
 
 **Lỗi thường gặp:**
-1. **Dồn cả tuần chưa sửa vào sáng Demo Day** — vá 6 ngày nợ trong 3 tiếng, demo bằng tài sản chưa test lại. *Phát hiện:* checklist Cụm A quá 40' vẫn chưa xong quá nửa. *Sửa:* ưu tiên ngược — chuẩn bị demo (Cụm C) TRƯỚC với những gì đang có, nợ cũ để Catch-up sau buổi live; và rút kinh nghiệm tuần 2: sửa 🔧 trong 24h như quy định.
+1. **Dồn cả tuần chưa sửa vào sáng Demo Day** — vá 6 ngày nợ trong 3 tiếng, demo bằng tài sản chưa test lại. *Phát hiện:* checklist Cụm A quá 45' vẫn chưa xong quá nửa. *Sửa:* ưu tiên ngược — chuẩn bị demo (Cụm C) TRƯỚC với những gì đang có, nợ cũ để Catch-up sau buổi live; và rút kinh nghiệm tuần 2: sửa 🔧 trong 24h như quy định.
 2. **Demo thành thuyết trình về AI** — 5 phút nói về "AI là tương lai", 1 phút chạy thật. *Phát hiện:* quá nửa thời gian không có màn hình thao tác. *Sửa:* bám 4 nhịp — nhịp 3 (chạy sống) phải ≥50% thời lượng; trainer cắt đúng giờ không nể nang.
 3. **Chọn 3 câu demo "an toàn" AI chắc chắn trả lời hay** — demo đẹp nhưng không ai tin, phản biện hỏi 1 câu là lộ. *Phát hiện:* cả 3 câu đều là FAQ đơn giản. *Sửa:* cơ cấu bắt buộc ①khó ②nội bộ ③tại chỗ đã chống lỗi này — trainer kiểm tra cơ cấu câu trước khi cho chạy; nhớ: 1 câu trả lời trung thực "em chưa có thông tin này" đáng tin hơn 3 câu trơn tru.
 

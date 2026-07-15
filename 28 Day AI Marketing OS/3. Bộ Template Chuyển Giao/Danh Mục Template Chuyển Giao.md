@@ -34,20 +34,38 @@ tags: [project, aios, template, product]
 | T10 | AI Instruction Document (system prompt cho Business Brain + Assistant) | 6 | Doc/RocketAgent | 🅿️0 | ✅ [[Template 6.1 — AI Instruction Document]] · [[Template 6.1A — Bản Mẫu MSX AI Business Brain]] · [[Template 6.2 — Test Case Report 6 Ca Chuẩn]] · [[Template 6.3 — Improvement List]] |
 | T11 | Foundation Scorecard (tự nghiệm thu tuần 1) | 7 | Sheet | 🅿️1 | ✅ [[Template 7.1 — Foundation Scorecard]] · [[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]] · [[Template 7.2 — Marketing Brief Tuần 2]] · [[Template 7.3 — Peer Score Demo Day]] |
 
-## Tuần 2 — Marketing Engine (10 template)
+## Tuần 2 — Marketing Engine (22 template — ✅ ĐÃ DỰNG ĐỦ 2026-07-15)
 
-| # | Template | Ngày | Dạng | Ưu tiên | Trạng thái |
-|---|---|---|---|---|---|
-| T12 | Content Strategy 1 trang + 5 Content Pillar Spa | 8 | Doc | 🅿️1 | ⬜ |
-| T13 | 90 Content Ideas Bank (ngân hàng ý tưởng — bản Spa đầy sẵn) | 8 | Sheet | 🅿️1 | ⬜ |
-| T14 | 30-Day Content Calendar (lịch nội dung) | 8/13 | Sheet | 🅿️1 | ⬜ |
-| T15 | 7 khung bài viết (chuyên môn/kể chuyện/checklist/cảnh báo/case study/bán mềm/kéo inbox) | 9 | Doc | 🅿️1 | ⬜ |
-| T16 | Brand Voice Guideline (hướng dẫn giọng thương hiệu) | 9 | Doc | 🅿️1 | ⬜ |
-| T17 | Visual Brand Kit + bộ mẫu Canva (banner/poster/thumbnail) theo ngành spa | 10 | Canva | 🅿️1 | ⬜ |
-| T18 | Video Script Pack (khung script hook 3s + 5 dạng video) + workflow sản xuất | 11 | Doc | 🅿️1 | ⬜ |
-| T19 | Landing Page khung sẵn (headline→FAQ) + Lead Form + Thank You | 12 | Page template | 🅿️0 | ⬜ |
-| T20 | Lead Magnet mẫu ngành spa (checklist da/ebook mini) | 12 | PDF | 🅿️1 | ⬜ |
-| T21 | Content KPI Sheet + Distribution Workflow | 13 | Sheet | 🅿️1 | ⬜ |
+> Đánh số lại khớp [[_Chuẩn Đồng Bộ Tuần 2]] mục 12 (thay hệ T12–T21 cũ). Case chuẩn = **MSX** (bỏ Sen Spa). Mỗi template = khung điền + bản mẫu MSX + ghi chú thích ứng ngành; nội dung chi tiết nằm mục 7 của giáo án ngày tương ứng.
+
+| # | Template | Ngày | Trạng thái |
+|---|---|:---:|---|
+| 8.0 | Brand Guideline (nhận diện — cổng trước content; T9.1/T10.1 kế thừa) | 8 | ✅ [[Template 8.0 — Brand Guideline]] |
+| 8.1 | Content Research Sheet (3 mỏ R1/R2/R3) | 8 | ✅ [[Template 8.1 — Content Research Sheet]] |
+| 8.2 | Content Strategy & 5 Pillar + Funnel Map | 8 | ✅ [[Template 8.2 — Content Strategy & 5 Pillar + Funnel Map]] |
+| 8.3 | Bảng 60 Ý Tưởng (có cột Mã nguồn) | 8 | ✅ [[Template 8.3 — Bảng 60 Ý Tưởng]] |
+| 9.1 | Brand Voice Guideline (nâng cấp giọng T8.0) | 9 | ✅ [[Template 9.1 — Brand Voice Guideline]] |
+| 9.2 | Content Bank (10 bài + cột Mã nguồn + "sửa gì so với AI") | 9 | ✅ [[Template 9.2 — Content Bank]] |
+| 9.3 | Content Repurpose Sheet | 9 | ✅ [[Template 9.3 — Content Repurpose Sheet]] |
+| 10.1 | Visual Brand Kit | 10 | ✅ [[Template 10.1 — Visual Brand Kit 1 trang]] |
+| 10.2 | Bảng Kế Hoạch Visual (6 visual truy nguyên Message Pack) | 10 | ✅ [[Template 10.2 — Bảng Kế Hoạch Visual]] |
+| 10.3 | Cấu Trúc Thư Viện Visual | 10 | ✅ [[Template 10.3 — Cấu Trúc Thư Viện Visual]] |
+| 11.1 | Video Script Template (5 phần theo giây + 2 script mẫu) | 11 | ✅ [[Template 11.1 — Video Script Template]] |
+| 11.2 | AI Video Production Workflow | 11 | ✅ [[Template 11.2 — AI Video Production Workflow]] |
+| 11.3 | Bảng Chọn Định Dạng Video | 11 | ✅ [[Template 11.3 — Bảng Chọn Định Dạng Video]] |
+| 12.1 | Bảng Chọn Lead Magnet (4 tiêu chí) | 12 | ✅ [[Template 12.1 — Bảng Chọn Lead Magnet]] |
+| 12.2 | Landing Page Copy 9 Khối (có cột Mã nguồn) | 12 | ✅ [[Template 12.2 — Landing Page Copy 9 Khối]] |
+| 12.3 | Cấu Trúc Form Chuẩn + Nối Sheet (+ Hermes/Zalo) | 12 | ✅ [[Template 12.3 — Cấu Trúc Form Chuẩn + Nối Sheet]] |
+| 12.4 | Lead Flow Map 6 Trạm + Data Security | 12 | ✅ [[Template 12.4 — Lead Flow Map 6 Trạm]] |
+| 13.1 | Publishing Calendar 14+16 Ngày (14 slot khớp kho) | 13 | ✅ [[Template 13.1 — Publishing Calendar 14+16 Ngày]] |
+| 13.2 | Distribution Workflow 5 vai + Automation Layer 3 tầng | 13 | ✅ [[Template 13.2 — Distribution Workflow & Automation Layer]] |
+| 13.3 | Content KPI Sheet (baseline từ N1) | 13 | ✅ [[Template 13.3 — Content KPI Sheet]] |
+| 14.1 | Marketing Engine Self-Audit + Engine Pack | 14 | ✅ [[Template 14.1 — Marketing Engine Self-Audit & Engine Pack]] |
+| 14.2 | Phiếu Chấm Chéo Demo (luồng vàng) | 14 | ✅ [[Template 14.2 — Phiếu Chấm Chéo Demo]] |
+| 14.3 | Sales Input Pack (đầu vào Tuần 3) | 14 | ✅ [[Template 14.3 — Sales Input Pack]] |
+| Module | **Phễu Quà Tặng Tự Động** (Vercel + Hermes/Zalo) — trao quà + nuôi dưỡng tự động | 12/13 | ✅ [[Module — Phễu Quà Tặng Tự Động (Vercel + Hermes-Zalo)]] |
+
+> **Bài tập Tuần 2:** ✅ 7 phiếu `Bài Tập Ngày 08…14` tại `Tuần 2 — AI Marketing Engine/Tuần 2 - Bài tập/`.
 
 ## Tuần 3 — Sales Engine (10 template)
 

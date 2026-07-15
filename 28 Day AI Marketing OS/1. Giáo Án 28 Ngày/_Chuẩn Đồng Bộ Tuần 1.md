@@ -15,10 +15,12 @@ tags: [project, aios, giao-an, spec]
 
 | Case | Vai trò | Dữ liệu nguồn |
 |---|---|---|
-| 🚀 **RocketAI Solutions** (B2B dịch vụ — công ty của người dạy) | Case DẠY — demo live; avatar khách hàng của RocketAI là **chị Mai, 35t, chủ Spa ABC, 10 nhân viên, ~500tr/tháng** (giữ bối cảnh spa cho học viên ngách dịch vụ) | [[Demo Case Study — Rocket AI BMC Mẫu]] |
-| 🍵 **MSX Group — Mẫu Sơn Xanh** (B2C sản phẩm — học viên thật) | Case CHỨNG MINH + demo vault sống; avatar **chị Hương, 40t, văn phòng Hà Nội** | [[Case Study Mẫu — RocketAI & MSX Group]] + vault `ai-marketing-system-msx-demo/` |
+| 🍵 **MSX Group — Mẫu Sơn Xanh** (B2C sản phẩm — học viên thật) | **Case XUYÊN SUỐT** — ví dụ chính của mọi ngày, demo vault sống, case CHỨNG MINH khi bán; avatar **chị Hương, 40t, văn phòng Hà Nội** | [[Case Study Mẫu — RocketAI & MSX Group]] + vault `ai-marketing-system-msx-demo/` |
+| 🚀 **RocketAI Solutions** (B2B dịch vụ — công ty của người dạy) | **Case ĐỐI CHIẾU** — mở ra khi mô hình B2B khác B2C (offer, proposal, chu kỳ chốt, AOV); avatar khách hàng của RocketAI là **chị Mai, 35t, chủ Spa ABC, 10 nhân viên, ~500tr/tháng** (giữ bối cảnh spa cho học viên ngách dịch vụ) | [[Demo Case Study — Rocket AI BMC Mẫu]] |
 
-**Mapping theo ngày:** N0 cả 2 (tour vault MSX) · N1 RocketAI (+MSX đối chiếu B2C) · N2 MSX · N3 cả 2 (so offer B2B vs B2C) · N4 MSX (FAQ 12 câu thật, 6 SP thật) · N5 RocketAI + bản mẫu MSX (Template 5.1A) · N6 cả 2 (2 Brain) · N7 cả 2 (demo mẫu = vault MSX).
+**Nguyên tắc:** MSX là ví dụ chính chạy suốt 28 ngày (vì vault demo đã build 80% — học viên mở ra đối chiếu được ngay, đúng nguyên tắc "nhìn bài đúng"). RocketAI xen kẽ ở những chỗ B2B khác B2C rõ rệt, và là case trainer demo sống trong buổi live.
+
+**Mapping theo ngày:** N0 tour vault MSX · N1 MSX (+RocketAI đối chiếu B2B: BMC, Snapshot, phễu) · N2 MSX (+RocketAI đối chiếu avatar B2B: người mua ≠ người dùng) · N3 cả 2 (so offer B2B vs B2C — RocketAI đậm hơn) · N4 MSX (FAQ 12 câu thật, 6 SP thật) · N5 MSX + RocketAI (prompt ngành dịch vụ) · N6 cả 2 (2 Brain) · N7 MSX (demo mẫu = vault MSX).
 
 Mục "Thích ứng ngành khác" giữ nguyên ở mọi ngày (spa/thẩm mỹ, nha khoa, giáo dục, gym/coaching) — học viên ngách dịch vụ vẫn "thấy mình" qua avatar chị Mai và ghi chú thích ứng.
 

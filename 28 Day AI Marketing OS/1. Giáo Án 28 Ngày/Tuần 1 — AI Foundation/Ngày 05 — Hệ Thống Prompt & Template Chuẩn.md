@@ -39,24 +39,24 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 
 ### Khối 1 — Vì sao phải CHUẨN HÓA prompt (5')
 - **Ý chính:** Hỏi AI ngẫu hứng = mỗi lần một kết quả, không giao được cho nhân viên, không cải tiến được. Prompt chuẩn hóa = quy trình làm việc: cùng đầu vào → cùng chất lượng đầu ra, ai chạy cũng được, hỏng thì biết sửa ở dòng nào.
-- **Cách giảng:** Analogy công thức món ăn: "Đầu bếp giỏi nấu ngon không cần công thức — nhưng CHUỖI nhà hàng cần công thức để 100 quán vị như nhau. Anh chị đang xây chuỗi, không phải nấu ăn tài tử." Demo đối chứng 60 giây: "viết bài về trị nám" (prompt 1 dòng) vs prompt chuẩn đủ 6 phần — chiếu 2 output cạnh nhau.
-- **Ví dụ Sen Spa:** Chị Lan từng dùng ChatGPT viết caption — lúc hay lúc dở, mỗi lần mô tả spa lại từ đầu. Sau hôm nay: mở thư viện → chọn prompt M1 → điền 2 chỗ trống → 3 phút có bài đúng giọng.
+- **Cách giảng:** Analogy công thức món ăn: "Đầu bếp giỏi nấu ngon không cần công thức — nhưng CHUỖI nhà hàng cần công thức để 100 quán vị như nhau. Anh chị đang xây chuỗi, không phải nấu ăn tài tử." Demo đối chứng 60 giây: "viết bài về AI cho spa" (prompt 1 dòng) vs prompt chuẩn đủ 6 phần — chiếu 2 output cạnh nhau.
+- **Ví dụ RocketAI:** Trước khi chuẩn hoá, Tony viết content tuyển học viên bằng cách chat ngẫu hứng với AI — mỗi lần mô tả lại RocketAI từ đầu, bài lúc hay lúc dở. Sau khi có thư viện: mở thư viện → chọn M01 → điền 2 chỗ trống → 3 phút có bài đúng giọng thực chiến.
 
 ### Khối 2 — Giải phẫu khung Role–Context–Task–Input–Output–Constraint (8')
 - **Ý chính:** 6 phần của một prompt chuẩn: **Role (vai trò)** — AI đóng vai ai (chuyên gia gì, cho ngành nào); **Context (bối cảnh)** — DN nào, khách nào, đang ở tình huống gì; **Task (nhiệm vụ)** — làm gì, các bước; **Input (dữ liệu đầu vào)** — chỗ `{{điền}}` dữ liệu thật; **Output (định dạng đầu ra)** — bảng/script/độ dài/cấu trúc; **Constraint (ràng buộc)** — cấm gì, giọng gì, giới hạn gì.
 - **Cách giảng:** Học viên đã DÙNG khung này 4 ngày nay (mọi prompt Ngày 1-4 đều 6 phần) — hôm nay mới gọi tên và tự viết. Quy tắc sửa prompt: output sai KIỂU → sửa Output/Constraint; output sai NỘI DUNG → sửa Context/Input; output nông → sửa Role/Task.
-- **Ví dụ Sen Spa:** Mổ xẻ prompt "viết bài Facebook" trên slide: tô màu 6 phần, chỉ ra nếu xóa Constraint "không hứa y khoa tuyệt đối" thì bài viết vi phạm quảng cáo ngay.
+- **Ví dụ RocketAI:** Mổ xẻ prompt M01 "viết bài Facebook" trên slide: tô màu 6 phần, chỉ ra nếu xoá Constraint "không hứa con số doanh thu/lead" thì bài tuyển học viên biến thành bài hứa hươu — mất uy tín ngay. Với học viên ngách spa/nha khoa, Constraint tương đương là "không hứa kết quả y khoa" (xoá là vi phạm quảng cáo).
 
 ### Khối 3 — Khối ngữ cảnh tái sử dụng: [BỐI CẢNH DN] và [GIỌNG] (7')
 - **Ý chính:** 80% phần Context và Constraint giống nhau ở mọi prompt → tách thành 2 khối văn bản chuẩn, viết MỘT lần, dán vào MỌI prompt: `[BỐI CẢNH DN]` = 5-7 dòng chưng cất từ Snapshot + Avatar + Offer (Ngày 1-3); `[GIỌNG]` = 4-5 dòng từ đặc tả giọng thương hiệu (Ngày 04). Đây là "con dấu" của DN đóng lên mọi câu lệnh.
 - **Cách giảng:** Đây chính là bí quyết làm 50 prompt trong 1 buổi tối: bộ khung đã phát sẵn, học viên chỉ chế tạo 2 khối này rồi "đóng dấu" hàng loạt.
-- **Ví dụ Sen Spa:** Khối `[BỐI CẢNH DN]` của Sen Spa (chiếu nguyên văn — xem mục 4, Bước 1).
+- **Ví dụ RocketAI:** Khối `[BỐI CẢNH DN]` của RocketAI (chiếu nguyên văn — xem mục 4, Bước 1); bản B2C tương ứng của MSX xem [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 
 ### Khối 4 — Tổ chức thư viện & quy trình test (5')
 - **Ý chính:** Thư viện quản lý trên 1 file bảng (Google Sheets/Notion) 7 cột: Mã | Tên prompt | Nhóm (M/S/CS/OPS) | Dùng khi nào | Prompt đầy đủ | Trạng thái test | Ghi chú kết quả. Đánh mã theo phòng ban: M01-M15 (Marketing), S01-S15 (Sales), CS01-CS10 (chăm sóc khách hàng), OPS01-OPS10 (vận hành/quản trị). Quy trình test 3 bước: chạy với dữ liệu thật → chấm Đạt/Chưa đạt theo 2 câu hỏi ("dùng được ngay không? cần sửa tay bao nhiêu %?") → ghi 1 dòng kết quả.
 - **Cách giảng:** "Prompt chưa test = chưa có. Giống SOP chưa ai làm thử — chỉ là giấy."
 
-> **Thích ứng ngành khác:** Bộ 50 prompt khung dùng chung cho mọi ngành dịch vụ bán qua tư vấn — chỉ khối `[BỐI CẢNH DN]` và `[GIỌNG]` là khác nhau. Nha khoa lưu ý thêm Constraint pháp lý quảng cáo y tế vào MỌI prompt marketing; Giáo dục thêm ràng buộc "người đọc là phụ huynh, không phải học viên"; Coaching/B2B đổi các prompt "đặt lịch soi da" thành "đặt lịch discovery call (buổi gọi tìm hiểu)".
+> **Thích ứng ngành khác:** Bộ 50 prompt khung dùng chung cho mọi ngành — chỉ khối `[BỐI CẢNH DN]` và `[GIỌNG]` là khác nhau. Spa/thẩm mỹ & nha khoa: thêm Constraint pháp lý quảng cáo y tế vào MỌI prompt marketing (chính là ngách của khách hàng RocketAI — chị Mai, chủ Spa ABC — nên demo hôm nay vẫn "chạm" bạn); Giáo dục: thêm ràng buộc "người đọc là phụ huynh, không phải học viên"; B2C sản phẩm: đối chiếu trọn bộ bản mẫu MSX ([[Template 5.1A — Bản Mẫu MSX Prompt Library v1]]); Coaching/B2B dịch vụ: đổi các prompt "đặt lịch soi da" thành "đặt lịch demo/discovery call (buổi gọi tìm hiểu)".
 
 ## 3. 🖥️ Agenda Buổi Live (90 phút)
 
@@ -64,60 +64,66 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 |---|---|---|
 | 10' | Warm-up + chữa bài Ngày 04 | Chiếu 1 KB tốt (FAQ từ inbox thật, có mục từ chối khéo) + lỗi "2 giá trong 2 tài liệu". Hỏi nhanh: "Ai đã test 3 câu khám sức khỏe? AI trả lời sai chỗ nào?" |
 | 25' | Giảng kiến thức trọng tâm | 4 khối mục 2. Trọng tâm: Khối 2 (giải phẫu 6 phần) + Khối 3 (khối ngữ cảnh). |
-| 30' | Demo thực hành live | Chế tạo 2 khối ngữ cảnh Sen Spa → đóng dấu vào 3 prompt khung → test → sửa 1 prompt bị lỗi (kịch bản mục 4). |
+| 30' | Demo thực hành live | Chế tạo 2 khối ngữ cảnh RocketAI → đóng dấu vào 3 prompt khung → test → sửa 1 prompt bị lỗi (kịch bản mục 4). |
 | 15' | Học viên làm tại chỗ + Q&A | Học viên viết nháp khối `[BỐI CẢNH DN]` của mình (chạy Prompt 1), dán bản nháp vào chat cho trainer nhận xét nhanh 3-4 bản. |
 | 10' | Giao bài tập | Chiếu deliverable + rubric. Nhấn mạnh: KHÔNG viết 50 prompt từ đầu — bộ khung đã phát, việc của bạn là cá nhân hóa 20 + test 10. |
 
-**Checklist chuẩn bị của trainer:** file Google Sheets "Prompt Library — 50 Prompt Khung" (bản phát học viên, cột prompt đầy đủ, cột cá nhân hóa trống) · bản Sen Spa đã cá nhân hóa 100% để demo · slide giải phẫu 6 phần có tô màu · 2 output đối chứng prompt 1 dòng vs prompt chuẩn · link Template 5.1-5.3 ghim sẵn.
+**Checklist chuẩn bị của trainer:** file "Prompt Library — 50 Prompt Khung" ([[Template 5.1 — Prompt Library 50 Prompt Khung]] — bản phát học viên, cột prompt đầy đủ, cột cá nhân hoá trống) · 2 khối ngữ cảnh RocketAI đã điền sẵn để demo (mục 4) · [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]] mở sẵn (bản mẫu học viên hoàn chỉnh để đối chiếu) · slide giải phẫu 6 phần có tô màu · 2 output đối chứng prompt 1 dòng vs prompt chuẩn · [[Template 5.2 — Khối Ngữ Cảnh Chuẩn]] + [[Template 5.3 — Prompt Usage Guide]] mở sẵn.
 
-## 4. 🎬 Kịch Bản Demo (Ví dụ Sen Spa)
+## 4. 🎬 Kịch Bản Demo (Ví dụ RocketAI)
+
+> Case DẠY = 🚀 RocketAI (demo live, dữ liệu từ [[Demo Case Study — Rocket AI BMC Mẫu]]). Bản mẫu học viên hoàn chỉnh để đối chiếu = 🍵 [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]] — cùng cách làm, áp lên DN B2C sản phẩm.
 
 **Bước 1 (7') — Chế tạo khối [BỐI CẢNH DN] bằng Prompt 1.**
-- Làm gì: Paste Prompt 1 (mục 8) với đầu vào là Snapshot + Avatar + Offer của Sen Spa. AI chưng cất thành khối 7 dòng.
+- Làm gì: Paste Prompt 1 (mục 8) với đầu vào là Snapshot + Avatar + Offer của RocketAI. AI chưng cất thành khối 7 dòng.
 - Kết quả trông như thế nào (đọc to nguyên văn):
-> `[BỐI CẢNH DN] Sen Spa — spa chăm sóc da tại Đống Đa, Hà Nội, 6 nhân viên, chuyên trị nám - mụn - trẻ hóa cho phụ nữ 30-45 tuổi văn phòng/kinh doanh nhỏ, thu nhập 15-40tr. Sản phẩm chủ lực: liệu trình "Da Sáng Đều Màu 90 Ngày" — 10 buổi trị nám 15tr, cam kết mốc buổi 5 bằng ảnh soi da, mỗi tháng nhận tối đa 5 khách nám mới. Khách đến từ Facebook + giới thiệu; nỗi sợ lớn nhất của khách: mất tiền vô ích như từng bị với kem trộn. Điểm khác biệt: phác đồ cá nhân hóa theo ảnh soi da hằng tháng + cam kết đo được. Không bao giờ hứa "hết nám 100%".`
-- Điểm nhấn: "7 dòng này là 4 ngày công sức của anh chị được nén lại. Từ giờ AI nào đọc 7 dòng này cũng hiểu Sen Spa trong 10 giây."
+> `[BỐI CẢNH DN] RocketAI Solutions — công ty dịch vụ B2B tại Việt Nam, 4 founder, chuyên chuyển giao hệ điều hành AI Marketing & Sale cho SME. Khách mục tiêu: chủ spa/thẩm mỹ nữ 30-45 tuổi tự điều hành (đại diện: chị Mai, 35t, Spa ABC, 10 nhân viên, ~500tr/tháng). Sản phẩm chủ lực: AI Marketing & Sale OS™ — OS Transfer 12tr / OS Installed 25tr / OS Managed 50tr+; cam kết bằng văn bản: sau 28 ngày hệ thống không chạy → hoàn học phí. Kênh: video Facebook của founder, buổi demo Zoom, khách cũ giới thiệu. Nỗi sợ lớn nhất của khách: "AI phức tạp quá, tôi không rành công nghệ" — sợ mua phải khoá học lý thuyết. Điểm khác biệt: cài hệ thống chạy thật + mentor 1:10 + RocketAgent chạy 24/7, không dạy suông. Không bao giờ hứa: con số doanh thu/lead cụ thể, "AI thay thế hoàn toàn con người".`
+- Điểm nhấn: "7 dòng này là 4 ngày công sức của anh chị được nén lại. Từ giờ AI nào đọc 7 dòng này cũng hiểu RocketAI trong 10 giây."
 
 **Bước 2 (5') — Chế tạo khối [GIỌNG].**
-- Làm gì: Lấy output Prompt 3 Ngày 04 (đặc tả giọng thương hiệu), rút thành khối 4 dòng: xưng hô "em – chị/nàng" · thân tình thẳng thắn như bạn lâu năm · hay mở đầu bằng câu hỏi đời thường · cấm: "thần thánh", "cam kết 100%", ">1 emoji/câu", kiểu liệt kê 3 chấm than.
+- Làm gì: Lấy output Prompt 3 Ngày 04 (đặc tả giọng thương hiệu RocketAI), rút thành khối 4 dòng (đọc to nguyên văn):
+> `[GIỌNG] Xưng "Rocket" hoặc "em" với khách, gọi "anh/chị". Thực chiến, thẳng thắn, minh bạch — chứng minh bằng số liệu và demo, không lên gân. Từ đặc trưng: hệ thống chạy thật, chuyển giao, hệ điều hành AI, cam kết bằng văn bản, 10x. Cấm: "thần kỳ", hứa con số doanh thu, thuật ngữ kỹ thuật không giải thích, quá 1 emoji/đoạn.`
 - Kết quả: khối `[GIỌNG]` 4 dòng dán được vào mọi prompt.
-- Điểm nhấn: ai chưa làm Bonus Ngày 04 → dùng Prompt 2 hôm nay (rút giọng nhanh từ 3 tin nhắn cũ, 5 phút).
+- Điểm nhấn: ai chưa làm Bonus Ngày 04 → dùng Prompt 2 hôm nay (rút giọng nhanh từ 3 bài đăng/tin nhắn cũ, 5 phút).
 
 **Bước 3 (8') — "Đóng dấu" hàng loạt: cá nhân hóa prompt khung M01.**
-- Làm gì: Mở file 50 prompt khung, lấy M01 (viết bài Facebook). Prompt khung có sẵn chỗ trống `{{[BỐI CẢNH DN]}}`, `{{[GIỌNG]}}`, `{{chủ đề bài}}` — dán 2 khối vào, điền chủ đề "vì sao nám đậm hơn vào mùa hè". Chạy.
-- Kết quả: bài Facebook 200 từ đúng giọng, mở bằng câu hỏi đời thường, kết bằng CTA "inbox SOI DA", không câu nào vi phạm quảng cáo.
+- Làm gì: Mở file 50 prompt khung, lấy M01 (viết bài Facebook). Prompt khung có sẵn chỗ trống `{{[BỐI CẢNH DN]}}`, `{{[GIỌNG]}}`, `{{chủ đề bài}}` — dán 2 khối vào, điền chủ đề "vì sao chủ spa làm content 4h/ngày mà khách vẫn không đến". Chạy.
+- Kết quả: bài Facebook 200 từ đúng giọng thực chiến, mở bằng nỗi đau "4 tiếng mỗi ngày cho content", kết bằng CTA "inbox DEMO nhận buổi demo Zoom", không một lời hứa doanh thu.
 - Điểm nhấn: bấm giờ — từ mở thư viện đến có bài: dưới 4 phút. "Đây là tốc độ vận hành từ tuần sau."
 
 **Bước 4 (7') — Test và chấm 2 prompt nữa (S03 xử lý từ chối, CS02 tin nhắn chăm sau buổi).**
-- Làm gì: Chạy S03 với objection thật "15 triệu hơi quá tay với em"; chạy CS02 cho khách vừa xong buổi 3. Chấm từng cái theo 2 câu hỏi: dùng ngay được không / phải sửa tay bao nhiêu %.
+- Làm gì: Chạy S03 với objection thật của chị Mai: "25 triệu cao quá — chị tự mày mò ChatGPT cũng được mà"; chạy CS02 cho học viên (chủ spa) vừa hoàn thành Tuần 1 của chương trình 28 ngày. Chấm từng cái theo 2 câu hỏi: dùng ngay được không / phải sửa tay bao nhiêu %.
 - Kết quả: S03 Đạt (sửa <10%); CS02 Chưa đạt — tin nhắn dài 200 từ như email. 
-- Điểm nhấn: sửa lỗi CS02 LIVE bằng quy tắc chẩn đoán Khối 2: sai KIỂU → thêm Constraint "≤60 từ, dạng tin nhắn Zalo, 1 emoji tối đa" → chạy lại → Đạt. Ghi cả 3 dòng kết quả vào cột test của Sheets.
+- Điểm nhấn: sửa lỗi CS02 LIVE bằng quy tắc chẩn đoán Khối 2: sai KIỂU → thêm Constraint "≤60 từ, dạng tin nhắn Zalo, 1 emoji tối đa" → chạy lại → Đạt. Ghi cả 3 dòng kết quả vào cột test của file thư viện.
 
 **Bước 5 (3') — Tour nhanh toàn thư viện.**
 - Làm gì: Lướt qua 4 nhóm trong file khung: M01-M15 (bài FB, email, kịch bản video, quảng cáo, content calendar, phân tích insight, landing page...), S01-S15 (kịch bản tư vấn, xử lý từ chối, proposal, báo giá, follow-up, phân loại khách, tóm tắt lịch sử tư vấn...), CS01-CS10 (trả lời FAQ, xử lý khiếu nại, tin chăm sóc, kịch bản gọi lại, gợi ý upsell/cross-sell...), OPS01-OPS10 (tóm tắt báo cáo, phân tích số liệu, kế hoạch tuần, đánh giá hiệu suất, viết SOP...).
 - Điểm nhấn: "Về nhà anh chị KHÔNG viết gì từ đầu — chọn 20 prompt sẽ dùng nhiều nhất, đóng dấu 2 khối, test 10 cái."
 
-## 5. ✅ Checklist Thực Thi (Học viên tự làm — Core ≤ 2h)
+## 5. ✅ Checklist Thực Thi (Học viên tự làm — Core ≤2h theo đường template)
 
-**Cụm A — Chế tạo 2 khối ngữ cảnh (30'):**
-- [ ] Chạy Prompt 1 tạo khối `[BỐI CẢNH DN]` từ Snapshot + Avatar + Offer của bạn (15')
-- [ ] Chạy Prompt 2 tạo khối `[GIỌNG]` (dùng bản Ngày 04 nếu đã có) (10')
-- [ ] Đọc to 2 khối — chỗ nào sai thực tế thì sửa tay (5')
+> ⏱ Mỗi cụm ghi 2 số: **dùng template điền sẵn / lần đầu tự làm**. Tổng: **110' theo template · lần đầu có thể tới ~2h30** — quá giờ: làm theo thứ tự ưu tiên A→D; Bonus không bắt buộc, không trừ điểm.
 
-**Cụm B — Cá nhân hóa 20 prompt (45'):**
+**Cụm A — Chế tạo 2 khối ngữ cảnh (⏱ dùng template: 20' · lần đầu: 30'):**
+- [ ] Chạy Prompt 1 tạo khối `[BỐI CẢNH DN]` từ Snapshot + Avatar + Offer của bạn (10')
+- [ ] Chạy Prompt 2 tạo khối `[GIỌNG]` (dùng bản Ngày 04 nếu đã có) (7')
+- [ ] Đọc to 2 khối — chỗ nào sai thực tế thì sửa tay (3')
+
+**Cụm B — Cá nhân hóa 20 prompt (⏱ dùng template: 45' · lần đầu: 60'):**
 - [ ] Tạo bản sao file "Prompt Library — 50 Prompt Khung" (2')
 - [ ] Chọn 20 prompt bạn sẽ dùng nhiều nhất trong 2 tuần tới (gợi ý phân bổ: 7 Marketing + 6 Sales + 4 CSKH + 3 OPS) (8')
 - [ ] Dán 2 khối vào từng prompt, điền các chỗ `{{...}}` còn lại bằng dữ liệu thật (35')
+- 💡 **Mẹo giảm tải:** viết 2 khối MỘT lần → nhân bản hàng loạt (copy 2 khối, tìm mọi chỗ `{{[BỐI CẢNH DN]}}`/`{{[GIỌNG]}}` và dán đè) — tuyệt đối không viết lại bối cảnh cho từng prompt.
 
-**Cụm C — Test 10 prompt (35'):**
-- [ ] Chọn 10/20 prompt quan trọng nhất, chạy thật từng cái (25')
+**Cụm C — Test 10 prompt (⏱ dùng template: 35' · lần đầu: 45'):**
+- [ ] Chọn 10/20 prompt quan trọng nhất (phủ ≥3 nhóm), chạy thật từng cái (25')
 - [ ] Chấm Đạt/Chưa đạt + ghi 1 dòng kết quả vào cột test (5')
-- [ ] Prompt Chưa đạt: sửa theo quy tắc chẩn đoán (sai kiểu → Output/Constraint; sai nội dung → Context/Input), chạy lại 1 lần (5')
+- [ ] Prompt Chưa đạt: sửa theo quy tắc chẩn đoán (sai KIỂU → Output/Constraint; sai NỘI DUNG → Context/Input; NÔNG → Role/Task), chạy lại 1 lần (5')
 
-**Cụm D — Nộp bài (10'):**
+**Cụm D — Nộp bài (⏱ 10' · lần đầu: 10'):**
 - [ ] Nộp link file Prompt Library (quyền xem) vào thread cohort trước 23h59
 
-**Bonus:** viết Prompt Usage Guide 1 trang (Template 5.3); cá nhân hóa nốt 30 prompt còn lại; tự viết 3-5 prompt cho tình huống đặc thù DN bạn (theo khung 6 phần).
+**Bonus (không tính vào 2h):** viết Prompt Usage Guide 1 trang ([[Template 5.3 — Prompt Usage Guide]]); cá nhân hoá nốt 30 prompt còn lại; tự viết 3-5 prompt cho tình huống đặc thù DN bạn (theo khung 6 phần, dùng Prompt 5).
 
 ## 6. 📝 Bài Tập Về Nhà
 
@@ -125,7 +131,7 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 
 **Deliverable nộp:**
 - Link file: `[Tên DN] — Ngày 05 — Prompt Library v1` (Google Sheets/Notion, quyền xem)
-- Ví dụ: `Sen Spa — Ngày 05 — Prompt Library v1`
+- Ví dụ: `MSX Group — Ngày 05 — Prompt Library v1` — bản hoàn chỉnh đúng chuẩn của học viên thật: [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]]. Đối chiếu bài của bạn với bản này TRƯỚC KHI nộp.
 
 **Deadline:** 23h59 cùng ngày, nộp vào thread cohort ngày 05.
 
@@ -133,15 +139,16 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 
 **Template 5.1 — File "Prompt Library — 50 Prompt Khung" (tài sản phát sẵn quan trọng nhất hôm nay).** Google Sheets/Markdown 7 cột: Mã | Tên prompt | Nhóm | Dùng khi nào | Prompt đầy đủ (khung 6 phần, có chỗ `{{[BỐI CẢNH DN]}}` `{{[GIỌNG]}}` và các `{{trường dữ liệu}}`) | Trạng thái test (Đạt/Chưa đạt/Chưa test) | Ghi chú kết quả. Link template: [[Template 5.1 — Prompt Library 50 Prompt Khung]]. Danh mục 50 prompt:
 
-**Template 5.1A — Bản mẫu dự án thực tế MSX.** File đã điền mẫu dựa trên Mẫu Sơn Xanh/MSX Group: có sẵn `[BỐI CẢNH DN]`, `[GIỌNG]`, 20 prompt đã cá nhân hóa và 10 dòng test mẫu để học viên nhìn là hiểu cách làm. Link: [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 - **Marketing (M01-M15):** bài Facebook theo angle · bài kể chuyện khách hàng · email/tin nhắn broadcast · kịch bản video ngắn 30-60s · kịch bản livestream · nội dung quảng cáo (3 phiên bản A/B) · content calendar (lịch nội dung) tháng · phân tích insight từ comment/inbox · viết landing page theo StoryBrand · lead magnet (mồi thu hút) · caption ảnh trước-sau đúng luật · trả lời comment · brief ảnh cho designer/AI ảnh · biến 1 bài dài thành 5 định dạng · tối ưu bài cũ.
 - **Sales (S01-S15):** kịch bản tư vấn đầy đủ theo SPIN · mở đầu cuộc tư vấn · xử lý từ chối (điền objection bất kỳ) · proposal (đề xuất) · báo giá cá nhân hóa · tin follow-up 3 chạm · phân loại lead nóng/ấm/lạnh từ hội thoại · tóm tắt lịch sử tư vấn 1 khách · kịch bản gọi điện hẹn lịch · tin nhắn "cứu" khách im lặng · so sánh khéo với đối thủ · chốt kèm khan hiếm thật · xin giới thiệu (referral) · tái ký/gia hạn · kịch bản khảo sát nhu cầu nhanh.
 - **CSKH (CS01-CS10):** trả lời FAQ theo KB · tin chăm sau buổi/lần dùng đầu · xử lý khiếu nại theo mức độ · kịch bản gọi lại khách bỏ ngang · nhắc lịch không gây phiền · chúc mừng mốc (buổi 5/10, sinh nhật) · gợi ý upsell đúng lúc · gợi ý cross-sell (bán chéo) · xin review/feedback · tin nhắn "hâm nóng" khách lâu không quay lại.
 - **OPS (OPS01-OPS10):** tóm tắt báo cáo tuần từ số liệu thô · phân tích số liệu marketing-sale · kế hoạch tuần cho chủ DN · đánh giá hiệu suất nhân viên theo tiêu chí · viết SOP từ mô tả miệng · soạn nội dung đào tạo nhân viên mới · biên bản & việc cần làm sau họp · soạn tin tuyển dụng · checklist mở/đóng ca · phân tích quyết định (nên/không nên).
 
-**Template 5.2 — Khối ngữ cảnh chuẩn.** 2 ô điền: `[BỐI CẢNH DN]` (khung 7 dòng: DN & địa bàn | khách mục tiêu | sản phẩm chủ lực + giá + cam kết | kênh | nỗi sợ lớn nhất của khách | điểm khác biệt | điều không bao giờ hứa) và `[GIỌNG]` (4 dòng: xưng hô | 2-3 đặc điểm | từ đặc trưng | điều cấm). *Kèm bản Sen Spa điền mẫu nguyên văn (như mục 4).*
+**Template 5.1A — Bản mẫu dự án thực tế MSX (bản "nhìn là hiểu" để đối chiếu).** File đã điền hoàn chỉnh từ học viên thật Mẫu Sơn Xanh/MSX Group: có sẵn `[BỐI CẢNH DN]`, `[GIỌNG]`, 20 prompt đã cá nhân hóa và 10 dòng test mẫu. Đây là "đáp án mẫu" — bài của bạn phải đạt cùng độ cụ thể (đọc prompt thấy ngay: bán gì, cho ai, khác gì, cấm nói gì). Link: [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 
-**Template 5.3 (Bonus) — Prompt Usage Guide 1 trang.** Các mục: 5 prompt dùng hằng ngày là gì, ai dùng | quy trình 4 bước: chọn prompt → điền `{{}}` → chạy → RÀ TRƯỚC KHI DÙNG (người chịu trách nhiệm cuối là người, không phải AI) | được sửa: trường Input, chủ đề | cấm sửa: Constraint an toàn (quảng cáo y tế, cam kết) | gặp output sai → báo ai, ghi vào đâu.
+**Template 5.2 — Khối ngữ cảnh chuẩn.** 2 ô điền: `[BỐI CẢNH DN]` (khung 7 dòng, ≤130 từ: DN & địa bàn | khách mục tiêu | sản phẩm chủ lực + giá + cam kết | kênh | nỗi sợ lớn nhất của khách | điểm khác biệt | điều không bao giờ hứa) và `[GIỌNG]` (4 dòng, ≤80 từ: xưng hô | 2-3 đặc điểm | từ đặc trưng | điều cấm). *Kèm 2 bản điền mẫu nguyên văn: RocketAI (như mục 4) + MSX.* Link: [[Template 5.2 — Khối Ngữ Cảnh Chuẩn]].
+
+**Template 5.3 (Bonus) — Prompt Usage Guide 1 trang.** Các mục: 5 prompt dùng hằng ngày là gì, ai dùng nhóm nào khi nào | quy trình 4 bước: chọn prompt → điền `{{}}` → chạy → RÀ TRƯỚC KHI DÙNG (người chịu trách nhiệm cuối là người, không phải AI) | được sửa: trường Input, chủ đề | cấm sửa: Constraint an toàn (quảng cáo y tế, cam kết) | quy tắc thêm/sửa/gộp prompt + nhịp bảo trì thứ Sáu theo SOP-05 | gặp output sai → báo ai, ghi vào đâu. *Kèm bản mẫu MSX.* Link: [[Template 5.3 — Prompt Usage Guide]].
 
 ## 8. 🤖 Prompt Mẫu
 
@@ -161,7 +168,7 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 [RÀNG BUỘC] Chỉ dùng dữ kiện có trong 3 tài liệu. Ưu tiên con số (giá, số buổi, giới hạn suất). Không tính từ quảng cáo. Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** output chính là khối 7 dòng ở mục 4 Bước 1 — dùng nguyên văn làm mẫu đối chiếu.
+**Ví dụ đã điền (RocketAI):** output chính là khối 7 dòng ở mục 4 Bước 1 — dùng nguyên văn làm mẫu đối chiếu. Bản B2C: khối [BỐI CẢNH DN] của MSX trong [[Template 5.1A — Bản Mẫu MSX Prompt Library v1]].
 
 ### Prompt 2 — Rút nhanh khối [GIỌNG] (cho ai chưa làm Bonus Ngày 04)
 
@@ -179,25 +186,25 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 [RÀNG BUỘC] Đặc điểm phải có bằng chứng từ mẫu, không phán chung chung ("thân thiện, chuyên nghiệp"). Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** dán 3 caption cũ của chị Lan → `[GIỌNG] Xưng "em" với khách, gọi "chị/nàng". Thân tình thẳng thắn như bạn lâu năm, hay mở đầu bằng câu hỏi đời thường ("Sáng nay soi gương chị thấy gì?"). Từ đặc trưng: da khỏe từ gốc, đều màu, phác đồ riêng, mốc buổi 5. Cấm: "thần thánh", "cam kết 100%", quá 1 emoji/câu, chê bai da của khách.`
+**Ví dụ đã điền (RocketAI):** dán 3 bài Facebook cũ của Tony (bài tuyển học viên, bài kể chuyện cài hệ thống) → output chính là khối [GIỌNG] 4 dòng ở mục 4 Bước 2 — chú ý đặc điểm nào cũng có bằng chứng từ bài thật ("chứng minh bằng số liệu và demo" rút từ thói quen chèn ảnh dashboard vào mọi bài).
 
 ### Prompt 3 — Prompt khung M01: Viết bài Facebook theo angle (mẫu tiêu biểu của thư viện)
 
 ```
-[VAI TRÒ] Bạn là copywriter mạng xã hội cho ngành dịch vụ chăm sóc cá nhân tại Việt Nam, viết bài Facebook tự nhiên như người thật chia sẻ, tuân thủ quy định quảng cáo ngành sức khỏe/làm đẹp.
+[VAI TRÒ] Bạn là copywriter mạng xã hội cho SME tại Việt Nam, viết bài Facebook tự nhiên như người thật chia sẻ, tuân thủ quy định quảng cáo của ngành trong [BỐI CẢNH DN].
 
 [BỐI CẢNH] {{[BỐI CẢNH DN]}}
 
 [NHIỆM VỤ] Viết 1 bài Facebook theo angle (góc truyền thông) được chỉ định: mở bằng hook chạm đúng tâm lý trong 2 dòng đầu (trước dấu "Xem thêm") → thân bài dẫn dắt bằng ví dụ/câu chuyện đời thường, cài 1 thông tin chuyên môn dễ hiểu → kết bằng CTA được chỉ định. Đề xuất kèm 1 dòng brief (mô tả ngắn) hình ảnh minh họa.
 
-[DỮ LIỆU ĐẦU VÀO] Chủ đề bài: {{chủ đề}}. Angle: {{chọn: nỗi đau / mong muốn / bằng chứng / kẻ thù chung / khẩn cấp}}. Chất liệu tâm lý liên quan: {{dán 1-2 dòng Pain/Desire/Fear tương ứng từ PDFO Map}}. CTA: {{VD: inbox "SOI DA" nhận suất soi da miễn phí}}.
+[DỮ LIỆU ĐẦU VÀO] Chủ đề bài: {{chủ đề}}. Angle: {{chọn: nỗi đau / mong muốn / bằng chứng / kẻ thù chung / khẩn cấp}}. Chất liệu tâm lý liên quan: {{dán 1-2 dòng Pain/Desire/Fear tương ứng từ PDFO Map}}. CTA: {{VD: inbox "DEMO" nhận buổi demo hệ thống 30 phút}}.
 
 [ĐỊNH DẠNG ĐẦU RA] Bài 150-250 từ, xuống dòng thoáng theo kiểu Facebook, tối đa 3 emoji cả bài, kèm 3 hashtag và 1 dòng brief ảnh.
 
-[RÀNG BUỘC] {{[GIỌNG]}}. Không hứa kết quả y khoa tuyệt đối, không dùng "số 1", không kể bệnh khách có thật khi chưa xin phép. 2 dòng đầu không nhắc tên thương hiệu (hook trước, thương hiệu sau).
+[RÀNG BUỘC] {{[GIỌNG]}}. Không hứa kết quả tuyệt đối, không dùng "số 1", không bịa số liệu/chứng nhận, không kể chuyện khách thật khi chưa xin phép. 2 dòng đầu không nhắc tên thương hiệu (hook trước, thương hiệu sau).
 ```
 
-**Ví dụ đã điền (Sen Spa):** `{{chủ đề}}` = "vì sao nám đậm hơn vào mùa hè"; `{{angle}}` = nỗi đau; `{{chất liệu}}` = "'Họp online toàn phải bật filter' + sợ mất tiền vô ích như kem trộn"; `{{CTA}}` = "inbox SOI DA giữ 1/5 suất soi da miễn phí tháng này" → bài mở đầu: "Cứ đến hè là lớp nền dày thêm một tông — chị có thấy mình trong câu đó không? ☀️ Nắng không tạo ra nám, nắng chỉ 'tô đậm' những gì đã có sẵn dưới da..."
+**Ví dụ đã điền (RocketAI):** `{{chủ đề}}` = "vì sao chủ spa làm content 4h/ngày mà khách vẫn không đến"; `{{angle}}` = nỗi đau; `{{chất liệu}}` = "'Marketing phụ thuộc một tay chủ' + sợ AI phức tạp, không rành công nghệ"; `{{CTA}}` = "inbox DEMO đăng ký buổi demo Zoom 26/07" → bài mở đầu: "4 tiếng mỗi ngày cho content — mà lịch hẹn vẫn trống một nửa. Chị có thấy mình trong câu đó không? Vấn đề không nằm ở chỗ chị viết chưa đủ hay, mà ở chỗ một mình chị đang gánh việc của cả một hệ thống..."
 
 ### Prompt 4 — Prompt khung S03: Xử lý từ chối (mẫu tiêu biểu nhóm Sales)
 
@@ -215,7 +222,7 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 [RÀNG BUỘC] {{[GIỌNG]}}. Không giảm giá để chốt (chỉ dùng ưu đãi có sẵn trong offer). Không phủ nhận cảm xúc khách ("chị đừng lo" = cấm; thay bằng công nhận rồi dẫn chứng). Không nói xấu lựa chọn khác của khách.
 ```
 
-**Ví dụ đã điền (Sen Spa):** `{{câu từ chối}}` = "Để em về bàn với chồng đã chị ạ"; `{{bối cảnh}}` = "khách đã soi da, hợp phác đồ nám 10 buổi 15tr, lưỡng lự ở bước chốt"; `{{cặp}}` = "'hỏi chồng' ← sợ quyết định sai một mình sau lần mất tiền kem trộn" → phương án 2 mẫu: "Dạ đúng rồi chị, khoản này nên bàn với anh ạ. Em gửi chị bảng phác đồ có ghi rõ cam kết mốc buổi 5 bằng ảnh soi da — chị cho anh xem luôn để anh yên tâm là mình không 'đặt cược' như mua kem trôi nổi. Em giữ kết quả soi da của chị đến cuối tuần nhé?"
+**Ví dụ đã điền (RocketAI):** `{{câu từ chối}}` = "25 triệu cao quá — chị tự mày mò ChatGPT cũng được mà"; `{{bối cảnh}}` = "chị Mai đã xem demo Zoom, đang cân nhắc gói OS Installed 25tr, lưỡng lự ở bước chốt"; `{{cặp}}` = "'tự làm được' ← sợ mất tiền cho khoá học lý thuyết, cuối cùng vẫn phải tự làm" → phương án 2 mẫu: "Dạ đúng là ChatGPT ai cũng dùng được chị ạ. Khác biệt nằm ở chỗ: Rocket không bán khoá học — Rocket cài hệ thống chạy thật trên chính spa của chị trong 28 ngày, kèm cam kết bằng văn bản: hệ thống không chạy thì hoàn học phí. Chị muốn em gửi video một hệ thống đang chạy của spa 10 nhân viên giống bên mình không?"
 
 ### Prompt 5 — Tự viết prompt mới theo khung 6 phần (prompt sinh prompt)
 
@@ -233,7 +240,7 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 [RÀNG BUỘC] Prompt mới phải chạy được ngay khi điền chỗ trống, không phụ thuộc hội thoại trước. Tiếng Việt.
 ```
 
-**Ví dụ đã điền (Sen Spa):** `{{tình huống}}` = "Cuối ngày, lễ tân gửi tôi danh sách khách đến hôm nay kèm ghi chú của kỹ thuật viên; tôi muốn AI soạn tin nhắn chăm sóc cá nhân hóa cho từng khách trong 1 lần chạy" → AI hỏi lại về định dạng danh sách → xuất prompt mới mã CS11 "Tin chăm sóc cuối ngày theo danh sách".
+**Ví dụ đã điền (RocketAI):** `{{tình huống}}` = "Sau mỗi buổi demo Zoom, tôi muốn AI soạn email tóm tắt buổi demo + đề xuất gói phù hợp (Transfer/Installed/Managed) cho khách từ ghi chú của tôi, trong 1 lần chạy" → AI hỏi lại về định dạng ghi chú → xuất prompt mới mã S16 "Email tóm tắt & đề xuất gói sau demo".
 
 ## 9. 📋 SOP Thao Tác (dùng lặp lại sau khóa học)
 
@@ -285,7 +292,7 @@ core-output: "Prompt Library v1 ≥50 prompt (≥20 đã cá nhân hóa) · 10 p
 → Với các AI hiện đại, prompt tiếng Việt cho ngữ cảnh Việt (khách Việt, văn nói Việt) thường ra kết quả TỐT HƠN vì không qua tầng dịch. Toàn bộ thư viện chương trình là tiếng Việt — cứ yên tâm dùng.
 
 **Lỗi thường gặp:**
-1. **Điền chỗ trống bằng dữ liệu mơ hồ** — `{{chủ đề}}` điền "viết về spa" → output lan man. *Phát hiện:* output đúng giọng nhưng nội dung nhạt, chung chung. *Sửa:* chỗ trống điền càng hẹp càng tốt ("vì sao nám đậm hơn vào mùa hè" thay vì "về nám"); quy tắc: mỗi `{{}}` trả lời 1 câu hỏi cụ thể.
+1. **Điền chỗ trống bằng dữ liệu mơ hồ** — `{{chủ đề}}` điền "viết về AI" → output lan man. *Phát hiện:* output đúng giọng nhưng nội dung nhạt, chung chung. *Sửa:* chỗ trống điền càng hẹp càng tốt ("vì sao chủ spa làm content 4h/ngày mà khách vẫn không đến" thay vì "về AI marketing"); quy tắc: mỗi `{{}}` trả lời 1 câu hỏi cụ thể.
 2. **Nhồi 3 nhiệm vụ vào 1 prompt** ("viết bài + làm lịch tháng + viết quảng cáo") → cả 3 đều nửa vời. *Phát hiện:* phần Task có >1 động từ chính không liên quan nhau. *Sửa:* 1 prompt = 1 sản phẩm đầu ra; chuỗi việc thì chạy lần lượt 2-3 prompt, lấy output cái trước làm Input cái sau.
 3. **Tin AI 100%, bỏ bước rà** — bài đăng có số liệu sai/câu vi phạm quảng cáo lên thẳng fanpage. *Phát hiện:* (muộn) khi khách/đối thủ chỉ ra. *Sửa:* luật cứng trong Usage Guide: mọi output chạm KHÁCH THẬT (đăng bài, gửi tin) phải qua mắt người trước; checklist rà 10 giây: số đúng chưa — có hứa quá không — đúng giọng không.
 

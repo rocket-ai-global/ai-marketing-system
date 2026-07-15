@@ -13,7 +13,7 @@ tags: [project, aios, giao-an, template]
 
 0. **Chuyển giao, không phải khoá học** — chương trình là **solutions chuyển giao hệ điều hành AI Marketing & Sale OS (Rocket Agent OPC / Hermes)**: framework, agent, template, hệ thống được ĐÓNG GÓI SẴN và bàn giao theo từng module mỗi ngày. Bài tập của học viên = **nạp dữ liệu DN mình → custom → test → tối ưu** module đã nhận, không xây từ số 0. Hệ điều hành sau bàn giao vận hành bằng Agent 24/7: tạo lead, tư vấn, follow-up, chăm sóc khách hàng, đo lường tăng trưởng.
 1. **Không dạy lý thuyết suông** — mỗi ngày học viên phải ĐÓNG XONG một nhóm tài sản cho doanh nghiệp thật của mình (module đã custom chạy được).
-2. **Case study = 2 case THẬT, 0 case bịa** (theo [[Case Study Kép — RocketAI + MSX Group]]): 🚀 RocketAI Solutions (B2B dịch vụ — case DẠY, avatar khách hàng là chị Mai chủ spa) + 🍵 MSX Group — Mẫu Sơn Xanh (B2C sản phẩm — case CHỨNG MINH, vault demo sống `ai-marketing-system-msx-demo/`). Sen Spa (hư cấu) đã loại bỏ toàn bộ. Mỗi demo, prompt mẫu, template minh hoạ bằng case thật theo mapping trong [[_Chuẩn Đồng Bộ Tuần 1]], kèm ghi chú "Thích ứng ngành khác" (spa/thẩm mỹ, nha khoa, giáo dục, gym, coaching — các ngành DNA "bán qua tư vấn").
+2. **Case study = 2 case THẬT, 0 case bịa** (theo [[Case Study Kép — RocketAI + MSX Group]]): 🍵 **MSX Group — Mẫu Sơn Xanh** (B2C sản phẩm — **case XUYÊN SUỐT**: ví dụ chính mọi ngày, vault demo sống `ai-marketing-system-msx-demo/`, đồng thời là case CHỨNG MINH khi bán) + 🚀 **RocketAI Solutions** (B2B dịch vụ — **case ĐỐI CHIẾU**: mở ra khi B2B khác B2C rõ rệt như offer/proposal/chu kỳ chốt; avatar khách hàng là chị Mai chủ spa). Sen Spa (hư cấu) đã loại bỏ toàn bộ. Mỗi demo, prompt mẫu, template minh hoạ bằng case thật theo mapping trong [[_Chuẩn Đồng Bộ Tuần 1]], kèm ghi chú "Thích ứng ngành khác" (spa/thẩm mỹ, nha khoa, giáo dục, gym, coaching — các ngành DNA "bán qua tư vấn").
 3. **Core vs Bonus** — mỗi ngày phân biệt rõ output BẮT BUỘC (Core — điều kiện qua ngày) và output NÂNG CAO (Bonus). Chủ SME chỉ có 1.5–2h/ngày ngoài giờ live.
 4. **Template dựng sẵn 80%** — học viên điền 20% dữ liệu doanh nghiệp mình, không xây từ khung trống.
 5. **Chấm được bằng rubric** — tiêu chí nghiệm thu phải đo được, để mentor + AI Grader chấm nhất quán (xem [[Hệ Thống Chấm Chữa & Support Hàng Ngày]]).
@@ -61,7 +61,7 @@ Bảng: Thời lượng | Hoạt động | Chi tiết. Khung chuẩn:
 
 ## 8. 🤖 Prompt Mẫu
 - 3-6 prompt HOÀN CHỈNH copy-paste được (khung Role–Context–Task–Input–Output–Constraint).
-- Mỗi prompt: đặt trong code block, có chỗ `{{điền dữ liệu DN}}`, kèm 1 ví dụ đã điền cho Sen Spa.
+- Mỗi prompt: đặt trong code block, có chỗ `{{điền dữ liệu DN}}`, kèm 1 ví dụ đã điền bằng **case thật** (🍵 MSX mặc định; 🚀 RocketAI khi cần đối chiếu B2B — theo mapping [[_Chuẩn Đồng Bộ Tuần 1]]).
 
 ## 9. 📋 SOP Thao Tác
 - Quy trình vận hành lặp lại sau khoá học (khi nào làm, ai làm, input → các bước → output, tần suất).

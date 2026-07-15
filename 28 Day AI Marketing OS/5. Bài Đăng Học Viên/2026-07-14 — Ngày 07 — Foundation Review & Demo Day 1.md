@@ -10,6 +10,8 @@ related_templates:
   - "[[Template 7.1A — Bản Mẫu MSX Foundation Scorecard]]"
   - "[[Template 7.2 — Marketing Brief Tuần 2]]"
   - "[[Template 7.3 — Peer Score Demo Day]]"
+self_check:
+  - "[[2026-07-14 — Ngày 07 — Bộ 5 Câu Hỏi Tự Kiểm Tra Tuần 1]]"
 ---
 # 🎤 NGÀY 07 — FOUNDATION REVIEW & DEMO DAY 1
 
@@ -18,6 +20,8 @@ Chào cả nhà,
 Hôm nay là **Ngày 07 — ngày tổng kiểm tra nền móng Tuần 1**.
 
 Hôm nay **không học thêm lý thuyết mới**. Nhiệm vụ là:
+
+> Trước khi demo, cả nhà mở file tự kiểm tra này và hỏi chính AI Business Brain của mình 5 câu vàng: [[2026-07-14 — Ngày 07 — Bộ 5 Câu Hỏi Tự Kiểm Tra Tuần 1]].
 
 > Tổng hợp 6 ngày đầu, tự chấm Foundation Scorecard, demo AI Business Brain và chốt Marketing Brief để bước vào Tuần 2.
 
